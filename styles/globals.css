@@ -35,3 +35,6 @@ body {
 .modal-links-item{
   @apply lg:text-[40px] leading-[60px] font-bold text-[#919199];
 }
+#navbar{
+  background-color: rgba(11, 11, 13, 0.8);
+}

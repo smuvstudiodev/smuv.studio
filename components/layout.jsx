@@ -1,10 +1,26 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import NavModal from './nav-modal';
 
 export default function Layout({ children, title }) {
     const [isOpen, setIsOpen] = useState(false);
+    // useEffect(()=>{
+    //     const navbar = document.querySelector('#navbar');
+    //     document.addEventListener('scroll',(e)=>{
+    //         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    //             navbar.classList.add("backdrop-blur-[80px]");
+    //             navbar.classList.remove("backdrop-blur-[80px]");
+
+    //           } else {
+    //             navbar.classList.remove("backdrop-blur-[80px]");
+    //             navbar.classList.add("backdrop-blur-[80px]");
+
+
+    //           }
+    //     })
+    // },[])
+
     return (
         <div className='relative'>
             <Head>
@@ -13,7 +29,7 @@ export default function Layout({ children, title }) {
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <nav className='w-full lg:h-100 h-[60px]  backdrop-blur-[80px] bg-[#0B0B0D]'>
+            <nav id='navbar' className='w-full  fixed top-0 left-0 backdrop-blur-[80px]'>
                 {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
                 <div className='flex justify-between align-baseline mx-4 lg:mx-100'>
                     <div className="logo-container ">
@@ -30,7 +46,7 @@ export default function Layout({ children, title }) {
                 </div>
             </nav>
 
-            <main>
+            <main className='mt-100'>
                 {children}</main>
 
             <footer>
