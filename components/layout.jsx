@@ -12,7 +12,7 @@ export default function Layout({ children, title }) {
                 <link rel="icon" href="/favicon.png" />
             </Head>
            
-            <nav className='w-full h-100'>
+            <nav className='w-full h-100  backdrop-blur-[80px] bg-[#0B0B0D]'>
             {isOpen && <NavModal options={[isOpen, setIsOpen]}/>}
                 <div className='flex justify-between align-baseline mx-4 lg:mx-100'>
                     <div className="logo-container ">

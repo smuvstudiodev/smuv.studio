@@ -10,10 +10,10 @@ export default function NavModal({ options }) {
     return (
         <div className='
             absolute top-0 left-0 w-full
-            h-full min-h-screen bg-[rgba(0,0,0,0.85)]
+            h-full min-h-screen bg-[rgba(0,0,0,0.85)] backdrop-blur-sm
             flex justify-center items-center content-center
             '>
-            <div className='text-2xl text-white bg-[#0A0A0D]  h-[510px] w-[520px] rounded-xl py-11 px-[71px]'>
+            <div className='text-2xl text-white bg-[#0A0A0D]  backdrop-blur-[20px] h-[510px] w-[520px] rounded-xl py-11 px-[71px]'>
                 <div className="relative">
                     <div className="absolute -right-10 -top-24">
                         <button onClick={() => closeModal()}>
