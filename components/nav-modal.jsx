@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NavModal({ options }) {
-
+    const [isOpen, setIsOpen] = options;
     const closeModal = () => {
-        options[1](false);
+        setIsOpen(!isOpen);
     }
 
 
@@ -15,15 +16,15 @@ export default function NavModal({ options }) {
             '>
             <div className='text-2xl text-white bg-[#0A0A0D]  backdrop-blur-[20px] h-[510px] w-[520px] rounded-xl py-11 px-[71px]'>
                 <div className="relative">
-                    <div className="absolute -right-10 -top-24">
+                    <div className="absolute -right-20 -top-24">
                         <button onClick={() => closeModal()}>
-                            <img src="images/cancle-icon.png" alt="" />
+                            <Image src="/images/cancle-icon.png" alt="Cancel Icon" width={45} height={45} />
                         </button>
                     </div>
                 </div>
 
                 <div>
-                    <img src="images/logo-icon.png" className="w-12 h-12" alt="Smuv Icon" />
+                <Image src="/images/logo-icon.png"  alt="Smuv Icon" width={48} height={48} />
                 </div>
                 <div className="flex modal-links">
                     <Link href="/">

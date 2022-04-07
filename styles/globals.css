@@ -17,16 +17,16 @@ body {
 }
 
 .logo-container{
-  @apply flex lg:gap-x-11;
+  @apply flex h-full gap-[10px] lg:gap-x-11 py-[10px];
 }
 .logo{
-  @apply lg:h-[79.33px] lg:w-[180.64px] my-[10px];
+  @apply h-10 w-[91px] lg:h-[79.33px] lg:w-[180.64px] my-[10px];
 }
 .logo-text{
-  @apply  self-center text-[#737380] text-[16px] mt-1;
+  @apply  self-center text-[#737380] text-[10px] lg:text-[16px] lg:mt-1;
 }
 .hambugger{
-  @apply my-[27px];
+  @apply my-auto lg:my-[27px] w-7 h-7 lg:w-11 lg:h-11;
 }
 
 .modal-links{
