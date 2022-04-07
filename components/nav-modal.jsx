@@ -13,7 +13,7 @@ export default function NavModal({ options }) {
             h-full min-h-screen bg-[rgba(0,0,0,0.85)]
             flex justify-center items-center content-center
             '>
-            <div className='text-2xl text-white bg-[#0A0A0D] h-[510px] w-[520px] rounded-xl py-11 px-[71px]'>
+            <div className='text-2xl text-white bg-[#0A0A0D]  h-[510px] w-[520px] rounded-xl py-11 px-[71px]'>
                 <div className="relative">
                     <div className="absolute -right-10 -top-24">
                         <button onClick={() => closeModal()}>
@@ -38,7 +38,7 @@ export default function NavModal({ options }) {
                 </div>
                 <div className="border-t-2 border-dashed border-[#252529] py-6">
                     <span>Want a smuv experience?</span>
-                    <h4>Let's talk at hi@smuvstudio.com</h4>
+                    <h4>Let{"'"}s talk at hi@smuvstudio.com</h4>
                 </div>
             </div>
         </div>
