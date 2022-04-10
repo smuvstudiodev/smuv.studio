@@ -18,13 +18,16 @@ export default function NavModal({ options }) {
                 <div className="relative">
                     <div className="absolute -right-20 -top-24">
                         <button onClick={() => closeModal()}>
+                            
                             <Image src="/images/cancle-icon.png" alt="Cancel Icon" width={45} height={45} />
                         </button>
                     </div>
                 </div>
 
                 <div>
-                <Image src="/images/logo-icon.png"  alt="Smuv Icon" width={48} height={48} />
+                <object type="image/svg+xml"  width={48} height={48} data="/images/Logo_Icon_Animation.svg">svg-animation</object>
+
+                {/* <Image src="/images/Logo_Icon_Animation.svg"  alt="Smuv Icon" width={48} height={48} /> */}
                 </div>
                 <div className="flex modal-links">
                     <Link href="/">
