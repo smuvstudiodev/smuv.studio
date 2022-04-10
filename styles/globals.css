@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'TT Firs Neue Bold Outline Trial';
+  src: url('fonts/TT_Firs_Neue/TT\ Firs\ Neue\ Trial\ Bold.ttf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,8 +12,7 @@ body {
   padding: 0;
   margin: 0;
   background: #0B0B0D;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:'TT Firs Neue Bold Outline Trial', sans-serif;
 }
 
 
