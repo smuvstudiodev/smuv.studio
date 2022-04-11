@@ -1,21 +1,63 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Layout from '../components/layout'
 
 export default function Home() {
   return (
     <Layout title={"UI/UX and Frontend company."}>
-      
-      <div className="relative mt-100 flex justify-center justify-items-center content-center h-[927px] max-w-screen-xl mx-auto">
-      <object className='absolute left-100 right-100 bottom-100 ' type="image/svg+xml" data="/images/Hero_Element.svg">svg-animation</object>
-        <div className='absolute top-44  bottom-100'>
-          <h1 className='text-primary md:text-6xl lg:text-8xl font-bold text-center self-center'>
-            A word-class UX-UI studio that love to create 
-            <span>
-              
+
+      <div className="relative mt-100 lg:mt-10 xl:mt-100 2xl:mt-[200px] flex justify-center justify-items-center content-center lg:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
+        <object className='hidden top-[-15%] lg:block absolute left-[15%] right-100 item-center self-center xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg"></object>
+        <div className='relative mt-[82px] lg:mt-40   flex flex-col content-center justify-center'>
+          <h1 className='heading-text text-[26px] text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold text-center self-center'>
+            A word-class UX-UI <br className="hidden lg:block" /> studio that love to create
+            <span className="inline-block my-[6px] lg:my-4">
+              insane designs.
             </span>
           </h1>
+
+          <div className='hero-btn-group lg:my-5 mt-10 flex flex-col lg:flex-row justify-between mx-auto gap-y-4 lg:gap-x-5 max-w-sm content-center'>
+            <Link href="/contact">
+              <a className='hero-btn group'>
+                <span>Let{"'"}s Collab</span>
+                <svg width="19" height="16" className='hero-btn-arrow-icon group-hover:fill-[#0A0A0D] lg:fill-[#737380] fill-[#0A0A0D] w-[19px] h-4 ' viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M9.84781 0.334735C10.3116 -0.111578 11.0634 -0.111578 11.5272 0.334735L18.6522 7.19188C19.1159 7.63819 19.1159 8.36181 18.6522 8.80812L11.5272 15.6653C11.0634 16.1116 10.3116 16.1116 9.84781 15.6653C9.38406 15.219 9.38406 14.4953 9.84781 14.049L14.9456 9.14286L1.1875 9.14286C0.531663 9.14286 0 8.63118 0 8C0 7.36882 0.531663 6.85714 1.1875 6.85714H14.9456L9.84781 1.95098C9.38406 1.50467 9.38406 0.781049 9.84781 0.334735Z" />
+                </svg>
+
+              </a>
+            </Link>
+            <span className='hero-text'>
+              Challenging the norm.
+            </span>
+          </div>
         </div>
 
+      </div>
+
+      {/* Clients */}
+      <div className="lg:max-w-screen-lg mx-auto my-60">
+        <div className='flex flex-row  justify-between gap-x-3 content-center items-baseline'>
+        <div className="module-border-wrap">
+              <div className="module lg:py-16 lg:px-11">
+                <Image src="/images/clients/prosperis.png" alt="Prosperis" width={244} height={48}/>
+              </div>
+            </div>
+            <div className="module-border-wrap">
+              <div className="module  lg:py-[50px] lg:px-11">
+                <Image src="/images/clients/one-port-365.png" alt="One Port 365" width={204.53} height={73.06}/>
+              </div>
+            </div>
+            <div className="module-border-wrap">
+              <div className="module">
+                <Image src="/images/clients/tingtel.png" alt="Tingtel" width={185.18} height={82.04}/>
+              </div>
+            </div>
+            <div className="module-border-wrap">
+              <div className="module">
+                <Image src="/images/clients/green-key.png" alt="Green Key" width={142.28} height={114.12}/>
+              </div>
+            </div>
+        </div>
       </div>
     </Layout>
   )

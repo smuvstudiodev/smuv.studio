@@ -21,13 +21,16 @@ body {
 }
 
 .logo-container{
-  @apply flex h-full gap-[10px] lg:gap-x-11 py-[10px];
+  @apply flex content-center h-full gap-[10px] lg:gap-x-11 py-[19px] lg:py-[5px];
 }
-.logo{
+/* .logo{
   @apply h-10 w-[91px] lg:h-[79.33px] lg:w-[180.64px] my-[10px];
+} */
+.logo{
+  @apply h-10 w-[91px] lg:h-[79.33px] lg:w-[180.64px] my-[10px] self-center;
 }
 .logo-text{
-  @apply  self-center text-[#737380] text-[10px] lg:text-[16px] lg:mt-1;
+  @apply  self-center text-[#737380] text-[10px] lg:text-[16px];
 }
 .hambugger{
   @apply my-auto lg:my-[27px] w-7 h-7 lg:w-11 lg:h-11;
@@ -41,4 +44,55 @@ body {
 }
 #navbar{
   background-color: rgba(11, 11, 13, 0.8);
+}
+.hero-btn{
+  @apply px-[21.38px] py-[15.55px] lg:px-7 bg-[#ebebf7] lg:bg-transparent text-[#0A0A0D] lg:w-[65%] self-center lg:py-4 rounded-lg border-[#737380] border hover:border-0 flex gap-x-2 justify-center content-center items-baseline lg:text-primary hover:bg-primary lg:hover:text-[#0A0A0D] lg:text-[22px] font-semibold transition;
+}
+.hero-btn, .hero-btn:hover, .hero-btn-arrow-icon, .hero-btn-arrow-icon:hover{
+  @apply transition duration-300 ease-in-out;
+}
+.hero-text{
+  @apply inline-block lg:text-[18px] text-[12px] text-primary  lg:w-[35%] self-center;  
+}
+
+.hero-btn:hover ~ .hero-text{
+  @apply lg:opacity-50;
+}
+
+.heading-text span {
+  background: linear-gradient(270deg, #EF6D35 27.91%, #FF097F 74.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+ 
+.module-border-wrap {
+  max-width: 332px;
+  padding: 1rem;
+  position: relative;
+  padding: 1px;
+  border-radius: 14px;
+  border: 1px solid rgba(69, 69, 77, 0.2);
+  background: #0B0B0D;
+  background-image: linear-gradient(
+    to right,
+    #0B0B0D,
+    #0B0B0D
+  );
+  transition: background-image 0.5s linear;
+
+}
+.module-border-wrap:hover{
+  background-image: linear-gradient(to right, red, purple);
+  transition: background-image 0.5s linear;
+
+  @apply cursor-pointer;
+
+}
+.module {
+  background: #0B0B0D;
+  color: white;
+  /* padding: 64px 44px; */
+  border-radius: 14px;
 }

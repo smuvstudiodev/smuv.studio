@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import Layout from '../components/layout'
+
 
 export default function Contact({data}){
 
@@ -14,9 +16,11 @@ export default function Contact({data}){
     console.log(data);
 
     return(
-        <div className="text-white w-full">
+        <Layout>
+            <div className="text-white w-full mt-100">
             <h1 className="text-center text-4xl">Contact us</h1>
         </div>
+        </Layout>
     )
 }
 

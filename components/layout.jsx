@@ -29,12 +29,12 @@ export default function Layout({ children, title }) {
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <nav id='navbar' className='w-full z-40 fixed top-0 left-0 backdrop-blur-[80px]'>
+            <nav id='navbar' className='w-full z-40 fixed top-0 left-0 backdrop-blur-[80px] '>
                 {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
-                <div className='flex justify-between align-baseline mx-4 lg:mx-100'>
+                <div className='flex justify-between align-baseline mx-4 lg:mx-100 '>
                     <div className="logo-container ">
-                        <div className="logo">
-                        <object type="image/svg+xml" data="/images/Logo_Icon_and_WordMark_Logo_colour_Animation.svg">svg-animation</object>
+                        <div className="logo flex">
+                        <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px] w-[90px] h-[23px] self-center" data="/images/Logo_Icon_and_WordMark_Logo_colour_Animation.svg">svg-animation</object>
                             {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
                         </div>
                         <span className="logo-text">A UX/UI Design Studio</span>
