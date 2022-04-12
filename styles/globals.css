@@ -34,7 +34,7 @@ body {
   @apply h-10 w-[91px] lg:h-[79.33px] lg:w-[180.64px] my-[10px];
 } */
 .logo{
-  @apply h-10 w-[91px] lg:h-[79.33px] lg:w-[180.64px] my-[10px] self-center;
+  @apply h-10 w-[91px] lg:h-[79.33px] lg:w-[180.64px] self-center flex items-center;
 }
 .logo-text{
   @apply  self-center text-[#737380] text-[10px] lg:text-[16px];

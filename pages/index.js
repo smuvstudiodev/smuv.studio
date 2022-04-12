@@ -9,7 +9,7 @@ export default function Home() {
       <div className="relative mt-100 xl:mt-100  2xl:mt-[200px] flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
         <object className='hidden top-[-10%] md:top-[-15%] xl:top-[-15%] md:block absolute left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg"></object>
         <div className='relative mt-[82px]  lg:mt-40 xl:mt-44   flex flex-col content-center justify-center'>
-          <h1 className='heading-text text-[26px] text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold text-center self-center'>
+          <h1 className='heading-text text-[26px] text-primary px-1 md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold text-center self-center'>
             A word-class UX-UI <br className="hidden md:block" /> studio that love to create
             <span className="inline-block md:block my-[6px] md:my-4">
               insane designs.
