@@ -93,6 +93,40 @@ body {
 .module {
   background: #0B0B0D;
   color: white;
-  /* padding: 64px 44px; */
+ 
+ 
   border-radius: 14px;
+  @apply flex justify-center items-center content-center lg:h-[177px] w-[320px] max-w-[320px] lg:w-[320px];
 }
+
+/* .module-border-wrap {
+  @apply flex justify-center items-center h-[77px] lg:h-[177px];
+  position: relative;
+  padding:  4px 1px;
+  border-radius: 14px;
+  border: 1px solid rgba(69, 69, 77, 0.2);
+  background: #0B0B0D;
+  background-image: linear-gradient(
+    to right,
+    #0B0B0D,
+    #0B0B0D
+  );
+  transition: background-image 0.5s linear;
+
+}
+.module-border-wrap:hover{
+  background-image: linear-gradient(to right, red, purple);
+  transition: background-image 0.5s linear;
+  @apply cursor-pointer;
+}
+.module {
+  background: #0B0B0D;
+  color: white;
+  width: 330px;
+  height:177px;
+  padding: 55px 44px;
+  border-radius: 14px;
+  @apply flex justify-center items-center  ;
+
+  
+} */

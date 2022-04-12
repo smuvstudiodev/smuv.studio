@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <Layout title={"UI/UX and Frontend company."}>
 
-      <div className="relative mt-100 lg:mt-10 xl:mt-100 2xl:mt-[200px] flex justify-center justify-items-center content-center lg:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
-        <object className='hidden top-[-15%] lg:block absolute left-[15%] right-100 item-center self-center xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg"></object>
-        <div className='relative mt-[82px] lg:mt-40   flex flex-col content-center justify-center'>
+      <div className="relative mt-100 xl:mt-100  2xl:mt-[200px] flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
+        <object className='hidden top-[-10%] md:top-[-15%] xl:top-[-15%] md:block absolute left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg"></object>
+        <div className='relative mt-[82px]  lg:mt-40 xl:mt-44   flex flex-col content-center justify-center'>
           <h1 className='heading-text text-[26px] text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold text-center self-center'>
-            A word-class UX-UI <br className="hidden lg:block" /> studio that love to create
-            <span className="inline-block my-[6px] lg:my-4">
+            A word-class UX-UI <br className="hidden md:block" /> studio that love to create
+            <span className="inline-block md:block my-[6px] md:my-4">
               insane designs.
             </span>
           </h1>
@@ -35,30 +35,58 @@ export default function Home() {
       </div>
 
       {/* Clients */}
-      <div className="lg:max-w-screen-lg mx-auto my-60">
-        <div className='flex flex-row  justify-between gap-x-3 content-center items-baseline'>
-        <div className="module-border-wrap">
-              <div className="module lg:py-16 lg:px-11">
-                <Image src="/images/clients/prosperis.png" alt="Prosperis" width={244} height={48}/>
-              </div>
+
+      {/* <div className='mt-20 lg:mt-100 grid grid-cols-4 gap-x-3 mx-auto lg:max-w-screen-lg'>
+          <div className="module-border-wrap">
+            <div className="module">
+              <img src="/images/clients/prosperis.png" alt="Prosperis" />
             </div>
-            <div className="module-border-wrap">
-              <div className="module  lg:py-[50px] lg:px-11">
-                <Image src="/images/clients/one-port-365.png" alt="One Port 365" width={204.53} height={73.06}/>
-              </div>
+          </div>
+          <div className="module-border-wrap">
+            <div className="module">
+              <img src="/images/clients/one-port-365.png" alt="One Port 365"/>
             </div>
-            <div className="module-border-wrap">
-              <div className="module">
-                <Image src="/images/clients/tingtel.png" alt="Tingtel" width={185.18} height={82.04}/>
-              </div>
+          </div>
+          <div className="module-border-wrap">
+            <div className="module ">
+              <img className='img' src="/images/clients/tingtel.png" alt="Tingtel"/>
             </div>
-            <div className="module-border-wrap">
-              <div className="module">
-                <Image src="/images/clients/green-key.png" alt="Green Key" width={142.28} height={114.12}/>
-              </div>
+          </div>
+          <div className="module-border-wrap">
+            <div className="module">
+              <img src="/images/clients/green-key.png" alt="Green Key"/>
             </div>
+          </div>
+        </div> */}
+
+
+      <div>  
+        <div className="mt-[300px] ">
+        
+        <div className='lg:flex lg:flex-row grid grid-cols-4 gap-4 scale-[50%] xl:scale-[80%] justify-between gap-x-5 content-center items-center'>
+          <div className="module-border-wrap">
+            <div className="module">
+              <Image src="/images/clients/prosperis.png" alt="Prosperis" width={244} height={48} />
+            </div>
+          </div>
+          <div className="module-border-wrap">
+            <div className="module">
+              <Image src="/images/clients/one-port-365.png" alt="One Port 365" width={204.53} height={73.06} />
+            </div>
+          </div>
+          <div className="module-border-wrap">
+            <div className="module ">
+              <Image src="/images/clients/tingtel.png" alt="Tingtel" width={185.18} height={82.04} />
+            </div>
+          </div>
+          <div className="module-border-wrap">
+            <div className="module">
+              <Image src="/images/clients/green-key.png" alt="Green Key" width={142.28} height={114.12} />
+            </div>
+          </div>
         </div>
       </div>
-    </Layout>
+    </div>
+    </Layout >
   )
 }
