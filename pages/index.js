@@ -11,9 +11,24 @@ export default function Home() {
         <div className='relative mt-[82px]  lg:mt-40 xl:mt-44   flex flex-col content-center justify-center'>
           <h1 className='heading-text text-[26px] text-primary px-1 md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold text-center self-center'>
             A word-class UX-UI <br className="hidden md:block" /> studio that love to create
-            <span className="inline-block md:block my-[6px] md:my-4">
-              insane designs.
-            </span>
+
+            <div className="scroller">
+              <div>
+                <span className="inline-block ">
+                  insane designs.
+                </span>
+                <span className="inline-block ">
+                  perfect user experience.
+                </span>
+                <span className="inline-block">
+                  design that converts.
+                </span>
+                <span className="">
+                  insane designs.
+                </span>
+              </div>
+            </div>
+
           </h1>
 
           <div className='hero-btn-group lg:my-5 mt-10 flex flex-col lg:flex-row justify-between mx-auto gap-y-4 lg:gap-x-5 max-w-sm content-center'>
@@ -60,46 +75,46 @@ export default function Home() {
         </div> */}
 
 
-      <div>  
-        <div className="mt-[300px] ">
-        
-        <div className='hidden lg:flex lg:flex-row md:grid grid-cols-4 gap-4 scale-[50%] xl:scale-[80%] justify-between gap-x-5 content-center items-center'>
-          <div className="module-border-wrap">
-            <div className="module">
-              <Image src="/images/clients/prosperis.png" alt="Prosperis" width={244} height={48} />
+      <div>
+        <div className="mt-[200px] ">
+
+          <div className='hidden lg:flex lg:flex-row md:grid grid-cols-4 gap-4 scale-[50%] xl:scale-[80%] justify-between gap-x-5 content-center items-center'>
+            <div className="module-border-wrap">
+              <div className="module">
+                <Image src="/images/clients/prosperis.png" alt="Prosperis" width={244} height={48} />
+              </div>
             </div>
-          </div>
-          <div className="module-border-wrap">
-            <div className="module">
-              <Image src="/images/clients/one-port-365.png" alt="One Port 365" width={204.53} height={73.06} />
+            <div className="module-border-wrap">
+              <div className="module">
+                <Image src="/images/clients/one-port-365.png" alt="One Port 365" width={204.53} height={73.06} />
+              </div>
             </div>
-          </div>
-          <div className="module-border-wrap">
-            <div className="module ">
-              <Image src="/images/clients/tingtel.png" alt="Tingtel" width={185.18} height={82.04} />
+            <div className="module-border-wrap">
+              <div className="module ">
+                <Image src="/images/clients/tingtel.png" alt="Tingtel" width={185.18} height={82.04} />
+              </div>
             </div>
-          </div>
-          <div className="module-border-wrap">
-            <div className="module">
-              <Image src="/images/clients/green-key.png" alt="Green Key" width={142.28} height={114.12} />
+            <div className="module-border-wrap">
+              <div className="module">
+                <Image src="/images/clients/green-key.png" alt="Green Key" width={142.28} height={114.12} />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div className='flex justify-center content-center items-center mt-7'>
-    <object type="image/svg+xml" className="w-1 h-[280px]" data="/images/Line_Movement.svg">svg-animation</object>
-        
-    </div>
-    <div className='tagline flex flex-col text-center w-[288px] lg:w-[705px] mx-auto justify-center content-center items-center my-9 lg:my-28'>
-       
+      <div className='flex justify-center content-center items-center '>
+        <object type="image/svg+xml" className="w-1 h-[280px]" data="/images/Line_Movement.svg">svg-animation</object>
+
+      </div>
+      <div className='tagline flex flex-col text-center w-[288px] lg:w-[705px] mx-auto justify-center content-center items-center my-9 lg:mb-20 lg:mt-10'>
+
         <span className="text-[#737380] text-sm lg:text-xl">Your enterprise wants a smarter product that converts?</span>
         <h2 className="font-bold text-3xl lg:text-[92px] lg:leading-[119px] text-[#C2C2CC] ">smuv can help<span>.</span> </h2>
-        
-    </div>
 
-    <div className="px-2  xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
+      </div>
+
+      <div className="px-2  xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-y-[17px]  2xl:gap-3">
           <div className="card">
             <object type="image/svg+xml" className="card-icon" data="/images/icons/Strategy_Icon.svg">svg-animation</object>
@@ -130,64 +145,64 @@ export default function Home() {
               <li>Front-end development</li>
             </ul>
           </div>
-          
-        </div>
-    </div>
 
-    <div className="px-5 md:px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
+        </div>
+      </div>
+
+      <div className="px-5 md:px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-y-[17px] lg:gap-y-20  gap-4 gap-x-9">
           <div className="project">
-           <Image className="project-image" src="/images/blog-images/unsplash_1_CMoFsPfso.png" width={689} height={521} alt="Blog post"/>
-           <div className="project-meta">
-              <h4 className="project-heading">Project Title</h4>
-              <p>Project Title</p>
-            </div>
-          </div>
-         
-
-          <div className="project">
-           <Image className="project-image" src="/images/blog-images/unsplash_lTb4gJK_l1Q.png" width={689} height={521} alt="Blog post"/>
-           <div className="project-meta">
+            <Image className="project-image" src="/images/blog-images/unsplash_1_CMoFsPfso.png" width={689} height={521} alt="Blog post" />
+            <div className="project-meta">
               <h4 className="project-heading">Project Title</h4>
               <p>Project Title</p>
             </div>
           </div>
 
+
           <div className="project">
-           <Image className="project-image" src="/images/blog-images/unsplash_xsGxhtAsfSA.png" width={689} height={521} alt="Blog post"/>
-           <div className="project-meta">
+            <Image className="project-image" src="/images/blog-images/unsplash_lTb4gJK_l1Q.png" width={689} height={521} alt="Blog post" />
+            <div className="project-meta">
               <h4 className="project-heading">Project Title</h4>
               <p>Project Title</p>
             </div>
           </div>
 
           <div className="project">
-           <Image className="project-image" src="/images/blog-images/unsplash_fIq0tET6llw.png" width={689} height={521} alt="Blog post"/>
-           <div className="project-meta">
+            <Image className="project-image" src="/images/blog-images/unsplash_xsGxhtAsfSA.png" width={689} height={521} alt="Blog post" />
+            <div className="project-meta">
               <h4 className="project-heading">Project Title</h4>
               <p>Project Title</p>
             </div>
           </div>
-          
+
+          <div className="project">
+            <Image className="project-image" src="/images/blog-images/unsplash_fIq0tET6llw.png" width={689} height={521} alt="Blog post" />
+            <div className="project-meta">
+              <h4 className="project-heading">Project Title</h4>
+              <p>Project Title</p>
+            </div>
+          </div>
+
         </div>
-    </div>
+      </div>
 
-    <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-20'>
-       
-       <span className="text-[#737380] text-sm lg:text-xl">That{"’"}s not all we have</span>
-      <Link href="/">
-        <a>
-        <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-2 flex items-center">
-         <span>Find more in our portfolio</span>
-         <svg width="91" height="61" viewBox="0 0 91 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M29 29.5H27.5V32.5H29V29.5ZM70.0607 32.0607C70.6464 31.4749 70.6464 30.5251 70.0607 29.9393L60.5147 20.3934C59.9289 19.8076 58.9792 19.8076 58.3934 20.3934C57.8076 20.9792 57.8076 21.9289 58.3934 22.5147L66.8787 31L58.3934 39.4853C57.8076 40.0711 57.8076 41.0208 58.3934 41.6066C58.9792 42.1924 59.9289 42.1924 60.5147 41.6066L70.0607 32.0607ZM29 32.5H69V29.5H29V32.5Z" fill="#C2C2CC"/>
-</svg>
+      <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-20'>
 
-       </h2>
-        </a>
+        <span className="text-[#737380] text-sm lg:text-xl">That{"’"}s not all we have</span>
+        <Link href="/">
+          <a>
+            <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-2 flex items-center">
+              <span>Find more in our portfolio</span>
+              <svg width="91" height="61" viewBox="0 0 91 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29 29.5H27.5V32.5H29V29.5ZM70.0607 32.0607C70.6464 31.4749 70.6464 30.5251 70.0607 29.9393L60.5147 20.3934C59.9289 19.8076 58.9792 19.8076 58.3934 20.3934C57.8076 20.9792 57.8076 21.9289 58.3934 22.5147L66.8787 31L58.3934 39.4853C57.8076 40.0711 57.8076 41.0208 58.3934 41.6066C58.9792 42.1924 59.9289 42.1924 60.5147 41.6066L70.0607 32.0607ZM29 32.5H69V29.5H29V32.5Z" fill="#C2C2CC" />
+              </svg>
+
+            </h2>
+          </a>
         </Link>
-       
-   </div>
+
+      </div>
       <div lassName='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-20'>
         <div className="bg-[#101012] py-20 px-16 ">
 

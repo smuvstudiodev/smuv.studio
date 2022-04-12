@@ -65,13 +65,57 @@ body {
 .hero-btn:hover ~ .hero-text{
   @apply lg:opacity-50;
 }
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  /* width: 10em; */
+}
 
-.heading-text span {
+.scroller div span:nth-child(1),.scroller div span:nth-child(4) {
   background: linear-gradient(270deg, #EF6D35 27.91%, #FF097F 74.84%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+.scroller div span:nth-child(2) {
+  background: linear-gradient(270deg, #6358E4 7.22%, #AF58E4 92.48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.scroller div span:nth-child(3) {
+  background: linear-gradient(270deg, #DFDA63 13.94%, #63DFAB 87.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.scroller >div {
+  position: absolute;
+  top: 0;
+  animation: slide 9s ease-in-out infinite;
+  font-weight: bold;
+  -webkit-animation: slide 15s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
 }
  
 .module-border-wrap {
