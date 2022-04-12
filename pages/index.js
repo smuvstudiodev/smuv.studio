@@ -100,7 +100,7 @@ export default function Home() {
     </div>
 
     <div className="px-2  xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-y-[17px]  2xl:gap-3">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-y-[17px]  2xl:gap-3">
           <div className="card">
             <object type="image/svg+xml" className="card-icon" data="/images/icons/Strategy_Icon.svg">svg-animation</object>
             <h3 className="card-heading">Strategy</h3>
@@ -133,6 +133,66 @@ export default function Home() {
           
         </div>
     </div>
+
+    <div className="px-5 md:px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-y-[17px] lg:gap-y-20  gap-4 gap-x-9">
+          <div className="project">
+           <Image className="project-image" src="/images/blog-images/unsplash_1_CMoFsPfso.png" width={689} height={521} alt="Blog post"/>
+           <div className="project-meta">
+              <h4 className="project-heading">Project Title</h4>
+              <p>Project Title</p>
+            </div>
+          </div>
+         
+
+          <div className="project">
+           <Image className="project-image" src="/images/blog-images/unsplash_lTb4gJK_l1Q.png" width={689} height={521} alt="Blog post"/>
+           <div className="project-meta">
+              <h4 className="project-heading">Project Title</h4>
+              <p>Project Title</p>
+            </div>
+          </div>
+
+          <div className="project">
+           <Image className="project-image" src="/images/blog-images/unsplash_xsGxhtAsfSA.png" width={689} height={521} alt="Blog post"/>
+           <div className="project-meta">
+              <h4 className="project-heading">Project Title</h4>
+              <p>Project Title</p>
+            </div>
+          </div>
+
+          <div className="project">
+           <Image className="project-image" src="/images/blog-images/unsplash_fIq0tET6llw.png" width={689} height={521} alt="Blog post"/>
+           <div className="project-meta">
+              <h4 className="project-heading">Project Title</h4>
+              <p>Project Title</p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+    <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-20'>
+       
+       <span className="text-[#737380] text-sm lg:text-xl">That{"’"}s not all we have</span>
+      <Link href="/">
+        <a>
+        <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-2 flex items-center">
+         <span>Find more in our portfolio</span>
+         <svg width="91" height="61" viewBox="0 0 91 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29 29.5H27.5V32.5H29V29.5ZM70.0607 32.0607C70.6464 31.4749 70.6464 30.5251 70.0607 29.9393L60.5147 20.3934C59.9289 19.8076 58.9792 19.8076 58.3934 20.3934C57.8076 20.9792 57.8076 21.9289 58.3934 22.5147L66.8787 31L58.3934 39.4853C57.8076 40.0711 57.8076 41.0208 58.3934 41.6066C58.9792 42.1924 59.9289 42.1924 60.5147 41.6066L70.0607 32.0607ZM29 32.5H69V29.5H29V32.5Z" fill="#C2C2CC"/>
+</svg>
+
+       </h2>
+        </a>
+        </Link>
+       
+   </div>
+      <div lassName='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-20'>
+        <div className="bg-[#101012] py-20 px-16 ">
+
+        </div>
+      </div>
     </Layout >
   )
 }

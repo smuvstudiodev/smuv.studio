@@ -159,3 +159,15 @@ body {
 .tagline h2{
   font-feature-settings: 'tnum' on, 'lnum' on;
 }
+.project-image{
+  @apply rounded-lg;
+}
+.project-meta{
+    @apply my-[28px]
+}
+.project-heading{
+  @apply text-2xl text-[#C2C2CC] font-bold;
+}
+.project-meta p{
+  @apply text-[#737380] text-xl;
+}
