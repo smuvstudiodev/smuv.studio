@@ -47,7 +47,7 @@ export default function Layout({ children, title }) {
                 </div>
             </nav>
 
-            <main className=''>
+            <main className='max-w-[1409px] mx-auto'>
                 {children}</main>
 
             <footer>

@@ -1,6 +1,13 @@
 @font-face {
-  font-family: 'TT Firs Neue Bold Outline Trial';
+  font-family: 'TT Firs Neue';
+  font-weight:700;
   src: url('fonts/TT_Firs_Neue/TT\ Firs\ Neue\ Trial\ Bold.ttf');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  font-weight:400;
+  src: url('fonts/TT_Firs_Neue/TT_Firs_Neue_Trial_Regular.ttf');
 }
 
 @tailwind base;
@@ -12,7 +19,7 @@ body {
   padding: 0;
   margin: 0;
   background: #0B0B0D;
-  font-family:'TT Firs Neue Bold Outline Trial', sans-serif;
+  font-family:'TT Firs Neue', sans-serif;
 }
 
 
@@ -130,3 +137,25 @@ body {
 
   
 } */
+.card{
+  @apply px-6 py-9 lg:py-[53px] lg:px-12 bg-[#101012] rounded-md mx-4;
+}
+.card-icon{
+  @apply w-16 h-16 lg:w-20 lg:h-20 ;
+}
+.card-heading{
+  @apply 2xl:text-[40px] xl:text-[30px] text-[20px]  font-bold leading-[51px]  lg:my-5 text-[#C2C2CC];
+}
+.card-list{
+  list-style-image: url('/images/tick_mark.png');
+  @apply mx-5;
+}
+.card-list li{
+  @apply text-lg 2xl:text-xl text-[#737380] font-normal my-2 lg:my-3;
+}
+.tagline h2 span{
+  @apply text-[#8080FF];
+}
+.tagline h2{
+  font-feature-settings: 'tnum' on, 'lnum' on;
+}
