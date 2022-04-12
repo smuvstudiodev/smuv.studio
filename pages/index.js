@@ -23,7 +23,7 @@ export default function Home() {
                 <span className="inline-block">
                   design that converts.
                 </span>
-                <span className="">
+                <span className="inline-block">
                   insane designs.
                 </span>
               </div>
