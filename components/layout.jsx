@@ -26,6 +26,8 @@ export default function Layout({ children, title }) {
             <Head>
                 <title>Smuv Studio {title && `- ${title}`}</title>
                 <meta name="description" content="Smuv, A UX/UI Design Studio" />
+                <meta name="theme-color" content="#0B0B0D" />
+
                 <link rel="icon" href="/Logo_Icon_Animation.svg" />
             </Head>
 
@@ -34,7 +36,7 @@ export default function Layout({ children, title }) {
                 <div className='flex justify-between align-baseline mx-4 lg:mx-100 '>
                     <div className="logo-container ">
                         <div className="logo">
-                        <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Logo_Icon_and_WordMark_Logo_colour_Animation.svg">svg-animation</object>
+                            <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Logo_Icon_and_WordMark_Logo_colour_Animation.svg">svg-animation</object>
                             {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
                         </div>
                         <span className="logo-text">A UX/UI Design Studio</span>
