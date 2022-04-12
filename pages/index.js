@@ -8,22 +8,22 @@ export default function Home() {
 
       <div className="relative mt-100 xl:mt-100  2xl:mt-[200px] flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
         <object className='hidden top-[-10%] md:top-[-15%] xl:top-[-15%] md:block absolute left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg"></object>
-        <div className='relative mt-[82px]  lg:mt-40 xl:mt-44   flex flex-col content-center justify-center'>
-          <h1 className='heading-text text-[26px] text-primary px-1 md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold text-center self-center'>
-            A word-class UX-UI <br className="hidden md:block" /> studio that love to create
+        <div className='relative mt-[82px] md:mt-100 lg:mt-40 xl:mt-44   flex flex-col content-center justify-center'>
+          <h1 className='heading-text text-[26px] text-primary px-1 md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold text-center self-center leading-[34px] lg:leading-[96px]'>
+            A word-class UX-UI <br className="hidden md:block" /> studio that loves to create
 
             <div className="scroller">
               <div>
-                <span className="inline-block ">
+                <span className="inline-block  ">
                   insane designs.
                 </span>
-                <span className="inline-block ">
+                <span className="inline-block  ">
                   perfect user experience.
                 </span>
-                <span className="inline-block">
+                <span className="inline-block ">
                   design that converts.
                 </span>
-                <span className="inline-block">
+                <span className="inline-block ">
                   insane designs.
                 </span>
               </div>
@@ -35,7 +35,7 @@ export default function Home() {
             <Link href="/contact">
               <a className='hero-btn group'>
                 <span>Let{"'"}s Collab</span>
-                <svg width="19" height="16" className='hero-btn-arrow-icon group-hover:fill-[#0A0A0D] lg:fill-[#737380] fill-[#0A0A0D] w-[19px] h-4 ' viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="19" height="16" className='hero-btn-arrow-icon group-hover:fill-[#0A0A0D] lg:fill-[#737380] fill-[#0A0A0D] w-[12.31px] h-[10.37px] lg:w-[19px] lg:h-4 ' viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M9.84781 0.334735C10.3116 -0.111578 11.0634 -0.111578 11.5272 0.334735L18.6522 7.19188C19.1159 7.63819 19.1159 8.36181 18.6522 8.80812L11.5272 15.6653C11.0634 16.1116 10.3116 16.1116 9.84781 15.6653C9.38406 15.219 9.38406 14.4953 9.84781 14.049L14.9456 9.14286L1.1875 9.14286C0.531663 9.14286 0 8.63118 0 8C0 7.36882 0.531663 6.85714 1.1875 6.85714H14.9456L9.84781 1.95098C9.38406 1.50467 9.38406 0.781049 9.84781 0.334735Z" />
                 </svg>
 
@@ -115,7 +115,7 @@ export default function Home() {
       </div>
 
       <div className="px-2  xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-y-[17px]  2xl:gap-3">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-y-[17px]  2xl:gap-3">
           <div className="card">
             <object type="image/svg+xml" className="card-icon" data="/images/icons/Strategy_Icon.svg">svg-animation</object>
             <h3 className="card-heading">Strategy</h3>
@@ -147,6 +147,21 @@ export default function Home() {
           </div>
 
         </div>
+      </div>
+
+      <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 md:mb-10 md:mt-24 lg:mb-20 lg:mt-40'>
+
+        <div className="flex flex-col md:flex-row justify-between gap-x-[100px]">
+          <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-2 w-[55%">
+            You{"’"}ve Reached the Design Zone.
+          </h2>
+
+          <span className="font-bold text-[14px] lg:text-[24px] lg:leading-[47px] text-[#C2C2CC] my-2  place-self-end text-right w-[45%]">
+          A little scope of what we’ve done.
+          </span>
+        </div>
+
+
       </div>
 
       <div className="px-5 md:px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">

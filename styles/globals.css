@@ -60,6 +60,7 @@ body {
 }
 .hero-text{
   @apply inline-block lg:text-[18px] text-[12px] text-primary  lg:w-[35%] self-center;  
+  
 }
 
 .hero-btn:hover ~ .hero-text{
@@ -98,9 +99,9 @@ body {
 .scroller >div {
   position: absolute;
   top: 0;
-  animation: slide 9s ease-in infinite;
+  animation: slide 5s ease-in infinite;
   font-weight: bold;
-  -webkit-animation: slide 9s ease-in infinite;
+  -webkit-animation: slide 8s ease-in infinite;
 }
 
 @keyframes slide {
