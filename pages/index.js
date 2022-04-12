@@ -51,13 +51,14 @@ export default function Home() {
 
       {/* Clients */}
 
-      {/* <div className='mt-20 lg:mt-100 grid grid-cols-4 gap-x-3 mx-auto lg:max-w-screen-lg'>
-          <div className="module-border-wrap">
+      <div className='scroll-parent lg:max-w-screen-lg'>
+        <div className="scroll-element mt-20 lg:mt-100 grid grid-cols-4 gap-x-3 mx-auto">
+        <div className="module-border-wrap  ">
             <div className="module">
               <img src="/images/clients/prosperis.png" alt="Prosperis" />
             </div>
           </div>
-          <div className="module-border-wrap">
+          <div className="module-border-wrap  ">
             <div className="module">
               <img src="/images/clients/one-port-365.png" alt="One Port 365"/>
             </div>
@@ -67,12 +68,13 @@ export default function Home() {
               <img className='img' src="/images/clients/tingtel.png" alt="Tingtel"/>
             </div>
           </div>
-          <div className="module-border-wrap">
+          <div className="module-border-wrap  ">
             <div className="module">
               <img src="/images/clients/green-key.png" alt="Green Key"/>
             </div>
           </div>
-        </div> */}
+        </div>
+        </div>
 
 
       <div>
@@ -152,7 +154,7 @@ export default function Home() {
       <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 md:mb-10 md:mt-24 lg:mb-20 lg:mt-40'>
 
         <div className="flex flex-col md:flex-row justify-between gap-x-[100px]">
-          <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-2 w-[55%">
+          <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-2 w-[55%]">
             You{"’"}ve Reached the Design Zone.
           </h2>
 
@@ -205,8 +207,8 @@ export default function Home() {
       <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-20'>
 
         <span className="text-[#737380] text-sm lg:text-xl">That{"’"}s not all we have</span>
-        <Link href="/">
-          <a>
+      
+          <a target="_blank" rel="noreferrer"  href="https://medium.com/@smuvstudio">
             <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-2 flex items-center">
               <span>Find more in our portfolio</span>
               <svg width="91" height="61" viewBox="0 0 91 61" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +217,7 @@ export default function Home() {
 
             </h2>
           </a>
-        </Link>
+        
 
       </div>
       <div lassName='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-20'>

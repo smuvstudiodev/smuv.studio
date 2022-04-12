@@ -49,7 +49,7 @@ export default function Layout({ children, title }) {
                 </div>
             </nav>
 
-            <main className='max-w-[1409px] mx-auto'>
+            <main className='max-w-[1409px] mx-auto overflow-hidden'>
                 {children}</main>
 
             <footer>

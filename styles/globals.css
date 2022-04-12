@@ -216,3 +216,29 @@ body {
 .project-meta p{
   @apply text-[#737380] text-xl;
 }
+
+.scroll-parent {
+  position: relative;
+  width: 300vw;
+  height: 20rem;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  /*width: inherit;
+  height: inherit;
+  */position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: primary 5s linear infinite;
+  -webkit-animation: primary 5s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
