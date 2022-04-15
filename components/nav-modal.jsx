@@ -14,7 +14,8 @@ export default function NavModal({ options }) {
                 <div className="relative">
                     <div className="absolute -right-8 -top-20 lg:-right-20 lg:-top-24">
                         <button onClick={() => closeModal()}>
-                        <object type="image/svg+xml" className="w-8 h-8 lg:w- lg:h-12 " data="/images/cancle-icon.png">svg-animation</object>
+                      
+                        <Image src="/images/cancle-icon.png" width={32} height={32} alt="close btn" />
                         </button>
                     </div>
                 </div>
