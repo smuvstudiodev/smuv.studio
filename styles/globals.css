@@ -63,7 +63,7 @@ body {
   background-color: rgba(11, 11, 13, 0.8);
 }
 .hero-btn {
-  @apply px-[21.38px] py-[15.55px] lg:px-7 bg-[#ebebf7] lg:bg-transparent text-[#0A0A0D] lg:w-[65%] self-center lg:py-4 rounded-lg border-[#737380] border hover:border-0 flex gap-x-2 justify-center content-center items-baseline lg:text-primary hover:bg-primary lg:hover:text-[#0A0A0D] lg:text-[22px] font-semibold transition;
+  @apply px-[20px] py-[14px] lg:px-6 bg-[#ebebf7] lg:bg-transparent text-[#0A0A0D] lg:w-[65%] self-center lg:py-4 rounded-lg border-[#737380] border hover:border-0 flex gap-x-2 justify-center content-center items-baseline lg:text-primary hover:bg-primary lg:hover:text-[#0A0A0D] lg:text-[20px] font-semibold transition;
 }
 .hero-btn,
 .hero-btn:hover,
@@ -72,11 +72,14 @@ body {
   @apply transition duration-300 ease-in-out;
 }
 .hero-text {
-  @apply inline-block lg:text-[18px] text-[12px] text-primary  lg:w-[35%] self-center;
+  @apply inline-block lg:text-[16px] text-[10px] text-primary  lg:w-[35%] self-center;
 }
 
 .hero-btn:hover ~ .hero-text {
   @apply lg:opacity-50;
+}
+.hero-btn:hover{
+  @apply mb-[2px] 2xl:mb-[3px];
 }
 .scroller {
   /* height: 1.2em;
