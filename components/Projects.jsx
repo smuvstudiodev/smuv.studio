@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Projects = () => {
     return (
-        <div>
+        <div id="works">
             <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 md:mb-10 md:mt-24 lg:mb-20 lg:mt-40'>
 
                 <div className="flex flex-col md:flex-row justify-between gap-x-[100px]">

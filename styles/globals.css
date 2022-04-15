@@ -46,7 +46,7 @@ body {
 }
 
 .nav-modal{
-  @apply text-2xl text-white bg-[#0A0A0D]  backdrop-blur-[20px] h-[333px] w-[358px] lg:h-[510px] lg:w-[520px] m-10 rounded-xl py-6 px-7 lg:py-12 lg:px-[71px];
+  @apply text-2xl text-white bg-[#0A0A0D]  backdrop-blur-[20px] h-[333px] w-[358px] lg:h-[510px] lg:w-[520px] m-10 rounded-xl pt-6 pb-2 px-7 lg:py-12 lg:px-[71px];
 }
 
 .modal-links {

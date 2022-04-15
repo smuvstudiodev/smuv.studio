@@ -5,7 +5,7 @@ const Clients = ()=>{
         <div>
         <div className="mt-[200px] ">
 
-          <div className='hidden lg:flex lg:flex-row md:grid grid-cols-4 gap-4 scale-[50%] xl:scale-[80%] justify-between gap-x-5 content-center items-center'>
+          <div className=' lg:flex lg:flex-row md:grid grid-cols-4 gap-4 scale-[50%] xl:scale-[80%] justify-between gap-x-5 content-center items-center'>
             <div className="module-border-wrap">
               <div className="module">
                 <Image src="/images/clients/prosperis.png" alt="Prosperis" width={244} height={48} />
