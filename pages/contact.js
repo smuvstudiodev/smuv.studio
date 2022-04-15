@@ -26,12 +26,12 @@ export default function Contact({ data }) {
 
 export const getServerSideProps = async () => {
 
-    const res = await fetch('https://api.studio.smuvcreative.com/wp-json/wp/v2/pricing')
+    const res = await fetch('https://api.studio.smuvcreative.com/wp-json/wp/v2/project')
     const json = await res.json()
 
     return {
         props: {
-            data: json[0]
+            data: json
 
         }
     }

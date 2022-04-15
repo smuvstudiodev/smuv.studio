@@ -2,7 +2,9 @@ import Image from 'next/image';
 
 
 
-const Projects = () => {
+const Projects = ({projects}) => {
+    console.log(projects);
+
     return (
         <div id="works">
             <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 md:mb-10 md:mt-24 lg:mb-20 lg:mt-40'>
@@ -22,38 +24,48 @@ const Projects = () => {
 
             <div className="px-5 md:px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-y-[17px] lg:gap-y-20  gap-4 gap-x-9">
-                    <div className="project">
+                    {/* <div className="project">
                         <Image className="project-image" src="/images/blog-images/unsplash_1_CMoFsPfso.png" width={689} height={521} alt="Blog post" />
                         <div className="project-meta">
                             <h4 className="project-heading">Project Title</h4>
                             <p>Project Title</p>
                         </div>
-                    </div>
+                    </div> */}
+                    {
+                        projects && projects.map((project)=>(
+                            <div className="project" key={project.id}>
+                            <Image className="project-image" src={project.featured_image.guid} width={689} height={521} alt="Blog post" />
+                            <div className="project-meta">
+                                <h4 className="project-heading">{project.title.rendered}</h4>
+                                <p>Tag: {project.tags}</p>
+                            </div>
+                        </div>
+                        ))
+                    }
 
-
-                    <div className="project">
+                    {/* <div className="project">
                         <Image className="project-image" src="/images/blog-images/unsplash_lTb4gJK_l1Q.png" width={689} height={521} alt="Blog post" />
                         <div className="project-meta">
                             <h4 className="project-heading">Project Title</h4>
                             <p>Project Title</p>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div className="project">
+                    {/* <div className="project">
                         <Image className="project-image" src="/images/blog-images/unsplash_xsGxhtAsfSA.png" width={689} height={521} alt="Blog post" />
                         <div className="project-meta">
                             <h4 className="project-heading">Project Title</h4>
                             <p>Project Title</p>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div className="project">
+                    {/* <div className="project">
                         <Image className="project-image" src="/images/blog-images/unsplash_fIq0tET6llw.png" width={689} height={521} alt="Blog post" />
                         <div className="project-meta">
                             <h4 className="project-heading">Project Title</h4>
                             <p>Project Title</p>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

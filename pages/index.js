@@ -7,7 +7,7 @@ import AnimatedLine from '../components/AnimatedLine';
 import Projects from '../components/Projects';
 
 
-export default function Home() {
+export default function Home({projects}) {
 
   return (
     <Layout title={"UI/UX and Frontend company."}>
@@ -16,7 +16,7 @@ export default function Home() {
       <Clients />
       <AnimatedLine />
       <Services />
-     <Projects/>
+     <Projects projects={projects}/>
  
       <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto mt-10 lg:my-20 my-10 lg:mt-20'>
 
@@ -36,4 +36,16 @@ export default function Home() {
       </div>
     </Layout >
   )
+}
+export const getServerSideProps = async () => {
+
+  const res = await fetch('https://api.studio.smuvcreative.com/wp-json/wp/v2/project')
+  const json = await res.json()
+
+  return {
+      props: {
+          projects: json
+
+      }
+  }
 }

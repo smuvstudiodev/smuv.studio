@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Footer from './footer';
 import NavModal from './nav-modal';
@@ -35,11 +36,13 @@ export default function Layout({ children, title }) {
             <nav id='navbar' className='w-full z-40 fixed top-0 left-0 backdrop-blur-[80px] '>
                 {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
                 <div className='flex justify-between align-baseline mx-4 lg:mx-100 '>
-                    <div className="logo-container ">
-                        <div className="logo">
+                    <div className="logo-container cursor-pointer">
+                       <Link href={"/"}>
+                       <a className="logo cursor-pointer">
                             <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Logo_Icon_and_WordMark_Logo_colour_Animation.svg">svg-animation</object>
                             {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
-                        </div>
+                        </a>
+                       </Link>
                         <span className="logo-text">A UX/UI Design Studio</span>
                     </div>
                     <div className='hambugger'>
