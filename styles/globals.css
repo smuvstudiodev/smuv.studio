@@ -83,7 +83,7 @@ body {
 }
 
 .scroller p span:nth-child(1),
-.scroller p span:nth-child(4) {
+.scroller p span:nth-child(4), .no-case-study-heading {
   background: linear-gradient(270deg, #ef6d35 27.91%, #ff097f 74.84%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

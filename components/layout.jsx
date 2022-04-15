@@ -36,15 +36,17 @@ export default function Layout({ children, title }) {
             <nav id='navbar' className='w-full z-40 fixed top-0 left-0 backdrop-blur-[80px] '>
                 {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
                 <div className='flex justify-between align-baseline mx-4 lg:mx-100 '>
-                    <div className="logo-container cursor-pointer">
-                       <Link href={"/"}>
-                       <a className="logo cursor-pointer">
-                            <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Logo_Icon_and_WordMark_Logo_colour_Animation.svg">svg-animation</object>
-                            {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
+                    <Link href={"/"}>
+                        <a className="logo-container cursor-pointer">
+
+                            <div className="logo cursor-pointer">
+                                <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Logo_Icon_and_WordMark_Logo_colour_Animation.svg">svg-animation</object>
+                                {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
+                            </div>
+
+                            <span className="logo-text">A UX/UI Design Studio</span>
                         </a>
-                       </Link>
-                        <span className="logo-text">A UX/UI Design Studio</span>
-                    </div>
+                    </Link>
                     <div className='hambugger'>
                         <button onClick={() => setIsOpen(!isOpen)}>
                             <Image src="/images/hambugger.png" alt="Hambugger Icon" width={45} height={45} />
@@ -57,7 +59,7 @@ export default function Layout({ children, title }) {
                 {children}
             </main>
 
-            <Footer/>
+            <Footer />
         </div>
     )
 }

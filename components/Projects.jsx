@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link'
 
 
 
-const Projects = ({projects}) => {
+const Projects = ({ projects }) => {
     console.log(projects);
 
     return (
@@ -32,14 +33,18 @@ const Projects = ({projects}) => {
                         </div>
                     </div> */}
                     {
-                        projects && projects.map((project)=>(
+                        projects && projects.map((project) => (
                             <div className="project" key={project.id}>
-                            <Image className="project-image" src={project.featured_image.guid} width={689} height={521} alt="Blog post" />
-                            <div className="project-meta">
-                                <h4 className="project-heading">{project.title.rendered}</h4>
-                                <p>Tag: {project.tags}</p>
+                                <Link href="/case-study">
+                                    <a>
+                                        <Image className="project-image" src={project.featured_image.guid} width={689} height={521} alt="Blog post" />
+                                        <div className="project-meta">
+                                            <h4 className="project-heading">{project.title.rendered}</h4>
+                                            <p>Tag: {project.tags}</p>
+                                        </div>
+                                    </a>
+                                </Link>
                             </div>
-                        </div>
                         ))
                     }
 
