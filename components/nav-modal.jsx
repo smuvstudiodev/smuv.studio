@@ -6,11 +6,17 @@ export default function NavModal({ options }) {
     const closeModal = () => {
         setIsOpen(!isOpen);
     }
-
+    const closeByBody=(e)=>{
+        e.stopPropagation();
+        setIsOpen(!isOpen);
+    }
+    const StopCloseByBody=(e)=>{
+        e.stopPropagation();
+    }
 
     return (
-        <div className='nav-modal-container'>
-            <div className='nav-modal'>
+        <div className='nav-modal-container' onClick={e=>closeByBody(e)}>
+            <div className='nav-modal' onClick={e=>StopCloseByBody(e)}>
                 <div className="relative">
                     <div className="absolute -right-8 -top-20 lg:-right-20 lg:-top-24">
                         <button onClick={() => closeModal()}>

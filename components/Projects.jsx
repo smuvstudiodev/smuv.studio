@@ -12,10 +12,10 @@ const Projects = ({ projects }) => {
 
                 <div className="flex flex-col md:flex-row justify-between gap-x-[100px]">
                     <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-2 w-[55%]">
-                        You{"’"}ve Reached the Design Zone.
+                        You{"’"}ve Reached the <br className="hidden lg:block"/> Design Zone.
                     </h2>
 
-                    <span className="font-bold text-[14px] lg:text-[24px] lg:leading-[47px] text-[#C2C2CC] my-2  place-self-end text-right w-[45%]">
+                    <span className=" text-[14px] lg:text-[22px] lg:leading-[47px] text-[#737380] my-2  place-self-center text-right w-[45%]">
                         A little scope of what we’ve done.
                     </span>
                 </div>
@@ -37,7 +37,7 @@ const Projects = ({ projects }) => {
                             <div className="project" key={project.id}>
                                 <Link href="/case-study">
                                     <a>
-                                        <Image className="project-image" src={project.featured_image.guid} width={689} height={521} alt="Blog post" />
+                                        <Image className="project-image" src={project.featured_image.guid} layout="responsive" width={689} height={521} alt="Blog post" />
                                         <div className="project-meta">
                                             <h4 className="project-heading">{project.title.rendered}</h4>
                                             <p>Tag: {project.tags}</p>

@@ -40,7 +40,7 @@ body {
   @apply h-10 w-[91px] lg:h-[79.33px] lg:w-[180.64px] self-center flex items-center;
 }
 .logo-text {
-  @apply self-center text-[#737380] text-[10px] lg:text-[16px];
+  @apply self-center text-[#737380] text-[8px] lg:text-[14px];
 }
 .hambugger {
   @apply my-auto lg:my-[27px] w-7 h-7 lg:w-11 lg:h-11;
@@ -226,16 +226,16 @@ body {
 .scroller {
   /* max-height: 70px; */
    overflow: hidden;
-   @apply my-1 lg:my-3;
+   @apply my-1 lg:my-1;
  }
 .animate-text {
  height: 85px;
   overflow: hidden;
-  @apply my-1 lg:my-3 max-h-[50px] lg:max-h-[85px] lg:h-[85px];
+  @apply my-1 lg:my-1 max-h-[50px] lg:max-h-[85px] lg:h-[85px];
 }
 
 .animate-text span {
-  @apply text-[26px] hidden px-1 md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold text-center self-center leading-[34px] lg:leading-[96px];
+  @apply text-[26px] hidden px-1 md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-[92px] font-bold text-center self-center leading-[34px] lg:leading-[96px];
 
 }
 
