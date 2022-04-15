@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import Footer from './footer';
 import NavModal from './nav-modal';
 
 export default function Layout({ children, title }) {
@@ -50,11 +51,10 @@ export default function Layout({ children, title }) {
             </nav>
 
             <main className='max-w-[1409px] mx-auto overflow-hidden'>
-                {children}</main>
+                {children}
+            </main>
 
-            <footer>
-
-            </footer>
+            <Footer/>
         </div>
     )
 }
