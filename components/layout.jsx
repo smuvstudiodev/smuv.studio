@@ -7,21 +7,21 @@ import NavModal from './nav-modal';
 
 export default function Layout({ children, title }) {
     const [isOpen, setIsOpen] = useState(false);
-    // useEffect(()=>{
-    //     const navbar = document.querySelector('#navbar');
-    //     document.addEventListener('scroll',(e)=>{
-    //         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    //             navbar.classList.add("backdrop-blur-[80px]");
-    //             navbar.classList.remove("backdrop-blur-[80px]");
+    useEffect(()=>{
+        const navbar = document.querySelector('#navbar');
+        document.addEventListener('scroll',(e)=>{
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.classList.add("backdrop-blur-[80px]");
+                // navbar.classList.remove("backdrop-blur-[80px]");
 
-    //           } else {
-    //             navbar.classList.remove("backdrop-blur-[80px]");
-    //             navbar.classList.add("backdrop-blur-[80px]");
+              } else {
+                navbar.classList.remove("backdrop-blur-[80px]");
+                // navbar.classList.add("");
 
 
-    //           }
-    //     })
-    // },[])
+              }
+        })
+    },[])
 
     return (
         <div className='relative'>
@@ -33,14 +33,14 @@ export default function Layout({ children, title }) {
                 <link rel="icon" href="/Logo_Icon_Animation.svg" />
             </Head>
 
-            <nav id='navbar' className='w-full z-40 fixed top-0 left-0 backdrop-blur-[80px] '>
+            <nav id='navbar' className='w-full z-40 lg:py-2 fixed top-0 left-0  '>
                 {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
                 <div className='flex justify-between align-baseline mx-4 lg:mx-100 '>
                     <Link href={"/"}>
                         <a className="logo-container cursor-pointer">
 
                             <div className="logo cursor-pointer">
-                                <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Logo_Icon_and_WordMark_Logo_colour_Animation.svg">svg-animation</object>
+                                <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg">svg-animation</object>
                                 {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
                             </div>
 

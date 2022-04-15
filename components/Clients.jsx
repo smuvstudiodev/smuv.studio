@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const Clients = () => {
   return (
-    <div>
+    <div className="mt-[50px] lg:mt-[200px]">
       <div>
-        <div className="mt-[50px] lg:mt-[200px] ">
+        {/* <div  ">
 
-          <div className='w-screen-2xl lg:flex lg:flex-row grid grid-cols-1 lg:grid-cols-4 gap-4 lg:max-w-10 justify-between lg:gap-x-5 content-center items-center'>
+          <div className='max-w-screen-2xl lg:flex lg:flex-row grid grid-cols-1 lg:grid-cols-4 gap-4 lg:max-w-10 justify-between lg:gap-x-5 content-center items-center'>
             <div className="module-border-wrap">
               <div className="module">
                 <Image src="/images/clients/prosperis.png" alt="Prosperis" width={244} height={48} />
@@ -28,7 +28,25 @@ const Clients = () => {
               </div>
             </div>
           </div>
+        </div> */}
+
+        <div className="px-2 xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 ">
+         <div className="clients ">
+         <div className="prosperis client">
+          <object className='' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
+          </div>
+          <div className="oneport-365 client">
+          <object className='' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
+          </div>
+          <div className="tingtel client">
+          <object className='' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
+          </div>
+          <div className="oneport-365 client">
+          <object className='' type="image/svg+xml" data="images/clients/green-key.svg">Green Key</object>
+          </div>
+         </div>
         </div>
+
 
         {/* <div className="flex-2e">
           <div className="gradient-border">

@@ -35,10 +35,10 @@ const Hero = () => {
     }, [])
 
     return (
-        <div className="relative mt-100 xl:mt-100  2xl:mt-[200px] flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
+        <div className="relative mt-[250px] xl:mt-100  2xl:mt-[200px] flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
             <object className='hidden top-[-10%] md:top-[-15%] xl:top-[-15%] 2xl:top-[-10%] md:block absolute left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg"></object>
             <div className='relative mt-[82px] md:mt-[130px] lg:mt-40 xl:mt-36 2xl:mt-44  flex flex-col content-center justify-center'>
-                <h1 className='heading-text text-[26px] text-primary px-1 md:text-4xl lg:text-5xl xl:text-[92px]  font-bold text-center self-center leading-[34px] 2xl:leading-[96px]'>
+                <h1 className='heading-text text-[26px] text-primary px-1 md:text-4xl lg:text-5xl xl:text-[88px] 2xl:text-[92px]  font-bold text-center self-center leading-[34px] 2xl:leading-[96px]'>
                     A word-class UX-UI <br className="hidden md:block" /> studio <br className="md:hidden block" /> that loves to create
 
                     <div className="scroller">

@@ -7,6 +7,11 @@
   font-weight: 700;
   src: url("fonts/TT_Firs_Neue/TT\ Firs\ Neue\ Trial\ Bold.ttf");
 }
+@font-face {
+  font-family: "TT Firs Neue";
+  font-weight: 600;
+  src: url("./fonts/TT_Firs_Neue/TT_Firs_Neue-Trial_DemiBold.ttf");
+}
 
 @font-face {
   font-family: "TT Firs Neue";
@@ -31,7 +36,7 @@ body {
 }
 
 .logo-container {
-  @apply flex content-center h-full gap-[10px] lg:gap-x-11 py-[19px] lg:py-[5px];
+  @apply flex content-center h-full gap-[10px] lg:gap-x-5 py-[19px] lg:py-[5px];
 }
 /* .logo{
   @apply h-10 w-[91px] lg:h-[79.33px] lg:w-[180.64px] my-[10px];
@@ -76,7 +81,7 @@ body {
 }
 
 .hero-btn:hover ~ .hero-text {
-  @apply lg:opacity-50;
+  @apply lg:opacity-30;
 }
 .hero-btn:hover{
   @apply mb-[2px] 2xl:mb-[3px];
@@ -233,12 +238,13 @@ body {
  }
 .animate-text {
  height: 85px;
+ @apply h-[85px] xl:h-[100px];
   overflow: hidden;
   @apply my-1 lg:my-1 max-h-[50px] lg:max-h-[85px] lg:h-[85px];
 }
 
 .animate-text span {
-  @apply text-[26px] hidden px-1 md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-[92px] font-bold text-center self-center leading-[34px] lg:leading-[96px];
+  @apply text-[26px] hidden px-1 md:text-4xl lg:text-5xl xl:text-[92px] font-bold text-center self-center leading-[34px] lg:leading-[90px];
 
 }
 
@@ -248,6 +254,7 @@ body {
 }
 .animate-text span.text-out {
   animation: textOut 1s ease;
+  -webkit-animation:;
 }
 @keyframes textIn {
   0% {
@@ -332,4 +339,20 @@ body {
  align-items: center; */
  width: 200vw;
  overflow-x:auto;
+}
+
+.btn-transition,
+.btn-transition:hover{
+  transition: 0.3s;
+}
+
+
+.clients{
+  @apply flex;
+  width: 200vw;
+ overflow-x:auto;
+}
+
+.client{
+  @apply w-[332px] h-[178px] 2xl:w-[332px] 2xl:h-[178px] bg-transparent flex justify-center items-center content-center hover:bg-[#101012] rounded-[14px] m-3 hover:opacity-100 opacity-50;
 }
