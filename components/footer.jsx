@@ -25,8 +25,8 @@ const Footer = () => {
                     </a>
                 </div> 
             </div>
-            <div className="w-full text-center my-[28px] lg:my-100">
-                <span className="text-center text-[12px] lg:text-[20px] text-[#737380]">&copy; 2022 Smuv Legacy LTD. RC454332 All rights reserved. </span>
+            <div className="w-full text-center my-[25px] lg:my-100">
+                <span className="text-center text-[10px] lg:text-[17px] text-[#737380]">&copy; 2022 Smuv Legacy LTD. RC454332 All rights reserved. </span>
             </div>
         </div>
     )

@@ -40,7 +40,7 @@ const Projects = ({ projects }) => {
                                         <Image className="project-image" src={project.featured_image.guid} layout="responsive" width={689} height={521} alt="Blog post" />
                                         <div className="project-meta">
                                             <h4 className="project-heading">{project.title.rendered}</h4>
-                                            <p>Tag: {project.tags}</p>
+                                            <p>{project.tags}</p>
                                         </div>
                                     </a>
                                 </Link>
