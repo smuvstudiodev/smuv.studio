@@ -4,6 +4,10 @@ const nextConfig = {
   images: {
     domains: ['api.studio.smuvcreative.com'],
   },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
 }
 
 module.exports = nextConfig

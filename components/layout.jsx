@@ -7,21 +7,21 @@ import NavModal from './nav-modal';
 
 export default function Layout({ children, title }) {
     const [isOpen, setIsOpen] = useState(false);
-    useEffect(()=>{
+    useEffect(() => {
         const navbar = document.querySelector('#navbar');
-        document.addEventListener('scroll',(e)=>{
+        document.addEventListener('scroll', (e) => {
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 navbar.classList.add("backdrop-blur-[80px]");
                 // navbar.classList.remove("backdrop-blur-[80px]");
 
-              } else {
+            } else {
                 navbar.classList.remove("backdrop-blur-[80px]");
                 // navbar.classList.add("");
 
 
-              }
+            }
         })
-    },[])
+    }, [])
 
     return (
         <div className='relative'>
@@ -40,16 +40,33 @@ export default function Layout({ children, title }) {
                         <a className="logo-container cursor-pointer">
 
                             <div className="logo cursor-pointer">
-                                <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg">svg-animation</object>
+                                <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg" alt="Smuv Love Animation Logo">Smuv Love Animation Logo</object>
                                 {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
                             </div>
 
                             <span className="logo-text">A UX/UI Design Studio</span>
                         </a>
                     </Link>
-                    <div className='hambugger'>
+                    <div className='hambugger' >
                         <button onClick={() => setIsOpen(!isOpen)}>
-                            <Image src="/images/hambugger.png" alt="Hambugger Icon" width={45} height={45} />
+                            {/* <object  onClick={() => setIsOpen(!isOpen)} type="image/svg+xml" className="grayscale hover:grayscale-0 transition-all cursor-pointer" data="/images/hambugger.svg" alt="Hambugger Icon">Hambugger Icon</object> */}
+                            <svg className="grayscale hover:grayscale-0 transition-all cursor-pointer" data="/images/hambugger.svg" alt="Hambugger Icon" width="41" height="15" viewBox="0 0 41 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8.14185" width="32" height="4" rx="2" fill="url(#paint0_linear_766_579)" />
+                                <rect x="0.141846" y="11" width="40" height="4" rx="2" fill="#C4C4C4" />
+                                <rect x="0.141846" y="11" width="40" height="4" rx="2" fill="url(#paint1_linear_766_579)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_766_579" x1="8" y1="2.5" x2="40.5" y2="2.5" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#FF6436" />
+                                        <stop offset="1" stopColor="#FF3EC3" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_766_579" x1="-0.0354614" y1="13.5" x2="40.5895" y2="13.5" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#FF6436" />
+                                        <stop offset="1" stopColor="#FF3EC3" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+
                         </button>
                     </div>
                 </div>

@@ -16,6 +16,7 @@
 @font-face {
   font-family: "TT Firs Neue";
   font-weight: 400;
+  font-display: swap;
   src: url("fonts/TT_Firs_Neue/TT_Firs_Neue_Trial_Regular.ttf");
 }
 
