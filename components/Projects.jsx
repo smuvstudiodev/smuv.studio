@@ -36,11 +36,11 @@ const Projects = ({ projects }) => {
                         projects && projects.map((project) => (
                             <div className="project" key={project.id}>
                                 <Link href="/case-study">
-                                    <a>
-                                        <Image className="project-image" src={project.featured_image.guid} layout="responsive" width={689} height={521} alt="Blog post" />
+                                    <a  className="project overflow-hidden">
+                                        <Image className="project-image object-cover" src={project.featured_image.guid} layout="responsive" width={689} height={521} alt="Blog post" />
                                         <div className="project-meta">
                                             <h4 className="project-heading">{project.title.rendered}</h4>
-                                            <p>{project.tags}</p>
+                                            <p className="text-[18px]">{project.tags}</p>
                                         </div>
                                     </a>
                                 </Link>

@@ -8,7 +8,7 @@ const Services = () => {
             <div className="px-2  xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-y-[17px]  2xl:gap-3">
                     <div className="card">
-                        <object type="image/svg+xml" className="card-icon" data="/images/icons/Strategy_Icon.svg">Strategy_Icon</object>
+                        <object type="image/svg+xml" className="card-icon" data="/images/icons/Strategy_Icon.svg" alt="Strategy" ariaLabel="Strategy">Strategy_Icon</object>
                         <h3 className="card-heading">Strategy</h3>
                         <ul className='card-list'>
                             <li>Discovery chat</li>
@@ -17,7 +17,7 @@ const Services = () => {
                         </ul>
                     </div>
                     <div className="card">
-                        <object type="image/svg+xml" className="card-icon" data="/images/icons/Experience_Icon.svg">svg-animation</object>
+                        <object type="image/svg+xml" className="card-icon" data="/images/icons/Experience_Icon.svg" alt="Experience" ariaLabel="Experience">Experience_Icon</object>
                         <h3 className="card-heading">Experience</h3>
                         <ul className='card-list'>
                             <li>User flow chat</li>
@@ -27,7 +27,7 @@ const Services = () => {
                         </ul>
                     </div>
                     <div className="card">
-                        <object type="image/svg+xml" className="card-icon" data="/images/icons/Design_Icon.svg">svg-animation</object>
+                        <object type="image/svg+xml" className="card-icon" data="/images/icons/Design_Icon.svg" alt="Design_Icon" ariaLabel="Design">Design_Icon</object>
                         <h3 className="card-heading">Design</h3>
                         <ul className='card-list'>
                             <li>Brand-conscious UI Design</li>

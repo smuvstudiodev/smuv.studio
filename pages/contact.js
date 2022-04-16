@@ -14,7 +14,9 @@ export default function Contact({ data }) {
          dataf();
      },[data]) */
     console.log(data);
-
+    const submitForm = (e) => {
+        e.preventDefault();
+    }
     return (
         <Layout>
             <div className="relative mt-100 xl:mt-[120px]  2xl:mt-[200px] md:max-w-screen-lg xl:max-w-screen-2xl mx-auto  ">
@@ -27,8 +29,54 @@ export default function Contact({ data }) {
                             Our mission is simple: Work with the best, design with a purpose, and engineer for a sustainable future.
                         </p>
                     </div>
+                    <div className="py-10 px-5  lg:p-10 flex flex-col lg:flex-row gap-x-4">
+                        <div className="py-14 px-14 rounded-xl bg-[#101012] w-2/3">
+                            <div className="py-10">
+                                <h2 className="text-[40px] font-bold text-[#C2C2CC]">Let{"’"}s collaborate</h2>
+                            </div>
+                            <div className="py-2">
+                                <form onSubmit={submitForm}>
+                                    <div className="flex flex-col lg:md:flex-row my-4">
+                                        <div className='bg-[#101012] relative px-2 w-1/2'>
+                                            <input required className=" input-text " type="text" />
+                                            <span className='absolute input-textholder'>First Name</span>
+                                        </div>
+                                        <div className='bg-[#101012] relative px-2 w-1/2'>
+                                            <input required className=" input-text " type="text" />
+                                            <span className='absolute input-textholder'>Last Name</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col lg:md:flex-row my-4">
+                                        <div className='bg-[#101012] relative px-2 w-1/2'>
+                                            <input required className=" input-text " type="text" />
+                                            <span className='absolute input-textholder'>First Name</span>
+                                        </div>
+                                        <div className='bg-[#101012] relative px-2 w-1/2'>
+                                            <input required className=" input-text " type="text" />
+                                            <span className='absolute input-textholder'>Last Name</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col lg:md:flex-row my-4">
+                                        <div className='bg-[#101012] relative px-2 w-1/2'>
+                                            <input required className=" input-text " type="text" />
+                                            <span className='absolute input-textholder'>First Name</span>
+                                        </div>
+                                        <div className='bg-[#101012] relative px-2 w-1/2'>
+                                            <input required className=" input-text " type="text" />
+                                            <span className='absolute input-textholder'>Last Name</span>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <div>
 
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </Layout>
     )

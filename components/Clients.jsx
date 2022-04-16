@@ -1,4 +1,5 @@
 import Image from "next/image";
+// import Carousel from 'carousel-react-rcdev'
 
 const Clients = () => {
   return (
@@ -46,7 +47,21 @@ const Clients = () => {
             </div>
           </div>
         </div>
-
+        
+        {/* <Carousel>
+        <div className="prosperis client ">
+              <object className='' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
+            </div>
+            <div className="oneport-365 client">
+              <object className='' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
+            </div>
+            <div className="tingtel client">
+              <object className='' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
+            </div>
+            <div className="oneport-365 client">
+              <object className='' type="image/svg+xml" data="images/clients/green-key.svg">Green Key</object>
+            </div> 
+            </Carousel> */}
 
         {/* <div className="flex-2e">
           <div className="gradient-border">

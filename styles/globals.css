@@ -69,7 +69,7 @@ body {
   background-color: rgba(11, 11, 13, 0.8);
 }
 .hero-btn {
-  @apply px-[20px] py-[14px] lg:px-6 bg-[#ebebf7] lg:bg-transparent text-[#0A0A0D] lg:w-[65%] self-center lg:py-4 rounded-lg border-[#737380] border hover:border-0 flex gap-x-2 justify-center content-center items-baseline lg:text-primary hover:bg-primary lg:hover:text-[#0A0A0D] lg:text-[20px] font-semibold transition;
+  @apply px-[20px] py-[14px] lg:px-6 bg-[#ebebf7] lg:bg-transparent text-[#0A0A0D] lg:w-[65%] self-center lg:py-4 rounded-lg border-[#737380] border  flex gap-x-2 justify-center content-center items-baseline lg:text-[#737380] hover:bg-primary lg:hover:text-[#0A0A0D] lg:text-[20px] font-semibold transition;
 }
 .hero-btn,
 .hero-btn:hover,
@@ -84,9 +84,7 @@ body {
 .hero-btn:hover ~ .hero-text {
   @apply lg:opacity-30;
 }
-.hero-btn:hover{
-  @apply mb-[2px] 2xl:mb-[3px];
-}
+
 .scroller {
   /* height: 1.2em;
   line-height: 1.2em;
@@ -238,10 +236,10 @@ body {
    @apply my-1 lg:my-1;
  }
 .animate-text {
- height: 85px;
- @apply h-[85px] xl:h-[100px];
+ /* height: 85px; */
+ @apply h-[110px] xl:h-[110px];
   overflow: hidden;
-  @apply my-1 lg:my-1 max-h-[50px] lg:max-h-[85px] lg:h-[85px];
+  @apply my-1 lg:my-1 max-h-[50px] lg:max-h-[115px] lg:h-[115px];
 }
 
 .animate-text span {
@@ -366,4 +364,53 @@ body {
 
 client. object:hover{
   transition: 0.3s;
+}
+.animate-arrow{
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  animation: arrow ;
+  -webkit-animation: arrow 1.5s infinite ;
+}
+@keyframes arrow {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+  100%{
+  transform: translateX(10%);
+  -webkit-transform: translateX(10%);
+  -moz-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  -o-transform: translateX(10%);
+}
+}
+
+.input-textholder,
+.input-text:required:invalid ~ .input-textholder{
+  @apply text-[#7C7C82] font-semibold top-5 left-6 text-[17px];
+  transition: 0.3s;
+}
+.input-text{
+  @apply bg-transparent form-input px-4 py-5 rounded-lg text-[17px] text-[#C2C2CC] w-full;
+}
+.input-text:active ~ .input-textholder,
+.input-text:focus ~ .input-textholder,
+.input-text:required ~ .input-textholder {
+  @apply top-2 text-xs;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.input-text:required ~ .input-textholder,
+.input-text:required:invalid ~ .input-textholder {
+
 }
