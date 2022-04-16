@@ -30,7 +30,7 @@ const Clients = () => {
           </div>
         </div> */}
 
-        <div className="px-12 xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-5 lg:my-10 ">
+        <div className="px-12 xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto lg:my-3 ">
           <div className="clients ">
             <div className="prosperis client ">
               <object className='' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>

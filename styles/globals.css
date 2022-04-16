@@ -352,8 +352,8 @@ body {
 }
 
 .client{
-  @apply  w-[148.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px] bg-transparent flex justify-center items-center content-center hover:bg-[#101012] rounded-[14px] m-3 hover:opacity-100 opacity-50;
+  @apply px-4 w-[148.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px] bg-transparent flex justify-center items-center content-center hover:bg-[#101012] rounded-[14px] m-3 hover:opacity-100 opacity-50;
 }
 .client object{
-  @apply scale-50;
+  @apply scale-50 lg:scale-100;
 }

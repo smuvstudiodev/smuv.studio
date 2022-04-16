@@ -11,11 +11,11 @@ const Projects = ({ projects }) => {
             <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 md:mb-10 md:mt-24 lg:mb-20 lg:mt-40'>
 
                 <div className="flex flex-col md:flex-row justify-between gap-x-[100px]">
-                    <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-2 w-[55%]">
+                    <h2 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-3  lg:w-[55%]">
                         You{"’"}ve Reached the <br className="hidden lg:block"/> Design Zone.
                     </h2>
 
-                    <span className=" text-[14px] lg:text-[22px] lg:leading-[47px] text-[#737380] my-2  place-self-center text-right w-[45%]">
+                    <span className=" text-[14px] lg:text-[22px] lg:leading-[47px] text-[#737380] my-2 lg:my-0 lg:place-self-start lg:text-right lg:w-[45%]">
                         A little scope of what we’ve done.
                     </span>
                 </div>
