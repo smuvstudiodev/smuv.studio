@@ -433,7 +433,6 @@ select.input-text:disabled:focus{
 }
 .input-text:active ~ .input-textholder,
 .input-text:focus ~ .input-textholder,
-.input-text:required ~ .input-textholder,
 .input-text:not(:placeholder-shown).input-text:not(:focus) ~ .input-textholder {
   @apply top-[10px] text-xs;
   transition: 0.2s;
