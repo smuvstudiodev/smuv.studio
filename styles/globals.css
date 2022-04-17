@@ -95,7 +95,8 @@ body {
 
 .scroller p span:nth-child(1),
 .scroller p span:nth-child(4),
-.no-case-study-heading {
+.no-case-study-heading,
+.what-next-heading {
   background: linear-gradient(270deg, #ef6d35 27.91%, #ff097f 74.84%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -436,4 +437,7 @@ select.input-text:disabled:focus{
 .input-text:not(:placeholder-shown).input-text:not(:focus) ~ .input-textholder {
   @apply top-[10px] text-xs;
   transition: 0.2s;
+}
+.contact-p-text{
+  @apply text-lg text-[#737380] lg:leading-[25px] ;
 }

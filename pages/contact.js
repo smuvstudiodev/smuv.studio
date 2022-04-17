@@ -21,7 +21,7 @@ export default function Contact() {
         <Layout>
             <div className="relative mt-100 xl:mt-[120px]  2xl:mt-[200px] md:max-w-screen-lg xl:max-w-screen-2xl mx-auto  ">
                 <div className="py-10 px-5  lg:p-10 ">
-                    <div className=" lg:p-10 flex flex-col place-content-start lg:flex-row justify-between w-full lg:gap-x-9">
+                    <div className=" lg:py-10 flex flex-col place-content-start lg:flex-row justify-between w-full lg:gap-x-9">
                         <h1 className="no-case-study-heading text-2xl text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-bold self-center  lg:w-[60%]">
                             Get started with smuv today.
                         </h1>
@@ -29,8 +29,8 @@ export default function Contact() {
                             Our mission is simple: Work with the best, design with a purpose, and engineer for a sustainable future.
                         </p>
                     </div>
-                    <div className="py-10 lg:px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-x-4">
-                        <div className="py-14 lg:px-14 px-5 rounded-xl bg-[#101012] lg:w-2/3">
+                    <div className="py-10 lg:px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-8 ">
+                        <div className="py-10 lg:px-14 px-5 rounded-xl bg-[#101012] lg:w-2/3">
                             <div className="lg:py-10">
                                 <h2 className="text-[24px] lg:text-[40px] font-bold text-[#C2C2CC]">Let{"’"}s collaborate</h2>
                             </div>
@@ -38,7 +38,7 @@ export default function Contact() {
                                 <form onSubmit={submitForm}>
                                     <div className="flex flex-col lg:md:flex-row my-4 lg:mb-12 gap-y-4">
                                         <div className='form-group'>
-                                            <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off'/>
+                                            <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' />
                                             <label htmlFor="first_name" className='absolute input-textholder'>First Name</label>
                                         </div>
                                         <div className='form-group'>
@@ -67,7 +67,7 @@ export default function Contact() {
                                             {/* <label htmlFor="first_name" className='absolute input-textholder'>First Name</label> */}
                                         </div>
                                         <div className='form-group'>
-                                        <select className="input-text " disabled>
+                                            <select className="input-text " disabled>
                                                 <option selected>Select a serivce</option>
                                                 <option value="sapa">Sapa design</option>
                                             </select>
@@ -79,13 +79,30 @@ export default function Contact() {
                                             <label htmlFor="message" className='absolute input-textholder'>Message </label>
                                         </div>
                                     </div>
-                                    
-                                    
+
+
                                 </form>
                             </div>
-                        </div>
-                        <div>
+                            <div className='h-auto lg:translate-y-3 flex w-full justify-end'>
+           {/* <Link href="/"> */}
 
+           <button onClick={()=>alert("Summited")} className='bg-[#EBEBF7] lg:bg-transparent text-[16px] place-self-end lg:text-[18px] py-3 px-6 leading-5 lg:py-4 lg:px-10 lg:text-[#010103] border lg:border-[#737380] rounded-lg lg:bg-[#C2C2CC] hover:text-[#0A0A0D] transition-all hover:transition-all btn-transition font-semibold' target="_blank" rel="noreferrer" >
+              Next
+            </button>
+            {/* </Link> */}
+          </div>
+                        </div>
+                        <div className="py-14 lg:px-14 px-5 rounded-xl bg-[#101012] lg:w-1/3 lg:max-h-[444px]">
+                            <h3 className="text-[20px] lg:text-[32px] font-bold what-next-heading">What{"'"}s next?</h3>
+                            <div className="lg:py-10">
+                            <p className="contact-p-text">
+                                Bibendum lectus quis sagittis, leo sed posuere risus. Vestibulum, arcu, nam urna consequat. 
+                            </p>
+                            <br/>
+                            <p className="contact-p-text">
+                                Neque elementum sagittis porta enim. Diam pulvinar ut porta tincidunt leo sit vulputate tincidunt.
+                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
