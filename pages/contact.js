@@ -60,14 +60,15 @@ export default function Contact() {
                                         <div className='form-group'>
                                             {/* <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
                                             <select className="input-text ">
-                                                <option disabled>Select a serivce</option>
-                                                <option value="sapa">Sapa design</option>
+                                                <option selected disabled>Select a serivce</option>
+                                                <option value="ui_ui_design">UI/UX Design</option>
+                                                <option value="ui_ux_frontend">UI/UX Design and Frontend</option>
                                             </select>
                                             {/* <label htmlFor="first_name" className='absolute input-textholder'>First Name</label> */}
                                         </div>
                                         <div className='form-group'>
                                         <select className="input-text " disabled>
-                                                <option>Select a serivce</option>
+                                                <option selected>Select a serivce</option>
                                                 <option value="sapa">Sapa design</option>
                                             </select>
                                         </div>
