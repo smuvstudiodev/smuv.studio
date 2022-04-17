@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Layout from '../components/layout'
 
 
-export default function Contact({ data }) {
+export default function Contact() {
 
     /*  useEffect(()=>{
          const dataf = async () => {
@@ -13,7 +13,7 @@ export default function Contact({ data }) {
          }
          dataf();
      },[data]) */
-    console.log(data);
+    // console.log(data);
     const submitForm = (e) => {
         e.preventDefault();
     }
@@ -29,41 +29,53 @@ export default function Contact({ data }) {
                             Our mission is simple: Work with the best, design with a purpose, and engineer for a sustainable future.
                         </p>
                     </div>
-                    <div className="py-10 px-5  lg:p-10 flex flex-col lg:flex-row gap-x-4">
+                    <div className="py-10 px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-x-4">
                         <div className="py-14 px-14 rounded-xl bg-[#101012] w-2/3">
                             <div className="py-10">
                                 <h2 className="text-[40px] font-bold text-[#C2C2CC]">Let{"’"}s collaborate</h2>
                             </div>
                             <div className="py-2">
                                 <form onSubmit={submitForm}>
-                                    <div className="flex flex-col lg:md:flex-row my-4">
-                                        <div className='bg-[#101012] relative px-2 w-1/2'>
-                                            <input required className=" input-text " type="text" />
-                                            <span className='absolute input-textholder'>First Name</span>
+                                    <div className="flex flex-col lg:md:flex-row my-4 lg:mb-12">
+                                        <div className='form-group'>
+                                            <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off'/>
+                                            <label htmlFor="first_name" className='absolute input-textholder'>First Name</label>
                                         </div>
-                                        <div className='bg-[#101012] relative px-2 w-1/2'>
-                                            <input required className=" input-text " type="text" />
-                                            <span className='absolute input-textholder'>Last Name</span>
-                                        </div>
-                                    </div>
-                                    <div className="flex flex-col lg:md:flex-row my-4">
-                                        <div className='bg-[#101012] relative px-2 w-1/2'>
-                                            <input required className=" input-text " type="text" />
-                                            <span className='absolute input-textholder'>First Name</span>
-                                        </div>
-                                        <div className='bg-[#101012] relative px-2 w-1/2'>
-                                            <input required className=" input-text " type="text" />
-                                            <span className='absolute input-textholder'>Last Name</span>
+                                        <div className='form-group'>
+                                            <input id="last_name" placeholder=' ' className=" input-text " type="text" autoComplete="off" />
+                                            <label htmlFor="last_name" className='absolute input-textholder'>Last Name</label>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col lg:md:flex-row my-4">
-                                        <div className='bg-[#101012] relative px-2 w-1/2'>
-                                            <input required className=" input-text " type="text" />
-                                            <span className='absolute input-textholder'>First Name</span>
+                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 lg:mb-12">
+                                        <div className='form-group'>
+                                            <input id="email" placeholder=' ' className=" input-text " type="email" autoComplete='off' />
+                                            <label htmlFor="email" className='absolute input-textholder'>Email Address</label>
                                         </div>
-                                        <div className='bg-[#101012] relative px-2 w-1/2'>
-                                            <input required className=" input-text " type="text" />
-                                            <span className='absolute input-textholder'>Last Name</span>
+                                        <div className='form-group'>
+                                            <input id="company" placeholder=' ' className=" input-text " type="text" autoComplete='off' />
+                                            <label htmlFor="company" className='absolute input-textholder'>Company Name</label>
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 ">
+                                        <div className='form-group'>
+                                            {/* <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
+                                            <select className="input-text ">
+                                                <option disabled>Select a serivce</option>
+                                                <option value="sapa">Sapa design</option>
+                                            </select>
+                                            {/* <label htmlFor="first_name" className='absolute input-textholder'>First Name</label> */}
+                                        </div>
+                                        <div className='form-group'>
+                                        <select className="input-text " disabled>
+                                                <option>Select a serivce</option>
+                                                <option value="sapa">Sapa design</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className=" my-4 lg:my-8 lg:mb-12">
+                                        <div className='px-2 '>
+                                            <input id="email" placeholder=' ' className=" input-text " type="email" autoComplete='off' />
+                                            <label htmlFor="email" className='absolute input-textholder'>Email Address</label>
                                         </div>
                                     </div>
                                     
@@ -82,7 +94,7 @@ export default function Contact({ data }) {
     )
 }
 
-export const getServerSideProps = async () => {
+/* export const getServerSideProps = async () => {
 
     const res = await fetch('https://api.studio.smuvcreative.com/wp-json/wp/v2/pricing')
     const json = await res.json()
@@ -93,4 +105,4 @@ export const getServerSideProps = async () => {
 
         }
     }
-}
+} */
