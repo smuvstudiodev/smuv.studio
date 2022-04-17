@@ -50,7 +50,7 @@ export default function Layout({ children, title }) {
                     <div className='hambugger place-self-center' >
                         <button onClick={() => setIsOpen(!isOpen)} aria-label="Hambugger" aria>
                             {/* <object  onClick={() => setIsOpen(!isOpen)} type="image/svg+xml" className="grayscale hover:grayscale-0 transition-all cursor-pointer" data="/images/hambugger.svg" alt="Hambugger Icon">Hambugger Icon</object> */}
-                            <svg className="grayscale hover:grayscale-0 transition-all cursor-pointer" data="/images/hambugger.svg" alt="Hambugger Icon" width="41" height="15" viewBox="0 0 41 15" fill="none"
+                            <svg className="grayscale hover:grayscale-0 transition-all cursor-pointer h-[10px] w-7 lg:h-[15px] lg:w-10 " data="/images/hambugger.svg" alt="Hambugger Icon" width="41" height="15" viewBox="0 0 41 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="8.14185" width="32" height="4" rx="2" fill="url(#paint0_linear_766_579)" />
                                 <rect x="0.141846" y="11" width="40" height="4" rx="2" fill="#C4C4C4" />
