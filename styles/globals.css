@@ -401,7 +401,7 @@ client. object:hover {
 }
 
 .form-group {
-  @apply relative px-2 w-1/2;
+  @apply relative lg:px-2 lg:w-1/2;
 }
 .input-textholder {
   @apply text-[#7C7C82] font-semibold top-5 left-6 text-[17px] cursor-text z-0;
@@ -416,7 +416,7 @@ select.input-text:disabled:focus{
 }
 .input-text 
 {
-  @apply bg-transparent form-input px-4 pb-4 pt-7 rounded-lg text-[17px] text-[#C2C2CC] font-bold w-full z-10;
+  @apply bg-[#252529] form-input px-4 pb-4 pt-7 rounded-lg text-[17px] text-[#C2C2CC] font-bold w-full z-10  border-transparent;
   transition: background 0.2s;
 }
 
@@ -427,7 +427,7 @@ select.input-text:disabled:focus{
 }
 .input-text:focus,
 .input-text:active {
-  @apply bg-[#252529] border-transparent outline-none ring-transparent;
+  @apply bg-transparent border-[#252529] outline-none ring-transparent;
   transition: background 0.2s;
 }
 .input-text:active ~ .input-textholder,

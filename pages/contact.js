@@ -29,14 +29,14 @@ export default function Contact() {
                             Our mission is simple: Work with the best, design with a purpose, and engineer for a sustainable future.
                         </p>
                     </div>
-                    <div className="py-10 px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-x-4">
-                        <div className="py-14 px-14 rounded-xl bg-[#101012] w-2/3">
-                            <div className="py-10">
-                                <h2 className="text-[40px] font-bold text-[#C2C2CC]">Let{"’"}s collaborate</h2>
+                    <div className="py-10 lg:px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-x-4">
+                        <div className="py-14 lg:px-14 px-5 rounded-xl bg-[#101012] lg:w-2/3">
+                            <div className="lg:py-10">
+                                <h2 className="text-[24px] lg:text-[40px] font-bold text-[#C2C2CC]">Let{"’"}s collaborate</h2>
                             </div>
                             <div className="py-2">
                                 <form onSubmit={submitForm}>
-                                    <div className="flex flex-col lg:md:flex-row my-4 lg:mb-12">
+                                    <div className="flex flex-col lg:md:flex-row my-4 lg:mb-12 gap-y-4">
                                         <div className='form-group'>
                                             <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off'/>
                                             <label htmlFor="first_name" className='absolute input-textholder'>First Name</label>
@@ -46,7 +46,7 @@ export default function Contact() {
                                             <label htmlFor="last_name" className='absolute input-textholder'>Last Name</label>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 lg:mb-12">
+                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 lg:mb-12 gap-y-4">
                                         <div className='form-group'>
                                             <input id="email" placeholder=' ' className=" input-text " type="email" autoComplete='off' />
                                             <label htmlFor="email" className='absolute input-textholder'>Email Address</label>
@@ -56,7 +56,7 @@ export default function Contact() {
                                             <label htmlFor="company" className='absolute input-textholder'>Company Name</label>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 ">
+                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 gap-y-4">
                                         <div className='form-group'>
                                             {/* <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
                                             <select className="input-text ">
@@ -73,9 +73,9 @@ export default function Contact() {
                                         </div>
                                     </div>
                                     <div className=" my-4 lg:my-8 lg:mb-12">
-                                        <div className='px-2 '>
-                                            <input id="email" placeholder=' ' className=" input-text " type="email" autoComplete='off' />
-                                            <label htmlFor="email" className='absolute input-textholder'>Email Address</label>
+                                        <div className='lg:px-2 relative'>
+                                            <input id="message" placeholder=' ' className=" input-text " type="text" autoComplete='off' />
+                                            <label htmlFor="message" className='absolute input-textholder'>Message </label>
                                         </div>
                                     </div>
                                     
