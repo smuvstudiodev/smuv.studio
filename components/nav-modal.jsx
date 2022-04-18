@@ -42,7 +42,7 @@ export default function NavModal({ options }) {
                 </div>
                 <div className=" border-t-2 border-dashed border-[#252529] py-6 lg:py-8">
                     <span className="text-xs text-[#45454D] lg:text-base">Want a smuv experience?</span>
-                    <h4 className="text-[#919199] text-sm lg:text-xl">Let{"'"}s talk at <a href="mailto:hi@smuvstudio.com">hi@smuvstudio.com</a> </h4>
+                    <h4 className="text-[#919199] text-sm lg:text-xl">Let{"'"}s talk at <a href="mailto:start@smuvstudio.com">start@smuvstudio.com</a> </h4>
                 </div>
             </div>
         </div>
