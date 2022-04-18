@@ -40,7 +40,7 @@ export default function Layout({ children, title }) {
                         <a className="logo-container cursor-pointer">
 
                             <div className="logo cursor-pointer">
-                                <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg" alt="Smuv Love Animation Logo" ariaLabel="Smuv Love Animation Logo">Smuv Love Animation Logo</object>
+                                <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg" alt="Smuv Love Animation Logo" aria-label="Smuv Love Animation Logo">Smuv Love Animation Logo</object>
                                 {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
                             </div>
 
@@ -48,7 +48,7 @@ export default function Layout({ children, title }) {
                         </a>
                     </Link>
                     <div className='hambugger place-self-center' >
-                        <button onClick={() => setIsOpen(!isOpen)} aria-label="Hambugger" aria>
+                        <button onClick={() => setIsOpen(!isOpen)} aria-label="Hambugger">
                             {/* <object  onClick={() => setIsOpen(!isOpen)} type="image/svg+xml" className="grayscale hover:grayscale-0 transition-all cursor-pointer" data="/images/hambugger.svg" alt="Hambugger Icon">Hambugger Icon</object> */}
                             <svg className="grayscale hover:grayscale-0 transition-all cursor-pointer h-[10px] w-7 lg:h-[15px] lg:w-10 " data="/images/hambugger.svg" alt="Hambugger Icon" width="41" height="15" viewBox="0 0 41 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">

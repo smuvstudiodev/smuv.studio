@@ -1,10 +1,25 @@
 import Image from 'next/image';
 import Link from 'next/link'
+import { useState, useEffect } from 'react';
+
+import Parser from 'rss-parser';
+let parser = new Parser();
 
 
 
 const Projects = ({ projects }) => {
-    console.log(projects);
+    const [stories, setStories] = useState([]);
+    // console.log(projects);
+    useEffect(() => {
+        const fetchMediumFeeds = async () => {
+            let feed = await parser.parseURL('https://cors-anywhere.herokuapp.com/https://medium.com/feed/@smuvstudio');
+            setStories(feed.items);
+           
+
+        }
+        fetchMediumFeeds();
+    }, [])
+    console.log(stories);
 
     return (
         <div id="works">
@@ -12,7 +27,7 @@ const Projects = ({ projects }) => {
 
                 <div className="flex flex-col md:flex-row justify-between gap-x-[100px]">
                     <h3 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-3  lg:w-[55%]">
-                        You{"’"}ve Reached the <br className="hidden lg:block"/> Design Zone.
+                        You{"’"}ve Reached the <br className="hidden lg:block" /> Design Zone.
                     </h3>
 
                     <span className=" text-[14px] lg:text-[22px] lg:leading-[47px] text-[#737380] my-2 lg:my-0 lg:place-self-start lg:text-right lg:w-[45%]">
@@ -32,12 +47,28 @@ const Projects = ({ projects }) => {
                             <p>Project Title</p>
                         </div>
                     </div> */}
+                     {
+                        stories && stories.map((story) => (
+                            <div className="project" key={story.id}>
+                                <a target="_blank" href={story.link}>
+                                    <a className="project overflow-hidden">
+                                        {/* <Image className="project-image object-cover" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" /> */}
+                                        <div className="project-meta">
+                                            <h4 className="project-heading">{story.title}</h4>
+                                            {/* <p className="text-[18px]">{story.tags}</p> */}
+                                        </div>
+                                    </a>
+                                </a>
+                            </div>
+                        ))
+                    }
+
                     {
                         projects && projects.map((project) => (
                             <div className="project" key={project.id}>
                                 <Link href="/case-study">
-                                    <a  className="project overflow-hidden">
-                                        <Image className="project-image object-cover" src={project.featured_image.guid} layout="responsive" width={689} height={521} alt="Blog post" />
+                                    <a className="project overflow-hidden">
+                                        <Image className="project-image object-cover" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
                                         <div className="project-meta">
                                             <h4 className="project-heading">{project.title.rendered}</h4>
                                             <p className="text-[18px]">{project.tags}</p>

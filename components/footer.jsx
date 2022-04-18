@@ -11,7 +11,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="order-1 lg:order-2 lg:translate-x-5">
-                <object type="image/svg+xml"  width={48} height={48} data="/images/Logo_Icon_Animation.svg" alt="Smuv Logo" ariaLabel="Smuv Logo">Smuv Logo</object>
+                <object type="image/svg+xml"  width={48} height={48} data="/images/Logo_Icon_Animation.svg" alt="Smuv Logo" aria-label="Smuv Logo">Smuv Logo</object>
                 </div>
                 <div className="order-3 text-[#737380] flex gap-x-3">
                 <a href="https://twitter.com/smuvcreative" className="text-[16px] lg:text-[20px]"> 
