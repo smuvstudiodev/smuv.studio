@@ -45,9 +45,9 @@ export default function Layout({ children, title }) {
                 {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
                 <div className='flex justify-between align-center items-center content-center mx-4 lg:mx-100 relative'>
                     <Link href={"/"}>
-                        <a className="logo-container cursor-pointer">
+                        <a className="logo-container project-cursor">
 
-                            <div className="logo cursor-pointer" onClick={(e)=>goHome(e)}>
+                            <div className="logo project-cursor" onClick={(e)=>goHome(e)}>
                                 
                                 <object onClick={(e)=>goHome(e)} type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg" alt="Smuv Love Animation Logo" aria-label="Smuv Love Animation Logo">Smuv Love Animation Logo</object>
                                 {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
@@ -56,11 +56,11 @@ export default function Layout({ children, title }) {
                             <span className="logo-text">A UX/UI Design Studio</span>
                         </a>
                     </Link>
-                    <div className="absolute opacity-0 w-[150px] py-5 px-3 bg-white h-5 cursor-pointer"  onClick={(e)=>goHome(e)}>Text Home Button</div>
+                    <div className="absolute opacity-0 w-[150px] py-5 px-3 bg-white h-5 project-cursor"  onClick={(e)=>goHome(e)}>Text Home Button</div>
                     <div className='hambugger place-self-center' >
                         <button onClick={() => setIsOpen(!isOpen)} aria-label="Hambugger">
-                            {/* <object  onClick={() => setIsOpen(!isOpen)} type="image/svg+xml" className="grayscale hover:grayscale-0 transition-all cursor-pointer" data="/images/hambugger.svg" alt="Hambugger Icon">Hambugger Icon</object> */}
-                            <svg className="grayscale hover:grayscale-0 transition-all cursor-pointer h-[10px] w-7 lg:h-[15px] lg:w-10 " data="/images/hambugger.svg" alt="Hambugger Icon" width="41" height="15" viewBox="0 0 41 15" fill="none"
+                            {/* <object  onClick={() => setIsOpen(!isOpen)} type="image/svg+xml" className="grayscale hover:grayscale-0 transition-all project-cursor" data="/images/hambugger.svg" alt="Hambugger Icon">Hambugger Icon</object> */}
+                            <svg className="grayscale hover:grayscale-0 transition-all project-cursor h-[10px] w-7 lg:h-[15px] lg:w-10 " data="/images/hambugger.svg" alt="Hambugger Icon" width="41" height="15" viewBox="0 0 41 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="8.14185" width="32" height="4" rx="2" fill="url(#paint0_linear_766_579)" />
                                 <rect x="0.141846" y="11" width="40" height="4" rx="2" fill="#C4C4C4" />
@@ -82,7 +82,7 @@ export default function Layout({ children, title }) {
                 </div>
             </nav>
 
-            <main className='max-w-[1409px] mx-auto overflow-hidden project-cursor'>
+            <main className='max-w-[1409px] mx-auto overflow-hidden'>
                 {children}
             </main>
 

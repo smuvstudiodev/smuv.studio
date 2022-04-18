@@ -55,7 +55,7 @@ document.body.addEventListener("mousemove", applyCursorPos)
                                    <div className="project overflow-hidden">
                                             <div className="shade">
     
-                                            <Image className="project-image object-cover" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
+                                            <Image className="project-image object-cover " src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
                                             </div>
                                             <div className="project-meta">
                                                 <h4 className="project-heading">{project.title.rendered}</h4>
