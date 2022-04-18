@@ -31,7 +31,7 @@ export default function Contact() {
                             Get started with smuv today.
                         </h1>
                         <p className="text-sm lg:text-lg 2xl:text-xl leading-5 text-[#737380] mt-3 lg:mt-0 lg:w-[45%] ">
-                            Our mission is simple: Work with the best, design with a purpose, and engineer for a sustainable future.
+                            Our goal is clear: work with a vision, make it ambitious designs, build the future you dream of.
                         </p>
                     </div>
                     <div className="py-10 lg:px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-8 ">
