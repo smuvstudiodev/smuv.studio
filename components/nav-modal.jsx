@@ -33,7 +33,7 @@ export default function NavModal({ options }) {
                     <Link href="/">
                         <a className="modal-links-item">Home</a>
                     </Link>
-                    <Link href="#work">
+                    <Link href="#works">
                         <a className="modal-links-item">Works</a>
                     </Link>
                     <Link href="#blog">

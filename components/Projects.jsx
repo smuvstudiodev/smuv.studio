@@ -9,21 +9,26 @@ let parser = new Parser();
 
 const Projects = ({ projects }) => {
     const [stories, setStories] = useState([]);
-    // console.log(projects);
-    useEffect(() => {
-        const fetchMediumFeeds = async () => {
-            let feed = await parser.parseURL('https://cors-anywhere.herokuapp.com/https://medium.com/feed/@smuvstudio');
-            setStories(feed.items);
-           
-
-        }
-        fetchMediumFeeds();
-    }, [])
+    console.log(projects);
+  
     console.log(stories);
+    useEffect(()=>{
+        const root = document.querySelector(':root')
+
+const applyCursorPos = ({clientX, clientY}) => {
+    const x = `${clientX - 25}px`
+    const y = `${clientY - 25}px`
+
+    root.style.setProperty("--posX", x);
+    root.style.setProperty("--posY", y);
+}
+
+document.body.addEventListener("mousemove", applyCursorPos)
+    })
 
     return (
-        <div id="works">
-            <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 md:mb-10 md:mt-24 lg:mb-20 lg:mt-40'>
+        <div id="works" className=" mt-100">
+            <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto md:mb-10 md:mt-24 lg:mb-20 lg:mt-40'>
 
                 <div className="flex flex-col md:flex-row justify-between gap-x-[100px]">
                     <h3 className="font-bold text-3xl lg:text-[46px] lg:leading-[47px] text-[#C2C2CC] my-3  lg:w-[55%]">
@@ -40,68 +45,43 @@ const Projects = ({ projects }) => {
 
             <div className="px-5 md:px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-y-[17px] lg:gap-y-20  gap-4 gap-x-9">
-                    {/* <div className="project">
-                        <Image className="project-image" src="/images/blog-images/unsplash_1_CMoFsPfso.png" width={689} height={521} alt="Blog post" />
-                        <div className="project-meta">
-                            <h4 className="project-heading">Project Title</h4>
-                            <p>Project Title</p>
-                        </div>
-                    </div> */}
-                     {
-                        stories && stories.map((story) => (
-                            <div className="project" key={story.id}>
-                                <a target="_blank" href={story.link}>
-                                    <a className="project overflow-hidden">
-                                        {/* <Image className="project-image object-cover" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" /> */}
-                                        <div className="project-meta">
-                                            <h4 className="project-heading">{story.title}</h4>
-                                            {/* <p className="text-[18px]">{story.tags}</p> */}
-                                        </div>
-                                    </a>
-                                </a>
-                            </div>
-                        ))
-                    }
+
 
                     {
-                        projects && projects.map((project) => (
-                            <div className="project" key={project.id}>
-                                <Link href="/case-study">
-                                    <a className="project overflow-hidden">
-                                        <Image className="project-image object-cover" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
-                                        <div className="project-meta">
-                                            <h4 className="project-heading">{project.title.rendered}</h4>
-                                            <p className="text-[18px]">{project.tags}</p>
+                        projects && projects.map((project) => {
+                           if(project.link ===""){
+                            return(
+                                <div className="project" key={project.id}>
+                                   <div className="project overflow-hidden">
+                                            <div className="shade">
+    
+                                            <Image className="project-image object-cover" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
+                                            </div>
+                                            <div className="project-meta">
+                                                <h4 className="project-heading">{project.title.rendered}</h4>
+                                                <p className="text-[18px]">Coming Soon...</p>
+                                            </div>
                                         </div>
-                                    </a>
-                                </Link>
-                            </div>
-                        ))
+                                </div>
+                            )
+                           }else{
+                            return(
+                                <div className="project" key={project.id}>
+                                        <a href={project.link} className="project overflow-hidden">
+                                            <div className="shade">
+    
+                                            <Image className="project-image object-cover" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
+                                            </div>
+                                            <div className="project-meta">
+                                                <h4 className="project-heading">{project.title.rendered}</h4>
+                                                <p className="text-[18px]">{project.tags}</p>
+                                            </div>
+                                        </a>
+                                </div>
+                            )
+                           }
+                        })
                     }
-
-                    {/* <div className="project">
-                        <Image className="project-image" src="/images/blog-images/unsplash_lTb4gJK_l1Q.png" width={689} height={521} alt="Blog post" />
-                        <div className="project-meta">
-                            <h4 className="project-heading">Project Title</h4>
-                            <p>Project Title</p>
-                        </div>
-                    </div> */}
-
-                    {/* <div className="project">
-                        <Image className="project-image" src="/images/blog-images/unsplash_xsGxhtAsfSA.png" width={689} height={521} alt="Blog post" />
-                        <div className="project-meta">
-                            <h4 className="project-heading">Project Title</h4>
-                            <p>Project Title</p>
-                        </div>
-                    </div> */}
-
-                    {/* <div className="project">
-                        <Image className="project-image" src="/images/blog-images/unsplash_fIq0tET6llw.png" width={689} height={521} alt="Blog post" />
-                        <div className="project-meta">
-                            <h4 className="project-heading">Project Title</h4>
-                            <p>Project Title</p>
-                        </div>
-                    </div> */}
 
                 </div>
             </div>

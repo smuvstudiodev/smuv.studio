@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Footer from './footer';
 import NavModal from './nav-modal';
+import { useRouter } from 'next/router';
 
 export default function Layout({ children, title }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,13 @@ export default function Layout({ children, title }) {
             }
         })
     }, [])
+    const router = useRouter();
+
+    const goHome = (e)=>{
+        // e.preventDefault();
+        router.push("/");
+        console.log(e)
+    }
 
     return (
         <div className='relative'>
@@ -35,18 +43,20 @@ export default function Layout({ children, title }) {
 
             <nav id='navbar' className='w-full z-40 lg:py-2 fixed top-0 left-0  '>
                 {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
-                <div className='flex justify-between align-center items-center content-center mx-4 lg:mx-100 '>
+                <div className='flex justify-between align-center items-center content-center mx-4 lg:mx-100 relative'>
                     <Link href={"/"}>
                         <a className="logo-container cursor-pointer">
 
-                            <div className="logo cursor-pointer">
-                                <object type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg" alt="Smuv Love Animation Logo" aria-label="Smuv Love Animation Logo">Smuv Love Animation Logo</object>
+                            <div className="logo cursor-pointer" onClick={(e)=>goHome(e)}>
+                                
+                                <object onClick={(e)=>goHome(e)} type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg" alt="Smuv Love Animation Logo" aria-label="Smuv Love Animation Logo">Smuv Love Animation Logo</object>
                                 {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
                             </div>
 
                             <span className="logo-text">A UX/UI Design Studio</span>
                         </a>
                     </Link>
+                    <div className="absolute opacity-0 w-[150px] py-5 px-3 bg-white h-5 cursor-pointer"  onClick={(e)=>goHome(e)}>Text Home Button</div>
                     <div className='hambugger place-self-center' >
                         <button onClick={() => setIsOpen(!isOpen)} aria-label="Hambugger">
                             {/* <object  onClick={() => setIsOpen(!isOpen)} type="image/svg+xml" className="grayscale hover:grayscale-0 transition-all cursor-pointer" data="/images/hambugger.svg" alt="Hambugger Icon">Hambugger Icon</object> */}
