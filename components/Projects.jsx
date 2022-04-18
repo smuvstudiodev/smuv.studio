@@ -59,7 +59,7 @@ document.body.addEventListener("mousemove", applyCursorPos)
                                             </div>
                                             <div className="project-meta">
                                                 <h4 className="project-heading">{project.title.rendered}</h4>
-                                                <p className="text-[18px]">Coming Soon...</p>
+                                                <span className="text-xl bg-[#45454D] rounded-full max-w-[158px] text-[#0B0B0D] px-2 py-[2px]">Coming Soon</span>
                                             </div>
                                         </div>
                                 </div>
