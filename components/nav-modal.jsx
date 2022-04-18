@@ -21,7 +21,8 @@ export default function NavModal({ options }) {
                     <div className="absolute -right-8 -top-20 lg:-right-20 lg:-top-24">
                         <button onClick={() => closeModal()}>
                       
-                        <Image src="/images/cancle-icon.png" width={32} height={32} alt="close btn" priority />
+                        {/* <Image src="/images/cancle-icon.png" width={32} height={32} alt="close btn" priority /> */}
+                        <img src="/images/cancle-icon.png" width={32} height={32} alt="close btn"  />
                         </button>
                     </div>
                 </div>

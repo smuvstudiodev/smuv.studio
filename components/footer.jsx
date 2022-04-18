@@ -10,7 +10,7 @@ const Footer = () => {
                         +234 ​815 697 7033
                     </a>
                 </div>
-                <div className="order-1 lg:order-2 lg:translate-x-5">
+                <div className="order-1 lg:order-2 lg:translate-x-[2.0rem]">
                 <object type="image/svg+xml"  width={48} height={48} data="/images/Logo_Icon_Animation.svg" alt="Smuv Logo" aria-label="Smuv Logo">Smuv Logo</object>
                 </div>
                 <div className="order-3 text-[#737380] flex gap-x-3">

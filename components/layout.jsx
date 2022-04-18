@@ -57,7 +57,7 @@ export default function Layout({ children, title }) {
                         </a>
                     </Link>
                     <div className="absolute opacity-0 w-[150px] py-5 px-3 bg-white h-5 project-cursor"  onClick={(e)=>goHome(e)}>Text Home Button</div>
-                    <div className='hambugger place-self-center' >
+                    <div className='hambugger ' >
                         <button onClick={() => setIsOpen(!isOpen)} aria-label="Hambugger">
                             {/* <object  onClick={() => setIsOpen(!isOpen)} type="image/svg+xml" className="grayscale hover:grayscale-0 transition-all project-cursor" data="/images/hambugger.svg" alt="Hambugger Icon">Hambugger Icon</object> */}
                             <svg className="grayscale hover:grayscale-0 transition-all project-cursor h-[10px] w-7 lg:h-[15px] lg:w-10 " data="/images/hambugger.svg" alt="Hambugger Icon" width="41" height="15" viewBox="0 0 41 15" fill="none"
