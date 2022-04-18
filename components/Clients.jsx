@@ -43,7 +43,7 @@ const Clients = () => {
               <object className='' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
             <div className="oneport-365 client">
-              <object className='' type="image/svg+xml" data="images/clients/green-key.svg">Green Key</object>
+              <object className='' type="image/svg+xml" data="images/clients/adspace.svg" aria-lable="AdSpace">AdSpace</object>
             </div>
           </div>
         </div>
