@@ -20,7 +20,7 @@ export default function Contact() {
         e.preventDefault();
         alert("We will be taking you to book appointment with us.")
 
-        router.push("https://calendly.com/ability-1/30min")
+        router.push("https://bit.ly/3jQS9nW")
     }
     return (
         <Layout>
