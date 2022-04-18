@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="bg-[#101012] py-7 px-6 lg:py-20  lg:px-16 rounded-md flex flex-col lg:flex-row lg:justify-between gap-y-5 lg:content-center lg:items-center  w-full">
                 <div className="order-2 lg:order-1 text-[#737380] flex flex-col gap-y-2 ">
                     <a href="mailto:hi@smuv.studio" className="text-[16px] lg:text-[20px]">
-                        hi@smuv.studio 
+                        start@smuv.studio 
                     </a>
                     <a href="tel:+2348156977033" className="text-[16px] lg:text-[20px]"> 
                         +234 ​815 697 7033
