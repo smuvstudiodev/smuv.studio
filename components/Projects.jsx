@@ -67,7 +67,7 @@ document.body.addEventListener("mousemove", applyCursorPos)
                            }else{
                             return(
                                 <div className="project" key={project.id}>
-                                        <a href={project.link} className="project overflow-hidden">
+                                        <a target="_blank" rel="noopener" href={project.link} className="project overflow-hidden">
                                             <div className="shade">
     
                                             <Image className="project-image object-cover" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
