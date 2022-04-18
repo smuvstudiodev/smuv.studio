@@ -15,7 +15,7 @@ export default function NavModal({ options }) {
     }
 
     return (
-        <div className='nav-modal-container' onClick={e=>closeByBody(e)}>
+        <div className='nav-modal-container backdrop-blur-[100px]' onClick={e=>closeByBody(e)}>
             <div className='nav-modal' onClick={e=>StopCloseByBody(e)}>
                 <div className="relative">
                     <div className="absolute -right-8 -top-20 lg:-right-20 lg:-top-24">

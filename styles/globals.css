@@ -38,6 +38,8 @@ body {
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  cursor: url(cursor.cur), auto;
+
 }
 
 .logo-container {
@@ -204,7 +206,7 @@ body {
   
 } */
 .card {
-  @apply px-6 py-9 lg:py-[53px] lg:px-12 bg-[#101012] rounded-md mx-4;
+  @apply pl-6 py-9 lg:pl-[53px] lg:px-12 bg-[#101012] rounded-md mx-4;
 }
 .card-icon {
   @apply w-16 h-16 lg:w-20 lg:h-20;
@@ -214,7 +216,8 @@ body {
 }
 .card-list {
   list-style-image: url("/images/tick_mark.png");
-  @apply ml-7 lg:ml-6;
+  list-style-position: outside;
+  @apply ml-7 lg:ml-5 ;
 }
 .card-list li {
   @apply text-lg 2xl:text-xl text-[#737380] font-normal my-2 lg:my-3;
@@ -448,8 +451,8 @@ select.input-text:disabled:focus{
   @apply text-lg text-[#737380] lg:leading-[25px] ;
 }
 
-.project-cursor{
-  cursor: url(cursor.cur), auto;
+.project-cursor, a, object, svg, rect{
+  cursor: url(cursor.cur)!important;
 }
 .project-cursor_alt{
   cursor: url(cursor_alt.cur), auto;

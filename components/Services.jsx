@@ -11,29 +11,29 @@ const Services = () => {
                         <object type="image/svg+xml" className="card-icon" data="/images/icons/Strategy_Icon.svg" alt="Strategy" aria-label="Strategy">Strategy_Icon</object>
                         <h3 className="card-heading">Strategy</h3>
                         <ul className='card-list'>
-                            <li>Discovery chat</li>
-                            <li>User Research and Insight</li>
-                            <li>Stakeholder Workshops</li>
+                            <li> &nbsp; Discovery chat</li>
+                            <li> &nbsp; User Research and Insight</li>
+                            <li> &nbsp; Stakeholder Workshops</li>
                         </ul>
                     </div>
                     <div className="card">
                         <object type="image/svg+xml" className="card-icon" data="/images/icons/Experience_Icon.svg" alt="Experience" aria-label="Experience">Experience_Icon</object>
                         <h3 className="card-heading">Experience</h3>
                         <ul className='card-list'>
-                            <li>User flow chart</li>
-                            <li>Wireframing</li>
-                            <li>Prototyping</li>
-                            <li>Usability testing</li>
+                            <li> &nbsp; User flow chart</li>
+                            <li> &nbsp; Wireframing</li>
+                            <li> &nbsp; Prototyping</li>
+                            <li> &nbsp; Usability testing</li>
                         </ul>
                     </div>
                     <div className="card">
                         <object type="image/svg+xml" className="card-icon" data="/images/icons/Design_Icon.svg" alt="Design_Icon" aria-label="Design">Design_Icon</object>
                         <h3 className="card-heading">Design</h3>
                         <ul className='card-list'>
-                            <li>Brand-conscious UI Design</li>
-                            <li>Brand identity design</li>
-                            <li>Interaction design</li>
-                            <li>Front-end development</li>
+                            <li> &nbsp; Brand-conscious UI Design</li>
+                            <li> &nbsp; Brand identity design</li>
+                            <li> &nbsp; Interaction design</li>
+                            <li> &nbsp; Front-end development</li>
                         </ul>
                     </div>
 
