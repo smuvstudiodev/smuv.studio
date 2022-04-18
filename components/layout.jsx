@@ -23,6 +23,11 @@ export default function Layout({ children, title }) {
             }
         })
     }, [])
+    useEffect(()=>{  
+        window.addEventListener("load", function(){
+            
+        });
+        },[])
     const router = useRouter();
 
     const goHome = (e)=>{
@@ -33,6 +38,7 @@ export default function Layout({ children, title }) {
 
     return (
         <div className='relative'>
+            
             <Head>
                 <title>Smuv Studio {title && `- ${title}`}</title>
                 <meta name="description" content="Smuv, A UX/UI Design Studio" />
