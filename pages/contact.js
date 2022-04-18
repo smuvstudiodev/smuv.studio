@@ -102,11 +102,11 @@ export default function Contact() {
                             <h3 className="text-[20px] lg:text-[32px] font-bold what-next-heading">What{"'"}s next?</h3>
                             <div className="lg:py-10">
                             <p className="contact-p-text">
-                                Bibendum lectus quis sagittis, leo sed posuere risus. Vestibulum, arcu, nam urna consequat. 
+                               Kindly fill in the required fields below to progress to the next page.
                             </p>
                             <br/>
                             <p className="contact-p-text">
-                                Neque elementum sagittis porta enim. Diam pulvinar ut porta tincidunt leo sit vulputate tincidunt.
+                                Afterwards, you can book a discovery chat with us to discuss the details of your product.
                             </p>
                             </div>
                         </div>

@@ -20,7 +20,7 @@ const Services = () => {
                         <object type="image/svg+xml" className="card-icon" data="/images/icons/Experience_Icon.svg" alt="Experience" aria-label="Experience">Experience_Icon</object>
                         <h3 className="card-heading">Experience</h3>
                         <ul className='card-list'>
-                            <li>User flow chat</li>
+                            <li>User flow chart</li>
                             <li>Wireframing</li>
                             <li>Prototyping</li>
                             <li>Usability testing</li>
