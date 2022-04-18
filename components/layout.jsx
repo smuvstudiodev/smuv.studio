@@ -82,7 +82,7 @@ export default function Layout({ children, title }) {
                 </div>
             </nav>
 
-            <main className='max-w-[1409px] mx-auto overflow-hidden'>
+            <main className='max-w-[1409px] mx-auto overflow-hidden project-cursor'>
                 {children}
             </main>
 

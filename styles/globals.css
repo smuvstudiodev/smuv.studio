@@ -31,6 +31,7 @@ body {
   background: #0b0b0d;
   font-family: "TT Firs Neue", sans-serif;
   scroll-behavior:smooth;
+  
 }
 
 * {
@@ -55,6 +56,7 @@ body {
 }
 .nav-modal-container {
   @apply absolute top-0 left-0 w-full h-full min-h-screen bg-[rgba(0,0,0,0.85)] backdrop-blur-sm flex justify-center items-center content-center;
+  
 }
 
 .nav-modal {
@@ -224,6 +226,7 @@ body {
 }
 .project-image {
   @apply rounded-lg;
+  cursor: url(cursor.cur), auto;
 }
 .project-meta {
   @apply my-[28px];
@@ -444,5 +447,5 @@ select.input-text:disabled:focus{
 }
 
 .project-cursor{
-
+  cursor: url('/images/icons/cursor.png');
 }
