@@ -41,7 +41,9 @@ body {
   cursor: url(cursor.cur), auto;
 
 }
-
+::selection{
+  @apply bg-transparent;
+}
 .logo-container {
   @apply flex content-center h-full gap-[10px] lg:gap-x-5 py-[19px] lg:py-[5px];
 }
@@ -367,11 +369,14 @@ body {
 }
 
 .clients {
-  @apply flex;
+  @apply flex relative;
 }
 
 .client {
   @apply px-4 w-[148.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px] bg-transparent flex justify-center items-center content-center hover:bg-[#101012] rounded-[14px] m-3 hover:opacity-100 opacity-50;
+}
+.client-cover{
+  @apply opacity-0 absolute z-20 w-[148.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px];
 }
 .client object {
   @apply scale-50 lg:scale-[0.86];
@@ -451,7 +456,7 @@ select.input-text:disabled:focus{
   @apply text-lg text-[#737380] lg:leading-[25px] ;
 }
 
-.project-cursor, a, object, svg, rect{
+.project-cursor, a, object, svg, rect, .client object, .client{
   cursor: url(cursor.cur)!important;
 }
 .project-cursor_alt{

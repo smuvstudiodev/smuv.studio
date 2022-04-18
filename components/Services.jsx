@@ -7,7 +7,8 @@ const Services = () => {
             </div>
             <div className="px-2  xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-y-[17px]  2xl:gap-3">
-                    <div className="card">
+                    <div className="card relative">
+                    <div className="client-cover"/>
                         <object type="image/svg+xml" className="card-icon" data="/images/icons/Strategy_Icon.svg" alt="Strategy" aria-label="Strategy">Strategy_Icon</object>
                         <h3 className="card-heading">Strategy</h3>
                         <ul className='card-list'>
@@ -16,7 +17,8 @@ const Services = () => {
                             <li> &nbsp; Stakeholder Workshops</li>
                         </ul>
                     </div>
-                    <div className="card">
+                    <div className="card relative">
+                    <div className="client-cover"/>
                         <object type="image/svg+xml" className="card-icon" data="/images/icons/Experience_Icon.svg" alt="Experience" aria-label="Experience">Experience_Icon</object>
                         <h3 className="card-heading">Experience</h3>
                         <ul className='card-list'>
@@ -26,7 +28,8 @@ const Services = () => {
                             <li> &nbsp; Usability testing</li>
                         </ul>
                     </div>
-                    <div className="card">
+                    <div className="card relative">
+                    <div className="client-cover"/>
                         <object type="image/svg+xml" className="card-icon" data="/images/icons/Design_Icon.svg" alt="Design_Icon" aria-label="Design">Design_Icon</object>
                         <h3 className="card-heading">Design</h3>
                         <ul className='card-list'>

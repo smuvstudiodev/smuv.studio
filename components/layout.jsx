@@ -56,7 +56,8 @@ export default function Layout({ children, title }) {
                             <span className="logo-text">A UX/UI Design Studio</span>
                         </a>
                     </Link>
-                    <div className="absolute opacity-0 w-[150px] py-5 px-3 bg-white h-5 project-cursor"  onClick={(e)=>goHome(e)}>Text Home Button</div>
+                    <div className="absolute opacity-0 w-[150px] py-5 px-3 bg-white h-5 project-cursor"  onClick={(e)=>goHome(e)}/>
+                    <div className="client-cover"  onClick={(e)=>goHome(e)}/>
                     <div className='hambugger ' >
                         <button onClick={() => setIsOpen(!isOpen)} aria-label="Hambugger">
                             {/* <object  onClick={() => setIsOpen(!isOpen)} type="image/svg+xml" className="grayscale hover:grayscale-0 transition-all project-cursor" data="/images/hambugger.svg" alt="Hambugger Icon">Hambugger Icon</object> */}

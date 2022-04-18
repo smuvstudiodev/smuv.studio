@@ -34,16 +34,20 @@ const Clients = () => {
         <div className="px-12 xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto md:mt-100 lg:my-3 ">
           <div className="clients ">
             <div className="prosperis client ">
-              <object className='' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
+            <div className="client-cover"/>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
             <div className="oneport-365 client">
-              <object className='' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
+            <div className="client-cover"/>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
             <div className="tingtel client">
-              <object className='' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
+            <div className="client-cover"/>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
             <div className="oneport-365 client">
-              <object className='' type="image/svg+xml" data="images/clients/adspace.svg" aria-lable="AdSpace">AdSpace</object>
+            <div className="client-cover"/>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-lable="AdSpace">AdSpace</object>
             </div>
           </div>
         </div>
