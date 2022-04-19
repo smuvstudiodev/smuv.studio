@@ -32,13 +32,13 @@ rounded-tr-xl">
                 </div>
                 <div className="flex modal-links px-7 lg:px-[60px]">
                     <Link href="/">
-                        <a className="modal-links-item">Home</a>
+                        <a className="modal-links-item"  onClick={() => closeModal()}>Home</a>
                     </Link>
-                    <Link href="#works">
-                        <a className="modal-links-item">Works</a>
+                    <Link href="/#works">
+                        <a className="modal-links-item"  onClick={() => closeModal()}>Works</a>
                     </Link>
                     <Link href="#blog">
-                        <a className="modal-links-item">Blog</a>
+                        <a className="modal-links-item"  onClick={() => closeModal()}>Blog</a>
                     </Link>
                 </div>
                 <div className=" border-t-2 border-dashed border-[#252529] pt-5  px-7 lg:px-[60px]">

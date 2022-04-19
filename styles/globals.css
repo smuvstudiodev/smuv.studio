@@ -267,7 +267,13 @@ body {
   overflow: hidden;
   @apply my-1 lg:my-1 max-h-[50px] lg:max-h-[115px] lg:h-[115px];
 }
-
+.scroll-none::-webkit-scrollbar{
+  display:none;
+}
+.scroll-none{
+  @apply pt-10 pb-5;
+  box-sizing: border-box;
+}
 .animate-text span {
   @apply text-[26px] hidden px-1 md:text-4xl lg:text-5xl xl:text-[92px] font-bold text-center self-center leading-[34px] lg:leading-[90px];
 }
@@ -436,7 +442,7 @@ client. object:hover {
   transition: 0.3s;
 }
 select.input-text{
-  @apply pb-7 pt-7;
+  @apply pb-5 pt-5;
 }
 select.input-text:disabled:active,
 select.input-text:disabled:focus{
@@ -444,7 +450,7 @@ select.input-text:disabled:focus{
 }
 .input-text 
 {
-  @apply bg-[#252529] form-input px-4 pb-4 pt-7 rounded-lg text-[17px] text-[#C2C2CC] font-bold w-full z-10  border-transparent;
+  @apply bg-[#252529] form-input px-4 pb-3 pt-6 rounded-lg text-[17px] text-[#C2C2CC] font-bold w-full z-10  border-transparent;
   transition: background 0.2s;
 }
 
@@ -481,4 +487,19 @@ a, .cursor-ss-hand, input, button, button span{
 .coming-soon{
   cursor: url(coming_soon.cur), auto;
 
+}
+.textarea {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 50px;
+  line-height: 20px;
+  max-height: 267px;
+  resize: none;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: " ";
+  color: gray;
 }

@@ -24,7 +24,7 @@ export default function Contact() {
     }
     return (
         <Layout>
-            <div className="relative mt-100 xl:mt-[120px]  2xl:mt-[200px] md:max-w-screen-lg xl:max-w-screen-2xl mx-auto ">
+            <div className="relative 2xl:mt-[100px] md:max-w-screen-lg xl:max-w-screen-2xl mx-auto ">
                 <div className="py-10 px-5  lg:p-10 ">
                     <div className=" lg:py-10 flex flex-col place-content-start lg:flex-row justify-between w-full lg:gap-x-9">
                         <h1 className="no-case-study-heading text-2xl text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-bold self-center  lg:w-[60%]">
@@ -41,7 +41,7 @@ export default function Contact() {
                             </div>
                             <div className="py-2">
                                 <form onSubmit={submitForm}>
-                                    <div className="flex flex-col lg:md:flex-row my-4 lg:mb-12 gap-y-4">
+                                    <div className="flex flex-col lg:md:flex-row my-4 lg:mb-7 gap-y-2">
                                         <div className='form-group'>
                                             <input required id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' />
                                             <label htmlFor="first_name" className='absolute input-textholder'>First Name</label>
@@ -51,7 +51,7 @@ export default function Contact() {
                                             <label htmlFor="last_name" className='absolute input-textholder'>Last Name</label>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 lg:mb-12 gap-y-4">
+                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 lg:mb-7 gap-y-2">
                                         <div className='form-group'>
                                             <input required id="email" placeholder=' ' className=" input-text " type="email" autoComplete='off' />
                                             <label htmlFor="email" className='absolute input-textholder'>Email Address</label>
@@ -61,7 +61,7 @@ export default function Contact() {
                                             <label htmlFor="company" className='absolute input-textholder'>Company Name</label>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 gap-y-4">
+                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-6 gap-y-2">
                                         <div className='form-group'>
                                             {/* <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
                                             <select required className="input-text " placeholder='Select a Service'>
@@ -81,8 +81,12 @@ export default function Contact() {
                                     </div>
                                     <div className=" my-4 lg:my-8 lg:mb-12">
                                         <div className='lg:px-2 relative'>
-                                            <input required id="message" placeholder=' ' className=" input-text " type="text" autoComplete='off' />
-                                            <label htmlFor="message" className='absolute input-textholder'>Message </label>
+                                            {/* <input  placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
+                                            {/* <textarea placeholder=' ' required id="message" className="py-3 input-text h-20 max-h-100">
+
+                                            </textarea> */}
+                                            <span className="textarea scroll-none input-text" role="textbox"  autoComplete='off' contentEditable placeholder=" "></span>
+                                            <label htmlFor="message"  className='absolute input-textholder'>Message </label>
                                         </div>
                                     </div>
 
@@ -98,7 +102,7 @@ export default function Contact() {
                             </div>
                            
                         </div>
-                        <div className="py-14 lg:px-14 px-5 rounded-xl bg-[#101012] lg:w-1/3 lg:max-h-[444px]">
+                        <div className="py-14 lg:px-14 px-5 rounded-xl bg-[#101012] lg:w-1/3 lg:max-h-[350px]">
                             <h3 className="text-[20px] lg:text-[32px] font-bold what-next-heading">What{"'"}s next?</h3>
                             <div className="lg:py-10">
                             <p className="contact-p-text">
