@@ -51,11 +51,11 @@ document.body.addEventListener("mousemove", applyCursorPos)
                         projects && projects.map((project) => {
                            if(project.link ===""){
                             return(
-                                <div className="project" key={project.id}>
-                                   <div className="project overflow-hidden">
+                                <div className="project rounded-lg" key={project.id}>
+                                   <div className="project overflow-hidden coming-soon rounded-lg">
                                             <div className="shade">
     
-                                            <Image className="project-image object-cover " src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
+                                            <Image className="project-image object-cover  coming-soon" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
                                             </div>
                                             <div className="project-meta coming-soon">
                                                 <h4 className="project-heading">{project.title.rendered}</h4>
@@ -68,9 +68,9 @@ document.body.addEventListener("mousemove", applyCursorPos)
                             return(
                                 <div className="project" key={project.id}>
                                         <a href={project.link} className="project overflow-hidden">
-                                            <div className="shade">
+                                            <div className="shade rounded-lg">
     
-                                            <Image className="project-image object-cover" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
+                                            <Image className="project-image object-cover rounded-lg" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
                                             </div>
                                             <div className="project-meta">
                                                 <h4 className="project-heading">{project.title.rendered}</h4>

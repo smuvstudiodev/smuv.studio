@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <div id="loader" className="bg-black w-screen transition-[2s] top-0 left-0 h-screen fixed z-50 flex justify-center items-center content-center place-content-center">
-    <object type="image/svg+xml" className="w-6 h-6 lg:w-12 lg:h-12 " data="/images/Logo_Icon_Animation.svg">svg-animation</object>
+    <object type="image/svg+xml" className="w-6 h-6 lg:w-20 lg:h-20 " data="/images/Loading_State.svg">svg-animation</object>
     </div>
       <Component {...pageProps} />
     </>

@@ -230,10 +230,22 @@ body {
 .tagline h2 {
   font-feature-settings: "tnum" on, "lnum" on;
 }
-.project-image {
+.project-image:not(.coming-soon) {
   @apply rounded-lg;
   cursor: url(img.cur), auto;
   
+}
+.project{
+  @apply rounded-lg;
+}
+.project-image,
+.project-image:hover{
+  @apply rounded-lg;
+}
+.project-image,
+.project-image:hover {
+  transition: 0.5s;
+  @apply hover:scale-[1.1];
 }
 .project-meta {
   @apply my-[28px];
@@ -456,10 +468,10 @@ select.input-text:disabled:focus{
   @apply text-lg text-[#737380] lg:leading-[25px] ;
 }
 
-.project-cursor, object,  .client object, .client{
+.project-cursor, label, object,  .client object, .client{
   cursor: url(pointer.cur)!important;
 }
-a, .cursor-ss-hand, button, button span{
+a, .cursor-ss-hand, input, button, button span{
   cursor: url(hand.cur), auto;
 }
 
