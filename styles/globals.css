@@ -438,7 +438,7 @@ client. object:hover {
   @apply relative lg:px-2 lg:w-1/2;
 }
 .input-textholder {
-  @apply text-[#7C7C82] font-semibold top-5 left-6 text-[17px] cursor-text z-0;
+  @apply text-[#7C7C82] font-normal top-5 left-6 text-[17px] cursor-text z-0 bg-[#252529];
   transition: 0.3s;
 }
 select.input-text{
@@ -448,9 +448,19 @@ select.input-text:disabled:active,
 select.input-text:disabled:focus{
   @apply border-transparent;
 }
-.input-text 
+select option{
+  @apply text-[#7C7C82] font-normal py-5;
+}
+.reddd{
+  @apply text-red-300;
+}
+.input-text:not(.select)
 {
-  @apply bg-[#252529] form-input px-4 pb-3 pt-6 rounded-lg text-[17px] text-[#C2C2CC] font-bold w-full z-10  border-transparent;
+  @apply text-[#C2C2CC];
+}
+.input-text
+{
+  @apply bg-[#252529] text-[#7C7C82] form-input px-4 pb-3 pt-6 rounded-lg text-[17px]  font-normal w-full z-10  border-transparent;
   transition: background 0.2s;
 }
 
@@ -467,9 +477,13 @@ select.input-text:disabled:focus{
 .input-text:active ~ .input-textholder,
 .input-text:focus ~ .input-textholder,
 .input-text:not(:placeholder-shown).input-text:not(:focus) ~ .input-textholder {
-  @apply top-[10px] text-xs;
+  @apply top-[10px] text-xs pt-[2px] pr-10 bg-[#101012];
   transition: 0.2s;
 }
+.input-text:not(:placeholder-shown).input-text:not(:focus) ~ .input-textholder{
+  @apply bg-[#252529];
+}
+
 .contact-p-text{
   @apply text-lg text-[#737380] lg:leading-[25px] ;
 }
@@ -497,9 +511,31 @@ a, .cursor-ss-hand, input, button, button span{
   line-height: 20px;
   max-height: 267px;
   resize: none;
+  /* @apply pt-20 pb-20; */
 }
 
 .textarea[contenteditable]:empty::before {
   content: " ";
   color: gray;
+}
+
+.moving_card{
+  transform: translateY(0%);
+  animation: moveV 2s infinite;
+}
+.moving_card_once{
+  transform: translateY(0%);
+  animation: moveV 2s;
+}
+@keyframes moveV {
+  0%{
+  transform: translateY(0%);
+
+  }
+  50%{
+    transform: translateY(10%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
 }

@@ -16,7 +16,7 @@ export default function NavModal({ options }) {
 
     return (
         <div className='nav-modal-container backdrop-blur-[300px]' onClick={e=>closeByBody(e)}>
-            <div className='nav-modal' onClick={e=>StopCloseByBody(e)}>
+            <div className='nav-modal moving_card_once' onClick={e=>StopCloseByBody(e)}>
                 <div className="flex justify-between pt-6 pb-2 px-7 lg:py-12 lg:px-[60px] bg-[#101012] rounded-tl-xl
 
 rounded-tr-xl">
