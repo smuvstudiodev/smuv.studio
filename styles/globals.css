@@ -38,7 +38,7 @@ body {
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url(cursor.cur), auto;
+  /* cursor: url(cursor.cur), auto; */
 
 }
 ::selection{
@@ -60,12 +60,12 @@ body {
   @apply my-auto  w-7 h-7 ;
 }
 .nav-modal-container {
-  @apply absolute top-0 left-0 w-full h-full min-h-screen bg-[rgba(0,0,0,0.85)] backdrop-blur-sm flex justify-center items-center content-center;
+  @apply absolute top-0 left-0 w-full h-full min-h-screen bg-[rgba(0,0,0,0.90)] backdrop-blur-sm flex justify-center items-center content-center;
   
 }
 
 .nav-modal {
-  @apply text-2xl text-white bg-[#0A0A0D]  backdrop-blur-[20px] h-[333px] w-[358px] lg:h-[510px] lg:w-[520px] m-10 rounded-xl pt-6 pb-2 px-7 lg:py-12 lg:px-[71px];
+  @apply text-2xl text-white bg-[#0A0A0D]  backdrop-blur-[20px] h-[333px] w-[358px] lg:h-[510px] lg:w-[520px] m-10 rounded-xl;
 }
 
 .modal-links {
@@ -232,7 +232,7 @@ body {
 }
 .project-image {
   @apply rounded-lg;
-  cursor: url(cursor_alt.png), auto;
+  cursor: url(img.cur), auto;
   
 }
 .project-meta {
@@ -456,9 +456,17 @@ select.input-text:disabled:focus{
   @apply text-lg text-[#737380] lg:leading-[25px] ;
 }
 
-.project-cursor, a, object, svg, rect, .client object, .client{
-  cursor: url(cursor.cur)!important;
+.project-cursor, object,  .client object, .client{
+  cursor: url(pointer.cur)!important;
 }
+a, .cursor-ss-hand, button, button span{
+  cursor: url(hand.cur), auto;
+}
+
 .project-cursor_alt{
-  cursor: url(cursor_alt.cur), auto;
+  cursor: url(img.cur), auto;
+}
+.coming-soon{
+  cursor: url(coming_soon.cur), auto;
+
 }

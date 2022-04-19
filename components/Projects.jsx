@@ -57,9 +57,9 @@ document.body.addEventListener("mousemove", applyCursorPos)
     
                                             <Image className="project-image object-cover " src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
                                             </div>
-                                            <div className="project-meta">
+                                            <div className="project-meta coming-soon">
                                                 <h4 className="project-heading">{project.title.rendered}</h4>
-                                                <span className="text-xl bg-[#45454D] rounded-full max-w-[158px] text-[#0B0B0D] px-2 py-[2px]">Coming Soon</span>
+                                                <span className="text-xl bg-[#45454D] rounded-full max-w-[158px] text-[#0B0B0D] px-2 py-[2px] ">Coming Soon</span>
                                             </div>
                                         </div>
                                 </div>
