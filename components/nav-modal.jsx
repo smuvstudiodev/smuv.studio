@@ -37,9 +37,8 @@ rounded-tr-xl">
                     <Link href="/#works">
                         <a className="modal-links-item"  onClick={() => closeModal()}>Works</a>
                     </Link>
-                    <Link href="#blog">
-                        <a className="modal-links-item"  onClick={() => closeModal()}>Blog</a>
-                    </Link>
+                        <a href="https://medium.com/@smuvstudio" className="modal-links-item"  onClick={() => closeModal()}>Blog</a>
+                   
                 </div>
                 <div className=" border-t-2 border-dashed border-[#252529] pt-5  px-7 lg:px-[60px]">
                     <span className="text-xs text-[#45454D] lg:text-base">Want a smuv experience?</span>

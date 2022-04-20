@@ -15,13 +15,13 @@ const Footer = () => {
                 <object type="image/svg+xml"  width={48} height={48} data="/images/Logo_Icon_Animation.svg" alt="Smuv Logo" aria-label="Smuv Logo">Smuv Logo</object>
                 </div>
                 <div className="order-3 text-[#737380] flex gap-x-3">
-                <a href="https://twitter.com/smuvcreative" className="text-[16px] lg:text-[20px]"> 
+                <a href="https://twitter.com/smuvstudio" className="text-[16px] lg:text-[20px]"> 
                         Twitter
                     </a>
-                    <a href="https://instagram.com/smuvcreative" className="text-[16px] lg:text-[20px]"> 
+                    <a href="https://instagram.com/smuvstudio" className="text-[16px] lg:text-[20px]"> 
                         Instagram
                     </a>
-                    <a href="https://linkenin.com" className="text-[16px] lg:text-[20px]"> 
+                    <a href="https://linkedin.com/company/smuvstudio" className="text-[16px] lg:text-[20px]"> 
                         LinkedIn
                     </a>
                 </div> 
