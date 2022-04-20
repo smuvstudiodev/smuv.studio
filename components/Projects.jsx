@@ -43,8 +43,8 @@ document.body.addEventListener("mousemove", applyCursorPos)
 
             </div>
 
-            <div className="px-5 md:px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-y-[17px] lg:gap-y-10  gap-4 gap-x-4">
+            <div className="px-[16px] md:px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-y-[25px] lg:gap-y-10  gap-4 gap-x-4">
 
 
                     {
@@ -59,7 +59,7 @@ document.body.addEventListener("mousemove", applyCursorPos)
                                             {/* </div> */}
                                             <div className="project-meta ">
                                                 <h4 className="project-heading">{project.title.rendered}</h4>
-                                                <span className="text-xl bg-[#45454D] rounded-full max-w-[158px] text-[#0B0B0D] px-2 py-[2px] ">Coming Soon</span>
+                                                <span className="text-base lg:text-xl bg-[#45454D] rounded-full max-w-[158px] text-[#0B0B0D] px-2 py-[2px] ">Coming Soon</span>
                                             </div>
                                         </div>
                                 </div>
