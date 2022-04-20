@@ -486,7 +486,7 @@ select option{
 }
 
 .contact-p-text{
-  @apply text-lg text-[#737380] lg:leading-[25px] ;
+  @apply text-base lg:text-lg text-[#737380] lg:leading-[25px] ;
 }
 
 .project-cursor, label, object,  .client object, .client{

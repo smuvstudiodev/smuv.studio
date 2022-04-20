@@ -64,8 +64,8 @@ export default function Contact({ data }) {
     return (
         <Layout>
             <div className="relative mt-[60px] 2xl:mt-[100px] md:max-w-screen-lg xl:max-w-screen-2xl mx-auto ">
-                <div className="py-10 px-5  lg:p-10 ">
-                    <div className=" lg:py-10 flex flex-col place-content-start lg:flex-row justify-between w-full lg:gap-x-9">
+                <div className="py-10 px-3  lg:p-10 ">
+                    <div className="px-2 lg:py-10 flex flex-col place-content-start lg:flex-row justify-between w-full lg:gap-x-9">
                         <h1 className="no-case-study-heading text-2xl text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-bold self-center  lg:w-[60%]">
                             Get started with smuv today.
                         </h1>
@@ -74,13 +74,13 @@ export default function Contact({ data }) {
                         </p>
                     </div>
                     <div className="py-10 lg:px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-8 ">
-                        <div className="py-10 lg:px-14 px-5 rounded-xl bg-[#101012] lg:w-2/3">
+                        <div className="py-10 px-3 lg:px-5 rounded-xl bg-[#101012] lg:w-2/3">
                             <div className="lg:py-10">
                                 <h2 className="text-[24px] lg:text-[40px] font-bold text-[#C2C2CC]">Let{"’"}s collaborate</h2>
                             </div>
                             <div className="py-2">
                                 <form onSubmit={submitForm}>
-                                    <div className="flex flex-col lg:md:flex-row my-4 lg:mb-7 gap-y-2">
+                                    <div className="flex flex-col lg:md:flex-row my-1 lg:my-4 lg:mb-7 gap-y-2">
                                         <div className='form-group'>
                                             <input value={firstName} onChange={(e)=>setFirstName(e.target.value)} required id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' />
                                             <label htmlFor="first_name" className='absolute input-textholder'>First Name</label>
@@ -90,7 +90,7 @@ export default function Contact({ data }) {
                                             <label htmlFor="last_name" className='absolute input-textholder'>Last Name</label>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 lg:mb-7 gap-y-2">
+                                    <div className="flex flex-col lg:md:flex-row my-2 lg:my-4 lg:my-8 lg:mb-7 gap-y-2">
                                         <div className='form-group'>
                                             <input value={email}  onChange={(e)=>setEmail(e.target.value)} required id="email" placeholder=' ' className=" input-text " type="email" autoComplete='off' />
                                             <label htmlFor="email" className='absolute input-textholder'>Email Address</label>
@@ -100,7 +100,7 @@ export default function Contact({ data }) {
                                             <label htmlFor="company" className='absolute input-textholder'>Company Name</label>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col lg:md:flex-row my-4 lg:my-6 gap-y-2">
+                                    <div className="flex flex-col lg:md:flex-row my-2 lg:my-4 lg:my-6 gap-y-2">
                                         <div className='form-group'>
                                             {/* <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
                                             <select defaultValue={service} onChange={(e)=>{
@@ -144,7 +144,7 @@ export default function Contact({ data }) {
                                             </select>
                                         </div>
                                     </div>
-                                    <div className=" my-4 lg:my-8 lg:mb-12">
+                                    <div className=" my-2 lg:my-8 lg:mb-12">
                                         <div className='lg:px-2 relative'>
                                             {/* <input  placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
                                             <textarea value={message} onChange={(e)=>setMessage(e.target.value)}  placeholder=' ' required id="message" className="py-3 input-text h-20 max-h-100 scroll-none">
@@ -169,9 +169,9 @@ export default function Contact({ data }) {
                             </div>
 
                         </div>
-                        <div className="py-14 lg:px-14 px-5 rounded-xl bg-[#101012] lg:w-1/3 lg:max-h-[350px] moving_card">
-                            <h3 className="text-[20px] lg:text-[32px] font-bold what-next-heading">What{"'"}s next?</h3>
-                            <div className="lg:py-10">
+                        <div className="py-4 lg:py-8 md:px-9 xl:px-14 px-5 rounded-xl bg-[#101012] lg:w-1/3 lg:max-h-[350px] moving_card">
+                            <h3 className="text-[18px] md:px-[1px] lg:text-[32px] font-bold what-next-heading">What{"'"}s next?</h3>
+                            <div className="py-4 lg:py-10">
                                 <p className="contact-p-text">
                                     Kindly fill in the required fields below to progress to the next page.
                                 </p>
