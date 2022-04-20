@@ -47,7 +47,7 @@ const Clients = () => {
             </div>
             <div className="oneport-365 client">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-lable="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
             </div>
           </div>
         </div>

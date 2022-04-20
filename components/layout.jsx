@@ -60,7 +60,7 @@ export default function Layout({ children, title }) {
                             </div>
 
                             <span className="logo-text">A UX/UI Design Studio</span>
-                        </a>
+                        </a>    
                     </Link>
                     <div className="absolute opacity-0 w-[150px] py-5 px-3 bg-white h-5 project-cursor"  onClick={(e)=>goHome(e)}/>
                     <div className="client-cover cursor-ss-hand"  onClick={(e)=>goHome(e)}/>

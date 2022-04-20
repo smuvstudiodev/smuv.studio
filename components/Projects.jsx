@@ -53,11 +53,11 @@ document.body.addEventListener("mousemove", applyCursorPos)
                             return(
                                 <div className="project " key={project.id}>
                                    <div className="project overflow-hidden coming-soon ">
-                                            <div className="shade">
+                                            {/* <div className="shade"> */}
     
                                             <Image className="project-image object-cover  coming-soon" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
-                                            </div>
-                                            <div className="project-meta coming-soon">
+                                            {/* </div> */}
+                                            <div className="project-meta ">
                                                 <h4 className="project-heading">{project.title.rendered}</h4>
                                                 <span className="text-xl bg-[#45454D] rounded-full max-w-[158px] text-[#0B0B0D] px-2 py-[2px] ">Coming Soon</span>
                                             </div>
