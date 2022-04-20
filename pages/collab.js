@@ -7,6 +7,7 @@ export default function Contact({ data }) {
     const router = useRouter();
     const [price, setPrice] = useState(null);
     const [priceList, setPriceList] = useState([]);
+    const [priceSlug, setPriceSlug] = useState('');
 
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -17,11 +18,18 @@ export default function Contact({ data }) {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
+        // setPricing(priceSlug);
+       if(priceSlug !== ''){
+        var a = data.find((l)=>l.slug===priceSlug)
+        setPrice(a)
+        // console.log(a);
+       }
+
         return function cleanUp(){
-            setPriceList(data)
+            // setPriceList(data)
         }
-    }, [data])
-    console.log(data);
+    }, [priceSlug])
+    // console.log(data);
 
 
     const submitForm = async (e) => {
@@ -48,14 +56,11 @@ export default function Contact({ data }) {
 
         if(res.ok) router.push("https://bit.ly/3jQS9nW");
     }
-    const setPricing = (e) => {
-        // setPrice(data[id])
-        // const label = e.target.value;
-        // const newPriceList = priceList.find(l=> l==label )
-
-        // console.log(newPriceList);
-        // console.log(e);
-    }
+    // const setPricing = (value) => {
+    //      var a = data.find((l)=>l.slug===value)
+    //         setPrice(a)
+    //         console.log(a);
+    // }
 
     // const PriceSelect = () => {
     //     switch (key) {
@@ -110,9 +115,13 @@ export default function Contact({ data }) {
                                     <div className="flex flex-col lg:md:flex-row my-4 lg:my-6 gap-y-2">
                                         <div className='form-group'>
                                             {/* <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
-                                            <select value={service}  onChange={(e)=>setService(()=>{
-                                                var a = data.find((l)=>l.slug===e.target.value)
-                                                return a.title.rendered })} defaultValue="0" required className="input-text select" placeholder='Select a Service'>
+                                            <select value={service}  onChange={(e)=>{
+                                                // setPricing(e.target.value)
+                                                setPriceSlug(e.target.value)
+                                                setService(()=>{
+                                                    var a = data.find((l)=>l.slug===e.target.value)
+                                                    return a.title.rendered })
+                                            }} defaultValue="0" required className="input-text select" placeholder='Select a Service'>
                                                 {/* <option selected disabled>Select a serivce</option> */}
                                                 <option value="0" hidden disabled className="font-normal text-[#7C7C82] reddd">Select a serivce
                                                 </option>
@@ -127,13 +136,20 @@ export default function Contact({ data }) {
                                             {/* <label htmlFor="first_name" className='absolute input-textholder'>First Name</label> */}
                                         </div>
                                         <div className='form-group'>
-                                            <select value={budget} onChange={(e)=>setBudget(e.target.value)} defaultValue="0" className="input-text select"  >
-                                                <option value={'0'}>Select a Budget</option>
+                                            <select disabled={price==null?true:false} value={budget} onChange={(e)=>setBudget(e.target.value)} defaultValue="0" className="input-text select"  >
+                                                <option hidden disabled value={'0'}>Select a Budget</option>
+                                               {
+                                                   price !== null &&  <>
+                                                   <option value={price.price_range_1}>{price.price_range_1}</option>
+                                                    <option value={price.price_range_2}>{price.price_range_2}</option>
+                                                    <option value={price.price_range_3}>{price.price_range_3}</option>
+                                                    <option value={price.price_range_4}>{price.price_range_4}</option>
+                                                   
+                                                   </> 
+                                               }
                                                
-                                                <option value={data[0].price_range_1}>{data[0].price_range_1}</option>
-                                                <option value={data[0].price_range_2}>{data[0].price_range_2}</option>
-                                                <option value={data[0].price_range_3}>{data[0].price_range_3}</option>
-                                                <option value={data[0].price_range_4}>{data[0].price_range_4}</option>
+                                               
+                                                
                                             </select>
                                         </div>
                                     </div>

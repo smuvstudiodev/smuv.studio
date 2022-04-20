@@ -57,7 +57,7 @@ const Hero = () => {
                     </div>
                 </h1>
                 <div className='hero-btn-group lg:my-2 mt-4 lg:mt-5 flex flex-col lg:flex-row justify-between mx-auto gap-y-4 lg:gap-x-5 max-w-sm content-center'>
-                    <Link href="/contact">
+                    <Link href="/collab">
                         <a className='hero-btn group'>
                             <span>Let{"'"}s Collab</span>
                             <svg width="19" height="16" className='hero-btn-arrow-icon group-hover:fill-[#0A0A0D] lg:fill-[#737380] fill-[#0A0A0D] w-[12.31px]  h-[10.37px] lg:w-[19px] lg:h-4 ' viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
