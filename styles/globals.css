@@ -251,10 +251,10 @@ body {
   @apply my-[20px];
 }
 .project-heading {
-  @apply text-2xl text-[#C2C2CC] font-medium mb-2 lg:mb-2;
+  @apply text-[22px] text-[#C2C2CC] font-medium mb-2 lg:mb-2;
 }
 .project-meta p {
-  @apply text-[#737380] text-xl;
+  @apply text-[#737380] text-lg;
 }
 .scroller {
   /* max-height: 70px; */
