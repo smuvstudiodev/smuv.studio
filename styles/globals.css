@@ -391,7 +391,7 @@ body {
 }
 
 .client {
-  @apply px-4 w-[148.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px] bg-transparent flex justify-center items-center content-center hover:bg-[#101012] rounded-[14px] m-3 hover:opacity-100 opacity-50;
+  @apply px-4 w-[148.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px] bg-transparent flex justify-center items-center content-center lg:hover:bg-[#101012] rounded-[14px] m-3 lg:hover:opacity-100 lg:opacity-50;
 }
 .client-cover{
   @apply opacity-0 absolute z-20 w-[148.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px];
@@ -401,7 +401,7 @@ body {
   transition: 0.3s;
 }
 .client:hover > object {
-  @apply scale-[1] transition-all hover:transition-all;
+  @apply lg:scale-[1] transition-all hover:transition-all;
   transition: 0.3s;
 }
 

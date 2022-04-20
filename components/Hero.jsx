@@ -35,7 +35,7 @@ const Hero = () => {
     }, [])
 
     return (
-        <div className="relative mt-[100px] lg:mt-[250px] xl:mt-100   flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
+        <div className="relative mt-[45px] lg:mt-[250px] xl:mt-100   flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
             <object className='project-cursor hidden top-[-10%] md:top-[-15%] z-10 xl:top-[-15%] 2xl:top-[-9%] md:block absolute  left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg" alt="Hero Animation">Hero Animation</object>
             <div className="opacity-0 top-[10%] md:top-[15%] z-20 lg:h-[900px] py-100 xl:top-[-15%] 2xl:top-[-9%] md:block absolute  left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%] h-full "/>
             <div className='relative mt-[82px] md:mt-[130px] lg:mt-40 z-30 xl:mt-36 2xl:mt-44  flex flex-col content-center justify-center'>
