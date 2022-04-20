@@ -69,7 +69,7 @@ body {
 }
 
 .modal-links {
-  @apply flex flex-col gap-y-2 lg:gap-y-10 lg:gap-x-4 my-4 lg:my-6;
+  @apply flex flex-col gap-y-2 lg:gap-y-12 lg:gap-x-4 my-6 lg:my-8;
 }
 .modal-links-item {
   @apply text-xl lg:text-4xl leading-10 font-bold text-[#919199];
