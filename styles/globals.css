@@ -256,6 +256,7 @@ body {
 .project-meta p {
   @apply text-[#737380] text-lg;
 }
+
 .scroller {
   /* max-height: 70px; */
   overflow: hidden;

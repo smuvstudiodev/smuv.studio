@@ -23,14 +23,14 @@ export default function Layout({ children, title }) {
             }
         })
     }, [])
-    useEffect(()=>{  
-        window.addEventListener("load", function(){
-            
+    useEffect(() => {
+        window.addEventListener("load", function () {
+
         });
-        },[])
+    }, [])
     const router = useRouter();
 
-    const goHome = (e)=>{
+    const goHome = (e) => {
         // e.preventDefault();
         router.push("/");
         console.log(e)
@@ -38,7 +38,7 @@ export default function Layout({ children, title }) {
 
     return (
         <div className='relative'>
-            
+
             <Head>
                 <title>Smuv Studio {title && `- ${title}`}</title>
                 <meta name="description" content="Smuv, A UX/UI Design Studio" />
@@ -53,17 +53,20 @@ export default function Layout({ children, title }) {
                     <Link href={"/"}>
                         <a className="logo-container project-cursor">
 
-                            <div className="logo project-cursor" onClick={(e)=>goHome(e)}>
-                                
-                                <object onClick={(e)=>goHome(e)} type="image/svg+xml" className="lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg" alt="Smuv Love Animation Logo" aria-label="Smuv Love Animation Logo">Smuv Love Animation Logo</object>
+                            <div className="logo project-cursor" onClick={(e) => goHome(e)}>
+                                {/* <svg width="96" height="96">
+                                    <image xlinkHref="/images/Logo_Icon_Animation.svg" src="/images/logo-icon.png" width="96" height="96" />
+                                </svg> */}
+                                <object onClick={(e) => goHome(e)} type="image/svg+xml" className="h-[13px] w-[80px] lg:w-[150px] lg:h-[70px]" data="/images/Smuv_Love_animation.svg" alt="Smuv Love Animation Logo" aria-label="Smuv Love Animation Logo">Smuv Love Animation Logo</object>
                                 {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
                             </div>
 
+
                             <span className="logo-text">A UX/UI Design Studio</span>
-                        </a>    
+                        </a>
                     </Link>
-                    <div className="absolute opacity-0 w-[150px] py-5 px-3 bg-white h-5 project-cursor"  onClick={(e)=>goHome(e)}/>
-                    <div className="client-cover cursor-ss-hand"  onClick={(e)=>goHome(e)}/>
+                    <div className="absolute opacity-0 w-[150px] py-5 px-3 bg-white h-5 project-cursor" onClick={(e) => goHome(e)} />
+                    <div className="client-cover cursor-ss-hand" onClick={(e) => goHome(e)} />
                     <div className='hambugger ' >
                         <button onClick={() => setIsOpen(!isOpen)} aria-label="Hambugger">
                             {/* <object  onClick={() => setIsOpen(!isOpen)} type="image/svg+xml" className="grayscale hover:grayscale-0 transition-all project-cursor" data="/images/hambugger.svg" alt="Hambugger Icon">Hambugger Icon</object> */}

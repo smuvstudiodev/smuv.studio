@@ -63,7 +63,7 @@ export default function Contact({ data }) {
 
     return (
         <Layout>
-            <div className="relative 2xl:mt-[100px] md:max-w-screen-lg xl:max-w-screen-2xl mx-auto ">
+            <div className="relative mt-[60px] 2xl:mt-[100px] md:max-w-screen-lg xl:max-w-screen-2xl mx-auto ">
                 <div className="py-10 px-5  lg:p-10 ">
                     <div className=" lg:py-10 flex flex-col place-content-start lg:flex-row justify-between w-full lg:gap-x-9">
                         <h1 className="no-case-study-heading text-2xl text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-bold self-center  lg:w-[60%]">
@@ -82,7 +82,7 @@ export default function Contact({ data }) {
                                 <form onSubmit={submitForm}>
                                     <div className="flex flex-col lg:md:flex-row my-4 lg:mb-7 gap-y-2">
                                         <div className='form-group'>
-                                            <input value={firstName}onChange={(e)=>setFirstName(e.target.value)} required id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' />
+                                            <input value={firstName} onChange={(e)=>setFirstName(e.target.value)} required id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' />
                                             <label htmlFor="first_name" className='absolute input-textholder'>First Name</label>
                                         </div>
                                         <div className='form-group'>
@@ -92,7 +92,7 @@ export default function Contact({ data }) {
                                     </div>
                                     <div className="flex flex-col lg:md:flex-row my-4 lg:my-8 lg:mb-7 gap-y-2">
                                         <div className='form-group'>
-                                            <input value={email} onChange={(e)=>setEmail(e.target.value)} required id="email" placeholder=' ' className=" input-text " type="email" autoComplete='off' />
+                                            <input value={email}  onChange={(e)=>setEmail(e.target.value)} required id="email" placeholder=' ' className=" input-text " type="email" autoComplete='off' />
                                             <label htmlFor="email" className='absolute input-textholder'>Email Address</label>
                                         </div>
                                         <div className='form-group'>
@@ -103,13 +103,13 @@ export default function Contact({ data }) {
                                     <div className="flex flex-col lg:md:flex-row my-4 lg:my-6 gap-y-2">
                                         <div className='form-group'>
                                             {/* <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
-                                            <select defaultValue={service}  onChange={(e)=>{
+                                            <select defaultValue={service} onChange={(e)=>{
                                                 setPricing(e.target.value)
                                                 // setPriceSlug(e.target.value)
                                                 setService(()=>{
                                                     var a = data.find((l)=>l.slug===e.target.value)
                                                     return a.title.rendered })
-                                            }}  required className="input-text select" placeholder='Select a Service'>
+                                            }} required className="input-text select" placeholder='Select a Service'>
                                                 {/* <option selected disabled>Select a serivce</option> */}
                                                 <option value="0" hidden disabled className="font-normal text-[#7C7C82] reddd">Select a serivce
                                                 </option>
