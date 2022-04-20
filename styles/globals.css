@@ -231,24 +231,24 @@ body {
   font-feature-settings: "tnum" on, "lnum" on;
 }
 .project-image:not(.coming-soon) {
-  @apply rounded-lg;
+
   cursor: url(img.cur), auto;
   
 }
-.project{
+/* .project{
   @apply rounded-lg;
-}
-.project-image,
+} */
+/* .project-image,
 .project-image:hover{
   @apply rounded-lg;
-}
+} */
 .project-image,
 .project-image:hover {
   transition: 0.5s;
   @apply hover:scale-[1.1];
 }
 .project-meta {
-  @apply my-[28px];
+  @apply my-[20px];
 }
 .project-heading {
   @apply text-2xl text-[#C2C2CC] font-bold mb-2 lg:mb-2;
