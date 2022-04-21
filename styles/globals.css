@@ -278,7 +278,7 @@ body{
   box-sizing: border-box;
 }
 .animate-text span {
-  @apply text-[52px] hidden px-1 md:text-4xl lg:text-5xl xl:text-[92px] font-bold md:text-center md:self-center leading-[50px] lg:leading-[90px];
+  @apply text-[48px] hidden px-1 md:text-4xl lg:text-5xl xl:text-[92px] font-bold md:text-center md:self-center leading-[50px] lg:leading-[90px];
 }
 
 .animate-text span.text-in {
