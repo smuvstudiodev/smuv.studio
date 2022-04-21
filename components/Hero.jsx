@@ -35,11 +35,11 @@ const Hero = () => {
     }, [])
 
     return (
-        <div className="relative mt-[45px] md:mt-[100px] lg:mt-[250px] xl:mt-100   flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
-            <object className='project-cursor hidden top-[-10%] md:top-[0%]  lg:top-[-10%] z-10 xl:top-[-15%] 2xl:top-[-9%] md:block absolute  left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg" alt="Hero Animation">Hero Animation</object>
+        <div className="relative mt-[45px] md:mt-[20px] lg:mt-[50px] xl:mt-100   flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
+            <object className='project-cursor hidden top-[-10%] md:top-[-5%]  lg:top-[-2%] z-10 xl:top-[-15%] 2xl:top-[-9%] lg:block absolute  left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg" alt="Hero Animation">Hero Animation</object>
             <div className="opacity-0 top-[10%] md:top-[15%] z-20 lg:h-[900px] py-100 xl:top-[-15%] 2xl:top-[-9%] md:block absolute  left-[12%] xl:left-[15%] right-100 md:item-center md:self-center md:w-[75%] xl:w-[70%] h-full "/>
             <div className='relative mt-[82px] md:mt-[130px] lg:mt-40 z-30 xl:mt-36 2xl:mt-44  flex flex-col content-center justify-center'>
-                <h1 className='heading-text text-[48px] leading-[56px] text-primary px-4  md:text-5xl lg:text-6xl xl:text-[88px] 2xl:text-[92px]  font-bold text-left md:text-center self-start lg:self-center lg:leading-[44px] 2xl:leading-[96px]'>
+                <h1 className='heading-text text-[48px] leading-[56px] text-primary px-4  md:text-5xl lg:text-6xl xl:text-[88px] 2xl:text-[92px]  font-bold text-left md:text-center self-start lg:self-center lg:leading-[64px]  xl:leading-[96px]'>
                     A word-class UX-UI <br className="hidden md:block" /> studio <br className="md:hidden block" /> that loves to create
 
                     <div className="scroller">
