@@ -253,7 +253,7 @@ body{
   @apply my-[10px] lg:my-[20px];
 }
 .project-heading {
-  @apply text-[18px] lg:text-[22px] text-[#C2C2CC] font-medium mb-2 lg:mb-2;
+  @apply text-[18px] lg:text-[22px] text-[#C2C2CC] font-medium ;
 }
 .project-meta p {
   @apply text-[#737380] text-lg;
@@ -540,15 +540,15 @@ a, .cursor-ss-hand, input, button, button span{
 }
 .moving_card_once{
   transform: translateY(0%);
-  animation: moveVx 0.8s;
+  animation: moveVx 0.9s;
 }
 @keyframes moveVx {
   0%{
-  transform: translateY(-50%);
+  transform: translateY(-100%);
 
   }
   25%{
-    transform: translateY(-30%);
+    transform: translateY(-50%);
 
   }
   50%{

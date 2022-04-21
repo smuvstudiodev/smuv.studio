@@ -55,11 +55,11 @@ document.body.addEventListener("mousemove", applyCursorPos)
                                    <div className="project overflow-hidden coming-soon ">
                                             {/* <div className="shade"> */}
     
-                                            <Image className="project-image object-cover  coming-soon" src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
+                                            <Image className="project-image object-cover    " src={project.featured_image.guid} priority  width={689} height={521} alt="Blog post" />
                                             {/* </div> */}
                                             <div className="project-meta ">
                                                 <h4 className="project-heading">{project.title.rendered}</h4>
-                                                <span className="text-base lg:text-xl bg-[#45454D] rounded-full max-w-[158px] text-[#0B0B0D] px-2 py-[2px] ">Coming Soon</span>
+                                                <span className="text-base lg:text-xl text-[#45454D] rounded-full max-w-[158px] ">Coming Soon</span>
                                             </div>
                                         </div>
                                 </div>
@@ -74,7 +74,7 @@ document.body.addEventListener("mousemove", applyCursorPos)
                                             </div>
                                             <div className="project-meta">
                                                 <h4 className="project-heading">{project.title.rendered}</h4>
-                                                <p className="text-[18px]">{project.tags}</p>
+                                                <p className="text-[16px]">{project.tags}</p>
                                             </div>
                                         </a>
                                 </div>
