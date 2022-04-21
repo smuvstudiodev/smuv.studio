@@ -9,66 +9,66 @@ const Clients = () => {
         {/* MObile */}
         <div className="lg:hidden  max-w-screen-lg md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto md:mt-100 lg:my-3 ">
           <div className="clients clients-slider  max-w-screen-sm ov">
-            <div className="prosperis client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
-            <div className="tingtel client border-[0.25px]  border-[#212125]  w-[160px] px-5 ">
+            <div className="tingtel client border-[0.25px]  border-[#212125]  w-[170px] px-7 ">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
             </div>
-            <div className="prosperis client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
-            <div className="tingtel client border-[0.25px]  border-[#212125]  w-[160px] px-5 ">
+            <div className="tingtel client border-[0.25px]  border-[#212125]  w-[170px] px-7 ">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
             </div>
-            <div className="prosperis client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
-            <div className="tingtel client border-[0.25px]  border-[#212125]  w-[160px] px-5 ">
+            <div className="tingtel client border-[0.25px]  border-[#212125]  w-[170px] px-7 ">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
-            </div> <div className="prosperis client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            </div> <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
-            <div className="tingtel client border-[0.25px]  border-[#212125]  w-[160px] px-5 ">
+            <div className="tingtel client border-[0.25px]  border-[#212125]  w-[170px] px-7 ">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[160px] px-5">
+            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
             </div>

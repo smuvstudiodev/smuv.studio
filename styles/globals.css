@@ -394,13 +394,13 @@ body{
 }
 
 .client {
-  @apply px-4 w-[160.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px] bg-transparent flex justify-center items-center content-center lg:hover:bg-[#101012] rounded-[4px] m-4 lg:hover:opacity-100 lg:opacity-50;
+  @apply px-10 w-[170.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px] bg-transparent flex justify-center items-center content-center lg:hover:bg-[#101012] rounded-[8px] m-3 lg:hover:opacity-100 lg:opacity-50;
 }
 .client-cover{
-  @apply opacity-0 absolute z-20 w-[160.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px];
+  @apply opacity-0 absolute z-20 w-[168.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px];
 }
 .client object {
-  @apply px-3 lg:px-0 scale-50 lg:scale-[0.86];
+  @apply mx-6 lg:mx-0 scale-50 lg:scale-[0.86];
   transition: 0.3s;
 }
 .client:hover > object {
@@ -574,13 +574,13 @@ body{
 }
 
 .clients-slider {
-  width: 100vw;
+  width: 150vw;
   /* margin: auto; */
   overflow: hidden;
 }
 .clients-slider .client {
   display: flex;
-  /* padding: 0; */
+  padding: 20px;
   animation: cambio 30s infinite linear;
 }
 
