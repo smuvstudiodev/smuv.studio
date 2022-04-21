@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
                 <div className="order-1 lg:order-2 lg:translate-x-[2.0rem] relative">
                 <div className="client-cover"/>
-                <object type="image/svg+xml"  width={48} height={48} data="/images/Logo_Icon_Animation.svg" alt="Smuv Logo" aria-label="Smuv Logo">Smuv Logo</object>
+                <object type="image/svg+xml" className="h-8 w-8 lg:w-12 lg:h-12" data="/images/Logo_Icon_Animation.svg" alt="Smuv Logo" aria-label="Smuv Logo">Smuv Logo</object>
                 </div>
                 <div className="md:hidden border-t-[0.25px] border-[#212125] w-full order-3"/>
                 <div className="order-4 text-[#737380] flex gap-x-2 ">

@@ -23,7 +23,7 @@ export default function NavModal({ options }) {
                         <button onClick={() => closeModal()}>
                       
                         {/* <Image src="/images/cancle-icon.png" width={32} height={32} alt="close btn" priority /> */}
-                        <img src="/images/close.svg" className="w-[20px] -mt-5 mr-1 lg:w-[45px] h-[20px] lg:h-[45px]" alt="close btn"  />
+                        <img src="/images/close.svg" className="w-[27px] -mt-5 mr-1 lg:w-[45px] h-[27px] lg:h-[45px]" alt="close btn"  />
                         </button>
                     </div>
                 
