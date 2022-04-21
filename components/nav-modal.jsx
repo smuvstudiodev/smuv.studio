@@ -17,13 +17,13 @@ export default function NavModal({ options }) {
     return (
         <div className='nav-modal-container backdrop-blur-[300px]' onClick={e=>closeByBody(e)}>
             <div className='nav-modal moving_card_once' onClick={e=>StopCloseByBody(e)}>
-                <div className="flex justify-between py-3 content-center items-center pl-7 md:pt-6  md:pb-2  md:pl-7 lg:py-5 lg:px-[40px] bg-[#101012] rounded-tl-xl rounded-tr-xl">
+                <div className="flex justify-between py-3 content-center items-center pl-7 md:pt-6  md:pb-2  md:pl-7 lg:py-5 lg:pl-[40px] bg-[#101012] rounded-tl-xl rounded-tr-xl">
                     <object type="image/svg+xml" className="w-6 h-6 lg:w-12 lg:h-12 " data="/images/Logo_Icon_Animation.svg">svg-animation</object>
                     <div className="flex items-center">
                         <button onClick={() => closeModal()}>
                       
                         {/* <Image src="/images/cancle-icon.png" width={32} height={32} alt="close btn" priority /> */}
-                        <img src="/images/close.svg" className="w-[27px] -mt-5 mr-1 lg:w-[45px] h-[27px] lg:h-[45px]" alt="close btn"  />
+                        <img src="/images/close.svg" className="w-[27px] -mt-5 lg:-mt-10  mr-1 lg:w-[45px] h-[27px] lg:h-[45px]" alt="close btn"  />
                         </button>
                     </div>
                 

@@ -17,22 +17,7 @@ export default function Contact({ data }) {
     const [budget, setBudget] = useState('0');
     const [message, setMessage] = useState('');
 
-   /*  useEffect(() => {
-        // setPricing(priceSlug);
-       if(priceSlug !== ''){
-        var a = data.find((l)=>l.slug===priceSlug)
-        setPrice(a)
-        console.log(priceSlug);
-        console.log(service);
-       }
-
-        return function cleanUp(){
-            // setPriceList(data)
-        }
-    }, [priceSlug,data,service]) */
-    // console.log(data);
-
-
+  
     const submitForm = async (e) => {
         e.preventDefault();
         
@@ -73,9 +58,9 @@ export default function Contact({ data }) {
                             Our goal is clear: work with a vision, make ambitious designs, build the future you dream of.
                         </p>
                     </div>
-                    <div className="py-10 lg:px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-8 ">
+                    <div className="py-3 lg:px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-8 ">
                         <div className="py-10 px-3 lg:px-5 rounded-xl bg-[#101012] lg:w-2/3">
-                            <div className="lg:py-10">
+                            <div className="lg:py-4">
                                 <h2 className="text-[24px] lg:text-[40px] font-bold text-[#C2C2CC]">Let{"’"}s collaborate</h2>
                             </div>
                             <div className="py-2">
@@ -157,7 +142,7 @@ export default function Contact({ data }) {
                                         </div>
                                     </div>
 
-                                    <div className='h-auto lg:translate-y-3 flex w-full justify-end'>
+                                    <div className='h-auto lg:translate-y-2 flex w-full justify-end'>
                                         {/* <Link href="/"> */}
 
                                         <button type="submit" className='bg-[#EBEBF7] lg:bg-transparent text-[16px] place-self-end lg:text-[18px] py-3 px-6 leading-5 lg:py-4 lg:px-10 lg:text-[#010103] border lg:border-[#737380] rounded-lg lg:bg-[#C2C2CC] hover:text-[#0A0A0D] transition-all hover:transition-all btn-transition font-semibold' target="_blank" rel="noreferrer" >
