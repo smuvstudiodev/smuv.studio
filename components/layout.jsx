@@ -6,7 +6,7 @@ import Footer from './footer';
 import NavModal from './nav-modal';
 import { useRouter } from 'next/router';
 
-export default function Layout({ children, title }) {
+export default function Layout({ children}) {
     const [isOpen, setIsOpen] = useState(false);
     useEffect(() => {
         const navbar = document.querySelector('#navbar');
@@ -47,7 +47,7 @@ export default function Layout({ children, title }) {
         <div className='relative'>
 
             <Head>
-                <title>Smuv Studio {title && `- ${title}`}</title>
+                <title>Smuv Studio UI/UX and Frontend company.</title>
                 <meta name="description" content="Smuv, A UX/UI Design Studio" />
                 <meta name="theme-color" content="#0B0B0D" />
 

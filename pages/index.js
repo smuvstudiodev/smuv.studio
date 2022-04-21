@@ -10,7 +10,7 @@ import Projects from '../components/Projects';
 export default function Home({ projects }) {
 
   return (
-    <Layout title={"UI/UX and Frontend company."}>
+    <Layout>
     <div className="paralax-wrapper">
    <div>
    <Hero />
