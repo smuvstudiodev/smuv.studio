@@ -45,9 +45,13 @@ function MyApp({ Component, pageProps }) {
     // loaderCon.style.display = "none"
   }
   const closeLoaderContainer = () => {
+    const body = document.querySelector('body');
     const loaderCon = document.querySelector("#loader");
     // loaderCon.style.opacity = 0
     loaderCon.style.display = "none"
+    body.classList.remove("scroll-none");
+    body.classList.remove("h-screen")
+    body.classList.remove("overflow-hidden")
   }
   return (
     <>
