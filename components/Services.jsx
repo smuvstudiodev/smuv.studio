@@ -8,8 +8,8 @@ const Services = () => {
 
             <div className=' md:hidden tagline flex md:flex-col text-center w-screen md:w-full px-4 gap-x-4 md:gap-x-[0px] lg:w-[705px] mx-auto justify-center content-center items-center my-9 lg:mb-20 lg:mt-10'>
                 <span className="text-[#737380] max-w-[167px] md:w-full text-right md:text-center text-sm lg:text-xl w-1/2 md:w-full">Your enterprise wants a smarter product that converts?</span>
-                <div className="md:hidden w-[1px] h-[43px]">
-                    <img src="/images/stroke.svg" alt="Line Stroke"/>
+                <div className="lg:hidden h-[43px]">
+                    <img className="w-[3px] h-[43px]" src="/images/stroke.svg" alt="Line Stroke"/>
                 </div>
                 
                 <h2 className="font-bold text-[26px] text-left md:text-center leading-[27px] lg:text-[92px] lg:leading-[119px] text-[#C2C2CC] w-[45%] md:w-full">smuv <br className="md:hidden"/> can help.</h2>
