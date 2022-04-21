@@ -581,7 +581,7 @@ body{
 .clients-slider .client {
   display: flex;
   /* padding: 0; */
-  animation: cambio 10s infinite linear;
+  animation: cambio 30s infinite linear;
 }
 
 
