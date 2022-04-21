@@ -52,7 +52,7 @@ const Hero = () => {
                             </span>
                             <span>
                                 design that converts.
-                            </span>
+                            </span> 
                         </p>
                     </div>
                 </h1>
