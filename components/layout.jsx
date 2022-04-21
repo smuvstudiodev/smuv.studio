@@ -24,10 +24,17 @@ export default function Layout({ children, title }) {
         })
     }, [])
     useEffect(() => {
-        window.addEventListener("load", function () {
-
-        });
-    }, [])
+        const body = document.querySelector('body');
+        if(isOpen){
+            body.classList.add("scroll-none");
+            body.classList.add("h-screen")
+            body.classList.add("overflow-hidden")
+        }else{
+            body.classList.remove("scroll-none");
+            body.classList.remove("h-screen")
+            body.classList.remove("overflow-hidden")
+        }
+    }, [isOpen])
     const router = useRouter();
 
     const goHome = (e) => {
@@ -46,9 +53,9 @@ export default function Layout({ children, title }) {
 
                 <link rel="icon" href="/Logo_Icon_Animation.svg" />
             </Head>
-
+            {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
             <nav id='navbar' className='w-full z-40 lg:py-2 fixed top-0 left-0  '>
-                {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
+                
                 <div className='flex justify-between align-center items-center content-center mx-4 lg:mx-100 relative'>
                     <Link href={"/"}>
                         <a className="logo-container project-cursor">
