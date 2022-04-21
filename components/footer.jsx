@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-10'>
-            <div className="bg-[#101012] py-7 px-6 lg:py-20  lg:px-16 rounded-md flex flex-col lg:flex-row lg:justify-between gap-y-5 lg:content-center lg:items-center  w-full">
+            <div className="bg-[#101012] py-7 lg:py-20  lg:px-16 rounded-xl lg:rounded-md flex flex-col lg:flex-row justify-between gap-y-5 content-center items-center  w-full">
                 <div className="order-2 lg:order-1 text-[#737380] flex flex-col gap-y-2 ">
                     <a href="mailto:hi@smuv.studio" className="text-[16px] lg:text-[20px]">
                         start@smuv.studio 
@@ -14,14 +14,15 @@ const Footer = () => {
                 <div className="client-cover"/>
                 <object type="image/svg+xml"  width={48} height={48} data="/images/Logo_Icon_Animation.svg" alt="Smuv Logo" aria-label="Smuv Logo">Smuv Logo</object>
                 </div>
-                <div className="order-3 text-[#737380] flex gap-x-3">
-                <a href="https://twitter.com/smuvstudio" className="text-[16px] lg:text-[20px]"> 
+                <div className="md:hidden border-t-[0.25px] border-[#212125] w-full order-3"/>
+                <div className="order-4 text-[#737380] flex gap-x-2 ">
+                <a href="https://twitter.com/smuvstudio" className="text-[14px] lg:text-[20px]"> 
                         Twitter
                     </a>
-                    <a href="https://instagram.com/smuvstudio" className="text-[16px] lg:text-[20px]"> 
+                    <a href="https://instagram.com/smuvstudio" className="text-[14px] lg:text-[20px]"> 
                         Instagram
                     </a>
-                    <a href="https://linkedin.com/company/smuvstudio" className="text-[16px] lg:text-[20px]"> 
+                    <a href="https://linkedin.com/company/smuvstudio" className="text-[14px] lg:text-[20px]"> 
                         LinkedIn
                     </a>
                 </div> 

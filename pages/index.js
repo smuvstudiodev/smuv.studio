@@ -21,7 +21,7 @@ export default function Home({ projects }) {
 
       <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto mt-10 lg:my-20 my-10 lg:mt-20'>
 
-        <div className="flex flex-col lg:flex-row justify-center lg:text-left text-center gap-y-4 lg:justify-between items-center">
+        <div className="flex flex-col lg:flex-row justify-center lg:text-left text-center gap-y-8 lg:gap-y-4 lg:justify-between items-center">
           <div>
             <span className="text-[#737380] text-[16px] lg:text-xl">That{"’"}s not all we have</span>
             <a className='flex' target="_blank" rel="noreferrer" href="https://medium.com/@smuvstudio">
