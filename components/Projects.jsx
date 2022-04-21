@@ -9,9 +9,9 @@ let parser = new Parser();
 
 const Projects = ({ projects }) => {
     const [stories, setStories] = useState([]);
-    console.log(projects);
+    // console.log(projects);
   
-    console.log(stories);
+    // console.log(stories);
     useEffect(()=>{
         const root = document.querySelector(':root')
 

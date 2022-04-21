@@ -266,7 +266,7 @@ body{
 }
 .animate-text {
   /* height: 85px; */
-  @apply h-[150px] md:h-[110px] xl:h-[110px];
+  @apply h-[150px] md:h-[80px] lg:h-[110px] xl:h-[110px];
   overflow: hidden;
   @apply md:py-5 lg:my-1 max-h-[150px] lg:max-h-[115px] lg:h-[115px];
 }
@@ -278,7 +278,7 @@ body{
   box-sizing: border-box;
 }
 .animate-text span {
-  @apply text-[48px] hidden px-1 md:text-4xl lg:text-5xl xl:text-[92px] font-bold md:text-center md:self-center leading-[50px] lg:leading-[90px];
+  @apply text-[48px] hidden px-1 md:text-5xl lg:text-6xl xl:text-[92px] font-bold md:text-center md:self-center leading-[50px] lg:leading-[90px];
 }
 
 .animate-text span.text-in {
@@ -390,7 +390,7 @@ body{
 }
 
 .clients {
-  @apply flex relative;
+  @apply flex justify-center mx-auto relative;
 }
 
 .client {
@@ -408,7 +408,7 @@ body{
   transition: 0.3s;
 }
 
-client. object:hover {
+.client object:hover {
   transition: 0.3s;
 }
 .animate-arrow {
