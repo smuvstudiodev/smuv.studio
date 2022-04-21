@@ -31,21 +31,21 @@ const Clients = () => {
           </div>
         </div> */}
         {/* MObile */}
-        <div className="lg:hidden px-12 xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto md:mt-100 lg:my-3 ">
-          <div className="clients max-w-screen-sm ov">
-            <div className="prosperis client ">
+        <div className="lg:hidden  max-w-screen-lg md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto md:mt-100 lg:my-3 ">
+          <div className="clients clients-slider  max-w-screen-sm ov">
+            <div className="prosperis client border">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client">
+            <div className="oneport-365 client border">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
-            <div className="tingtel client">
+            <div className="tingtel client border ">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client">
+            <div className="oneport-365 client border">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
             </div>

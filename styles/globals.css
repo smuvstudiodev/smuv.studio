@@ -572,3 +572,20 @@ body{
 .paralax-wrapper{
   
 }
+
+.clients-slider {
+  width: 100vw;
+  /* margin: auto; */
+  overflow: hidden;
+}
+.clients-slider .client {
+  display: flex;
+  /* padding: 0; */
+  animation: cambio 10s infinite linear;
+}
+
+
+@keyframes cambio {
+  from {transform:translateX(200%)}
+  to {transform:translateX(-250%)}
+}
