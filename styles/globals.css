@@ -538,7 +538,7 @@ a, .cursor-ss-hand, input, button, button span{
     transform: translateY(0%);
   }
 }
-.moving_card_once{
+.moving_card_oncde{
   transform: translateY(0%);
   animation: moveVx 0.9s;
 }
