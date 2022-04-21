@@ -56,7 +56,7 @@ const Hero = () => {
                         </p>
                     </div>
                 </h1>
-                <div className='hero-btn-group lg:my-2 my-8 md:mt-4 lg:mt-5 flex md:justify-between mx-4 md:mx-auto gap-x-4 md:gap-y-4 lg:gap-x-5 max-w-sm md:content-center'>
+                <div className='hero-btn-group lg:my-2 my-4 md:mt-4 lg:mt-5 flex md:justify-between mx-4 md:mx-auto gap-x-4 md:gap-y-4 lg:gap-x-5 max-w-sm md:content-center'>
                     <Link href="/collab">
                         <a className='hero-btn group'>
                             <span>Let{"'"}s Collab</span>
