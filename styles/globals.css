@@ -264,9 +264,9 @@ body {
 }
 .animate-text {
   /* height: 85px; */
-  @apply h-[110px] xl:h-[110px];
+  @apply h-[115px] md:h-[110px] xl:h-[110px];
   overflow: hidden;
-  @apply  lg:my-1 max-h-[50px] lg:max-h-[115px] lg:h-[115px];
+  @apply md:py-5 lg:my-1 max-h-[150px] lg:max-h-[115px] lg:h-[115px];
 }
 .scroll-none::-webkit-scrollbar{
   display:none;
@@ -276,7 +276,7 @@ body {
   box-sizing: border-box;
 }
 .animate-text span {
-  @apply text-[26px] hidden px-1 md:text-4xl lg:text-5xl xl:text-[92px] font-bold text-center self-center leading-[20px] lg:leading-[90px];
+  @apply text-[52px] hidden px-1 md:text-4xl lg:text-5xl xl:text-[92px] font-bold md:text-center md:self-center leading-[50px] lg:leading-[90px];
 }
 
 .animate-text span.text-in {
@@ -558,4 +558,15 @@ a, .cursor-ss-hand, input, button, button span{
   100%{
     transform: translateY(0%);
   }
+}
+body{
+  height:100vh;
+  perspective:1px;
+  transform-style: preserve-3d;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+.paralax-wrapper{
+  
 }

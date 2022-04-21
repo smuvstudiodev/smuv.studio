@@ -11,8 +11,9 @@ export default function Home({ projects }) {
 
   return (
     <Layout title={"UI/UX and Frontend company."}>
-
-      <Hero />
+    <div className="paralax-wrapper">
+   <div>
+   <Hero />
       <Clients />
       <AnimatedLine />
       <Services />
@@ -42,6 +43,8 @@ export default function Home({ projects }) {
 
 
       </div>
+   </div>
+    </div>
     </Layout >
   )
 }

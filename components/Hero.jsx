@@ -37,9 +37,9 @@ const Hero = () => {
     return (
         <div className="relative mt-[45px] lg:mt-[250px] xl:mt-100   flex justify-center justify-items-center content-center md:max-w-screen-lg xl:max-w-screen-2xl mx-auto">
             <object className='project-cursor hidden top-[-10%] md:top-[-15%] z-10 xl:top-[-15%] 2xl:top-[-9%] md:block absolute  left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%]' type="image/svg+xml" data="/images/Hero_Element.svg" alt="Hero Animation">Hero Animation</object>
-            <div className="opacity-0 top-[10%] md:top-[15%] z-20 lg:h-[900px] py-100 xl:top-[-15%] 2xl:top-[-9%] md:block absolute  left-[12%] xl:left-[15%] right-100 item-center self-center md:w-[75%] xl:w-[70%] h-full "/>
+            <div className="opacity-0 top-[10%] md:top-[15%] z-20 lg:h-[900px] py-100 xl:top-[-15%] 2xl:top-[-9%] md:block absolute  left-[12%] xl:left-[15%] right-100 md:item-center md:self-center md:w-[75%] xl:w-[70%] h-full "/>
             <div className='relative mt-[82px] md:mt-[130px] lg:mt-40 z-30 xl:mt-36 2xl:mt-44  flex flex-col content-center justify-center'>
-                <h1 className='heading-text text-[26px] text-primary px-1 md:text-4xl lg:text-5xl xl:text-[88px] 2xl:text-[92px]  font-bold text-center self-center leading-[34px] 2xl:leading-[96px]'>
+                <h1 className='heading-text text-[52px] leading-[56px] text-primary px-4 md:text-4xl lg:text-5xl xl:text-[88px] 2xl:text-[92px]  font-bold text-left md:text-center self-start lg:self-center md:leading-[34px] 2xl:leading-[96px]'>
                     A word-class UX-UI <br className="hidden md:block" /> studio <br className="md:hidden block" /> that loves to create
 
                     <div className="scroller">
@@ -56,7 +56,7 @@ const Hero = () => {
                         </p>
                     </div>
                 </h1>
-                <div className='hero-btn-group lg:my-2 mt-4 lg:mt-5 flex flex-col lg:flex-row justify-between mx-auto gap-y-4 lg:gap-x-5 max-w-sm content-center'>
+                <div className='hero-btn-group lg:my-2 my-8 md:mt-4 lg:mt-5 flex md:justify-between mx-4 md:mx-auto gap-x-4 md:gap-y-4 lg:gap-x-5 max-w-sm md:content-center'>
                     <Link href="/collab">
                         <a className='hero-btn group'>
                             <span>Let{"'"}s Collab</span>
@@ -71,7 +71,6 @@ const Hero = () => {
                     </span>
                 </div>
             </div>
-
         </div>
     )
 }
