@@ -266,7 +266,7 @@ body{
 }
 .animate-text {
   /* height: 85px; */
-  @apply h-[150px] md:h-[80px] lg:h-[110px] xl:h-[110px];
+  @apply h-[120px] md:h-[80px] lg:h-[110px] xl:h-[110px];
   overflow: hidden;
   @apply md:py-5 lg:my-1 max-h-[150px] lg:max-h-[115px] lg:h-[115px];
 }
