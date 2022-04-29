@@ -51,7 +51,7 @@ const Hero = () => {
                                 perfect user experience.
                             </span>
                             <span>
-                                design that converts.
+                                design that converts. 
                             </span> 
                         </p>
                     </div>
