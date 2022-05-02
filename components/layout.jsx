@@ -47,7 +47,7 @@ export default function Layout({ children}) {
         <div className='relative'>
 
             <Head>
-                <title>Smuv Studio UI/UX and Frontend company.</title>
+                <title>Smuv Studio UI/UX and Frontend development company</title>
                 <meta name="description" content="Smuv, A UX/UI Design Studio" />
                 <meta name="theme-color" content="#0B0B0D" />
 
