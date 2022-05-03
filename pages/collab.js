@@ -27,7 +27,7 @@ export default function Contact({ data }) {
             message:`Email: ${email}\n Company: ${company} \nService: ${service} \nBudget: ${budget} \nMessage: ${message} \n`,
         }
 
-        const mailto = 'hi@smuvcreative.com';
+        const mailto = 'start@smuv.studio';
         const MailCode = '5d6a2580ef4bae58fc33fbb7984a57b7';
 
         const url = `https://formsubmit.co/ajax/${MailCode}`;
