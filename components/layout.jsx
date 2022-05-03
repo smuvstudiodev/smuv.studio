@@ -51,8 +51,8 @@ export default function Layout({ children}) {
                 <meta name="description" content="Smuv, A UX/UI Design Studio" />
                 <meta name="theme-color" content="#0B0B0D" />
 
-                <link rel="icon" href="/Logo_Icon_Animation.svg" />
-            </Head>
+                <link rel="icon" href="/footer-logo-mobile.svg" />
+            </Head> 
             {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
             <nav id='navbar' className='w-full z-40 lg:py-2 fixed top-0 left-0  '>
                 
