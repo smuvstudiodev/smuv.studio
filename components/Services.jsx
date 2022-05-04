@@ -4,8 +4,8 @@ const Services = () => {
     return (
         <>
             <div className='hidden tagline md:flex flex-col text-center w-[288px] md:w-[600px] lg:w-[705px] mx-auto justify-center content-center items-center my-9 lg:mb-20 md:my-20 lg:mt-10'>
-                <span className="text-[#737380] text-sm md:text-lg lg:text-xl">Your enterprise wants a smarter product that converts?</span>
-                <h2 className="font-bold text-3xl md:text-[72px] md:leading-[80px] lg:text-[92px] lg:leading-[119px] text-[#C2C2CC] ">smuv can help.</h2>
+                <span className="text-[#737380] text-sm font-normal md:text-lg lg:text-xl">Your enterprise wants a smarter product that converts?</span>
+                <h2 className="font-black text-3xl md:text-[72px] md:leading-[80px] lg:text-[92px] lg:leading-[119px] text-[#C2C2CC] ">smuv can help.</h2>
             </div>
 
             <div className=' md:hidden tagline flex md:flex-col text-center w-screen md:w-full px-4 gap-x-4 md:gap-x-[0px] lg:w-[705px] mx-auto justify-center content-center items-center my-9 lg:mb-20 lg:mt-10'>

@@ -6,7 +6,7 @@ import Footer from './footer';
 import NavModal from './nav-modal';
 import { useRouter } from 'next/router';
 
-export default function Layout({ children}) {
+export default function Layout({ children }) {
     const [isOpen, setIsOpen] = useState(false);
     useEffect(() => {
         const navbar = document.querySelector('#navbar');
@@ -25,11 +25,11 @@ export default function Layout({ children}) {
     }, [])
     useEffect(() => {
         const body = document.querySelector('body');
-        if(isOpen){
+        if (isOpen) {
             body.classList.add("scroll-none");
             body.classList.add("h-screen")
             body.classList.add("overflow-hidden")
-        }else{
+        } else {
             body.classList.remove("scroll-none");
             body.classList.remove("h-screen")
             body.classList.remove("overflow-hidden")
@@ -51,11 +51,10 @@ export default function Layout({ children}) {
                 <meta name="description" content="Smuv, A UX/UI Design Studio" />
                 <meta name="theme-color" content="#0B0B0D" />
 
-                <link rel="icon" href="/footer-logo-mobile.svg" />
-            </Head> 
+            </Head>
             {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
             <nav id='navbar' className='w-full z-40 lg:py-2 fixed top-0 left-0  '>
-                
+
                 <div className='flex justify-between align-center items-center content-center mx-4 lg:mx-100 relative'>
                     <Link href={"/"}>
                         <a className="logo-container project-cursor">

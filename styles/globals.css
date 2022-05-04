@@ -2,30 +2,6 @@
   --border-width: 3px;
 }
 
-@font-face {
-  font-family: "TT Firs Neue";
-  font-weight: 700;
-  src: url("fonts/TT_Firs_Neue/TT\ Firs\ Neue\ Trial\ Bold.ttf");
-}
-@font-face {
-  font-family: "TT Firs Neue";
-  font-weight: 600;
-  src: url("./fonts/TT_Firs_Neue/TT_Firs_Neue-Trial_DemiBold.ttf");
-}
-
-@font-face {
-  font-family: "TT Firs Neue";
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/TT_Firs_Neue/TT_Firs_Neue_Trial_Regular.ttf");
-}
-@font-face {
-  font-family: "TT Firs Neue";
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/TT_Firs_Neue/TT_Firs_Neue_Trial_Medium.ttf");
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,21 +11,19 @@ body {
   padding: 0;
   margin: 0;
   background: #0b0b0d;
-  font-family: "TT Firs Neue", sans-serif;
-  scroll-behavior:smooth;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
   cursor: url(cursor.cur), auto;
-  
 }
-body{
+body {
   position: relative;
 }
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   /* cursor: url(cursor.cur), auto; */
-
 }
-::selection{
+::selection {
   @apply bg-transparent;
 }
 .logo-container {
@@ -65,11 +39,10 @@ body{
   @apply self-center text-[#737380] text-[8px] lg:text-[14px];
 }
 .hambugger {
-  @apply my-auto  w-7 h-7 ;
+  @apply my-auto  w-7 h-7;
 }
 .nav-modal-container {
   @apply fixed z-50 top-0 left-0 bottom-0 right-0 w-full h-full min-h-screen bg-[rgba(0,0,0,0.90)] backdrop-blur-sm flex justify-center items-center content-center;
-  
 }
 
 .nav-modal {
@@ -80,13 +53,13 @@ body{
   @apply flex flex-col gap-y-2 lg:gap-y-12 lg:gap-x-4 my-6 lg:my-8;
 }
 .modal-links-item {
-  @apply text-xl lg:text-4xl leading-10 font-bold text-[#919199];
+  @apply text-xl lg:text-4xl leading-10 font-black text-[#919199];
 }
 #navbar {
   background-color: rgba(11, 11, 13, 0.8);
 }
 .hero-btn {
-  @apply px-[20px] py-[14px] lg:px-6 bg-[#ebebf7] lg:bg-transparent text-[#0A0A0D] lg:w-[65%] self-center lg:py-4 rounded-lg border-[#737380] border  flex gap-x-2 justify-center content-center items-baseline lg:text-[#737380] hover:bg-primary lg:hover:text-[#0A0A0D] lg:text-[20px] font-semibold transition;
+  @apply px-[20px] py-[14px] lg:px-6 bg-[#ebebf7] lg:bg-transparent text-[#0A0A0D] lg:w-[65%] self-center lg:py-4 rounded-lg border-[#737380] border  flex gap-x-2 justify-center content-center items-baseline lg:text-[#737380] hover:bg-primary lg:hover:text-[#0A0A0D] lg:text-[20px] font-extrabold transition;
 }
 .hero-btn,
 .hero-btn:hover,
@@ -95,7 +68,7 @@ body{
   @apply transition duration-300 ease-in-out;
 }
 .hero-text {
-  @apply inline-block lg:text-[16px] text-[10px] text-[#737380]  lg:w-[35%] self-center;
+  @apply inline-block lg:text-[16px] text-[10px] font-normal lg:font-medium text-[#737380]  lg:w-[35%] self-center;
 }
 
 .hero-btn:hover ~ .hero-text {
@@ -138,9 +111,7 @@ body{
 .scroller > div {
   position: absolute;
   top: 0;
-  /* animation: slide 5s ease-in infinite; */
-  font-weight: bold;
-  /* -webkit-animation: slide 8s ease-in infinite; */
+  @apply font-black;
 }
 
 /* @keyframes slide {
@@ -222,12 +193,12 @@ body{
   @apply w-16 h-16 lg:w-20 lg:h-20;
 }
 .card-heading {
-  @apply 2xl:text-[40px] xl:text-[30px] text-[20px]  font-bold leading-[51px]  lg:my-5 text-[#C2C2CC];
+  @apply 2xl:text-[40px] xl:text-[30px] text-[20px]  font-black leading-[51px]  lg:my-5 text-[#C2C2CC];
 }
 .card-list {
   list-style-image: url("/images/tick_mark.png");
   list-style-position: outside;
-  @apply ml-7 lg:ml-5 ;
+  @apply ml-7 lg:ml-5;
 }
 .card-list li {
   @apply text-lg 2xl:text-xl text-[#737380] font-normal my-2 lg:my-3;
@@ -239,9 +210,7 @@ body{
   font-feature-settings: "tnum" on, "lnum" on;
 }
 .project-image:not(.coming-soon) {
-
   cursor: url(img.cur), auto;
-  
 }
 
 .project-image,
@@ -253,10 +222,10 @@ body{
   @apply my-[10px] lg:my-[20px];
 }
 .project-heading {
-  @apply text-[18px] lg:text-[22px] text-[#C2C2CC] font-medium ;
+  @apply text-[18px] lg:text-[22px] text-[#C2C2CC] font-black;
 }
 .project-meta p {
-  @apply text-[#737380] text-lg;
+  @apply text-[#737380] font-semibold text-lg;
 }
 
 .scroller {
@@ -270,15 +239,15 @@ body{
   overflow: hidden;
   @apply lg:my-1 max-h-[150px] lg:max-h-[115px] lg:h-[115px];
 }
-.scroll-none::-webkit-scrollbar{
-  display:none;
+.scroll-none::-webkit-scrollbar {
+  display: none;
 }
-.scroll-none{
+.scroll-none {
   @apply pt-10 pb-5;
   box-sizing: border-box;
 }
 .animate-text span {
-  @apply text-[48px] hidden px-1 md:text-5xl lg:text-6xl xl:text-[92px] font-bold md:text-center md:self-center leading-[50px] lg:leading-[90px];
+  @apply text-[48px] hidden px-1 md:text-5xl lg:text-6xl xl:text-[92px] font-black md:text-center md:self-center leading-[50px] lg:leading-[90px];
 }
 
 .animate-text span.text-in {
@@ -396,7 +365,7 @@ body{
 .client {
   @apply px-10 w-[170.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px] bg-transparent flex justify-center items-center content-center lg:hover:bg-[#101012] rounded-[8px] m-3 lg:hover:opacity-100 lg:opacity-50;
 }
-.client-cover{
+.client-cover {
   @apply opacity-0 absolute z-20 w-[168.06px] h-[79.26px] lg:w-[332px] lg:h-[178px] 2xl:w-[332px] 2xl:h-[178px];
 }
 .client object {
@@ -418,7 +387,7 @@ body{
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   animation: arrow;
-  -webkit-animation: arrow .8s infinite;
+  -webkit-animation: arrow 0.8s infinite;
 }
 @keyframes arrow {
   0% {
@@ -441,29 +410,27 @@ body{
   @apply relative lg:px-2 lg:w-1/2;
 }
 .input-textholder {
-  @apply text-[#7C7C82] font-normal top-5 left-6 text-[17px] cursor-text z-0 bg-[#252529];
+  @apply text-[#7C7C82] font-semibold top-5 left-6 text-[17px] cursor-text z-0 bg-[#252529];
   transition: 0.3s;
 }
-select.input-text{
-  @apply pb-5 pt-5;
+select.input-text {
+  @apply pb-5 pt-5 font-semibold;
 }
 select.input-text:disabled:active,
-select.input-text:disabled:focus{
+select.input-text:disabled:focus {
   @apply border-transparent;
 }
-select option{
+select option {
   @apply text-[#7C7C82] font-normal py-5;
 }
-.reddd{
+.reddd {
   @apply text-red-300;
 }
-.input-text:not(.select)
-{
+.input-text:not(.select) {
   @apply text-[#C2C2CC];
 }
-.input-text
-{
-  @apply bg-[#252529] text-[#7C7C82] form-input px-4 pb-3 pt-6 rounded-lg text-[17px]  font-normal w-full z-10  border-transparent;
+.input-text {
+  @apply bg-[#252529] text-[#7C7C82] form-input px-4 pb-3 pt-6 rounded-lg text-[17px]  font-medium w-full z-10  border-transparent;
   transition: background 0.2s;
 }
 
@@ -480,30 +447,37 @@ select option{
 .input-text:active ~ .input-textholder,
 .input-text:focus ~ .input-textholder,
 .input-text:not(:placeholder-shown).input-text:not(:focus) ~ .input-textholder {
-  @apply top-[10px] text-xs pt-[2px] pr-10 bg-[#101012];
+  @apply top-[10px] text-xs pt-[2px] pr-10 bg-[#101012] font-medium;
   transition: 0.2s;
 }
-.input-text:not(:placeholder-shown).input-text:not(:focus) ~ .input-textholder{
-  @apply bg-[#252529];
+.input-text:not(:placeholder-shown).input-text:not(:focus) ~ .input-textholder {
+  @apply bg-[#252529] font-medium;
 }
 
-.contact-p-text{
-  @apply text-base lg:text-lg text-[#737380] lg:leading-[25px] ;
+.contact-p-text {
+  @apply text-base lg:text-lg text-[#737380] lg:leading-[25px];
 }
 
-.project-cursor, label, object,  .client object, .client{
-  cursor: url(pointer.cur)!important;
+.project-cursor,
+label,
+object,
+.client object,
+.client {
+  cursor: url(pointer.cur) !important;
 }
-a, .cursor-ss-hand, input, button, button span{
+a,
+.cursor-ss-hand,
+input,
+button,
+button span {
   cursor: url(hand.cur), auto;
 }
 
-.project-cursor_alt{
+.project-cursor_alt {
   cursor: url(img.cur), auto;
 }
-.coming-soon{
+.coming-soon {
   cursor: url(coming_soon.cur), auto;
-
 }
 .textarea {
   display: block;
@@ -522,55 +496,51 @@ a, .cursor-ss-hand, input, button, button span{
   color: gray;
 }
 
-.moving_card{
+.moving_card {
   transform: translateY(0%);
   animation: moveV 2s infinite;
 }
 @keyframes moveV {
-  0%{
+  0% {
     transform: translateY(0%);
-
   }
-  50%{
+  50% {
     transform: translateY(10%);
   }
-  100%{
+  100% {
     transform: translateY(0%);
   }
 }
-.moving_card_oncde{
+.moving_card_oncde {
   transform: translateY(0%);
   animation: moveVx 0.9s;
 }
 @keyframes moveVx {
-  0%{
-  transform: translateY(-100%);
-
+  0% {
+    transform: translateY(-100%);
   }
-  25%{
+  25% {
     transform: translateY(-50%);
-
   }
-  50%{
+  50% {
     transform: translateY(10%);
   }
-  75%{
+  75% {
     transform: translateY(20%);
   }
-  100%{
+  100% {
     transform: translateY(0%);
   }
 }
-body{
-  height:100vh;
-  perspective:1px;
+body {
+  height: 100vh;
+  perspective: 1px;
   transform-style: preserve-3d;
-  overflow-x:hidden;
-  overflow-y:auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.paralax-wrapper{
-  
+.paralax-wrapper {
 }
 
 .clients-slider {
@@ -584,8 +554,11 @@ body{
   animation: cambio 30s infinite linear;
 }
 
-
 @keyframes cambio {
-  from {transform:translateX(200%)}
-  to {transform:translateX(-250%)}
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(-250%);
+  }
 }

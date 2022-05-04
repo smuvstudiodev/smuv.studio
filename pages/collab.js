@@ -51,17 +51,17 @@ export default function Contact({ data }) {
             <div className="relative mt-[60px] 2xl:mt-[100px] md:max-w-screen-lg xl:max-w-screen-2xl mx-auto ">
                 <div className="py-10 px-3  lg:p-10 ">
                     <div className="px-2 lg:py-10 flex flex-col place-content-start lg:flex-row justify-between w-full lg:gap-x-9">
-                        <h1 className="no-case-study-heading text-2xl text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-bold self-center  lg:w-[60%]">
+                        <h1 className="no-case-study-heading text-2xl text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-black self-center  lg:w-[60%]">
                             Get started with smuv today.
                         </h1>
-                        <p className="text-sm lg:text-lg 2xl:text-xl leading-5 text-[#737380] mt-3 lg:mt-0 lg:w-[45%] ">
+                        <p className="text-sm lg:text-lg 2xl:text-xl font-normal leading-5 text-[#737380] mt-3 lg:mt-0 lg:w-[45%] ">
                             Our goal is clear: work with a vision, make ambitious designs, build the future you dream of.
                         </p>
                     </div>
                     <div className="py-3 lg:px-5  lg:p-10 2xl:px-2 flex flex-col lg:flex-row gap-8 ">
                         <div className="py-10 px-3 lg:px-5 rounded-xl bg-[#101012] lg:w-2/3">
                             <div className="lg:py-4">
-                                <h2 className="text-[24px] lg:text-[40px] font-bold text-[#C2C2CC]">Let{"’"}s collaborate</h2>
+                                <h2 className="text-[24px] lg:text-[40px] font-black text-[#C2C2CC]">Let{"’"}s collaborate</h2>
                             </div>
                             <div className="py-2">
                                 <form onSubmit={submitForm}>
@@ -75,7 +75,7 @@ export default function Contact({ data }) {
                                             <label htmlFor="last_name" className='absolute input-textholder'>Last Name</label>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col lg:md:flex-row my-2 lg:my-4 lg:my-8 lg:mb-7 gap-y-2">
+                                    <div className="flex flex-col lg:md:flex-row my-2 md:my-4 lg:my-8 lg:mb-7 gap-y-2">
                                         <div className='form-group'>
                                             <input value={email}  onChange={(e)=>setEmail(e.target.value)} required id="email" placeholder=' ' className=" input-text " type="email" autoComplete='off' />
                                             <label htmlFor="email" className='absolute input-textholder'>Email Address</label>
@@ -85,7 +85,7 @@ export default function Contact({ data }) {
                                             <label htmlFor="company" className='absolute input-textholder'>Company Name</label>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col lg:md:flex-row my-2 lg:my-4 lg:my-6 gap-y-2">
+                                    <div className="flex flex-col lg:md:flex-row my-2 md:my-4 lg:my-6 gap-y-2">
                                         <div className='form-group'>
                                             {/* <input id="first_name" placeholder=' ' className=" input-text " type="text" autoComplete='off' /> */}
                                             <select defaultValue={service} onChange={(e)=>{
@@ -145,7 +145,7 @@ export default function Contact({ data }) {
                                     <div className='h-auto lg:translate-y-2 flex w-full justify-end'>
                                         {/* <Link href="/"> */}
 
-                                        <button type="submit" className='bg-[#EBEBF7] lg:bg-transparent text-[16px] place-self-end lg:text-[18px] py-3 px-6 leading-5 lg:py-4 lg:px-10 lg:text-[#010103] border lg:border-[#737380] rounded-lg lg:bg-[#C2C2CC] hover:text-[#0A0A0D] transition-all hover:transition-all btn-transition font-semibold' target="_blank" rel="noreferrer" >
+                                        <button type="submit" className='bg-[#EBEBF7] lg:bg-transparent text-[16px] place-self-end lg:text-[18px] py-3 px-6 leading-5 lg:py-4 lg:px-10 lg:text-[#010103] border lg:border-[#737380] rounded-lg lg:bg-[#C2C2CC] hover:text-[#0A0A0D] transition-all hover:transition-all btn-transition font-bold' target="_blank" rel="noreferrer" >
                                             Next
                                         </button>
                                         {/* </Link> */}
@@ -155,8 +155,8 @@ export default function Contact({ data }) {
 
                         </div>
                         <div className="py-4 lg:py-8 md:px-9 xl:px-14 px-5 rounded-xl bg-[#101012] lg:w-1/3 lg:max-h-[350px] moving_card">
-                            <h3 className="text-[18px] md:px-[1px] lg:text-[32px] font-bold what-next-heading">What{"'"}s next?</h3>
-                            <div className="py-4 lg:py-10">
+                            <h3 className="text-[18px] md:px-[1px] lg:text-[32px] font-black what-next-heading">What{"'"}s next?</h3>
+                            <div className="py-4 lg:py-10 font-semibold">
                                 <p className="contact-p-text">
                                     Kindly fill in the required fields below to progress to the next page.
                                 </p>
