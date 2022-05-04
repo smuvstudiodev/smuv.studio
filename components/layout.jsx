@@ -40,7 +40,6 @@ export default function Layout({ children }) {
     const goHome = (e) => {
         // e.preventDefault();
         router.push("/");
-        console.log(e)
     }
 
     return (

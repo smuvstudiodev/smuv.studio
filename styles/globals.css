@@ -235,7 +235,7 @@ body {
 }
 .animate-text {
   /* height: 85px; */
-  @apply h-[100px] md:h-[80px] lg:h-[100px] xl:h-[110px];
+  @apply h-[110px] md:h-[80px] lg:h-[100px] xl:h-[110px];
   overflow: hidden;
   @apply lg:my-1 max-h-[150px] lg:max-h-[115px] lg:h-[115px];
 }
@@ -247,7 +247,7 @@ body {
   box-sizing: border-box;
 }
 .animate-text span {
-  @apply text-[48px] hidden px-1 md:text-5xl lg:text-6xl xl:text-[92px] font-black md:text-center md:self-center leading-[50px] lg:leading-[90px];
+  @apply text-[48px] hidden px-1 md:text-5xl lg:text-6xl xl:text-[92px] font-black md:text-center md:self-center leading-[55px] lg:leading-[110px];
 }
 
 .animate-text span.text-in {
