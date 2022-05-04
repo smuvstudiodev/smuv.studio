@@ -49,6 +49,10 @@ export default function Layout({ children }) {
                 <title>Smuv Studio UI/UX and Frontend development company</title>
                 <meta name="description" content="Smuv, A UX/UI Design Studio" />
                 <meta name="theme-color" content="#0B0B0D" />
+                {/* eslint-disable-next-line react/no-unknown-property */}
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet" />
 
             </Head>
             {isOpen && <NavModal options={[isOpen, setIsOpen]} />}
