@@ -23,7 +23,7 @@ const Clients = () => {
             </div>
             <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
             </div>
             <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
@@ -39,7 +39,7 @@ const Clients = () => {
             </div>
             <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
             </div>
             <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
@@ -55,7 +55,7 @@ const Clients = () => {
             </div>
             <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
             </div> <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
@@ -70,7 +70,7 @@ const Clients = () => {
             </div>
             <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@ const Clients = () => {
             </div>
             <div className="oneport-365 client">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.svg" aria-label="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
             </div>
           </div>
         </div>
