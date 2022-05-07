@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 // import Carousel from 'carousel-react-rcdev'
 
@@ -90,9 +91,10 @@ const Clients = () => {
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client">
+            <div className="oneport-365 client"> 
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
+              {/* <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object> */}
+              <img src={"images/clients/adspace.png"} alt="Adspace" />
             </div>
           </div>
         </div>

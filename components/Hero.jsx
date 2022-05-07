@@ -1,9 +1,9 @@
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import Link from 'next/link';
 
 const Hero = () => {
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const { children: titles } = document.querySelector(".animate-text");
         const txtsLen = titles.length;
         let index = 0;
