@@ -2,7 +2,7 @@ const Footer = () => {
     return (
         <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-10'>
             <div className="bg-[#101012] py-7 lg:py-20  lg:px-16 rounded-xl lg:rounded-md flex flex-col lg:flex-row justify-between gap-y-5 content-center items-center  w-full">
-                <div className="order-2 lg:order-1 text-[#737380] flex flex-col gap-y-2 font-semibold">
+                <div className="order-2 lg:order-1 text-[#737380] flex flex-col gap-y-2 font-medium">
                     <a href="mailto:hi@smuv.studio" className="text-[16px] lg:text-[20px]">
                         start@smuv.studio
                     </a>
