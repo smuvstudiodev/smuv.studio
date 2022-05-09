@@ -7,7 +7,7 @@ const Footer = () => {
                         start@smuv.studio
                     </a>
                     <a href="tel:+2348156977033" className="text-[16px] lg:text-[20px]">
-                        +234 ​815 697 7033
+                        +234 802 869 8609
                     </a>
                 </div>
                 <div className="order-1 lg:order-2 lg:translate-x-[2.0rem] relative">
