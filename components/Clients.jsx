@@ -14,7 +14,7 @@ const Clients = () => {
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
+            <div className=" client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
@@ -22,15 +22,15 @@ const Clients = () => {
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
+            <div className=" client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace-new.svg" aria-label="AdSpace">AdSpace</object>
             </div>
             <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
+            <div className=" client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
@@ -38,15 +38,15 @@ const Clients = () => {
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
+            <div className=" client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace-new.svg" aria-label="AdSpace">AdSpace</object>
             </div>
             <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
+            <div className=" client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
@@ -54,14 +54,14 @@ const Clients = () => {
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
+            <div className=" client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace-new.svg" aria-label="AdSpace">AdSpace</object>
             </div> <div className="prosperis client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
+            <div className=" client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
@@ -69,9 +69,9 @@ const Clients = () => {
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client border-[0.25px]  border-[#212125]  w-[170px] px-7">
+            <div className=" client border-[0.25px]  border-[#212125]  w-[170px] px-7">
             <div className="client-cover"/>
-              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object>
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace-new.svg" aria-label="AdSpace">AdSpace</object>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ const Clients = () => {
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/prosperis.svg">Prosperis</object>
             </div>
-            <div className="oneport-365 client">
+            <div className="client">
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/oneport-365.svg">One Port 365</object>
             </div>
@@ -91,10 +91,10 @@ const Clients = () => {
             <div className="client-cover"/>
               <object className='project-cursor' type="image/svg+xml" data="images/clients/tingtel.svg">Tingtel</object>
             </div>
-            <div className="oneport-365 client"> 
+            <div className=" client"> 
             <div className="client-cover"/>
-              {/* <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace.png" aria-label="AdSpace">AdSpace</object> */}
-              <img src={"images/clients/adspace.png"} alt="Adspace" />
+              <object className='project-cursor' type="image/svg+xml" data="images/clients/adspace-new.svg" aria-label="AdSpace">AdSpace</object>
+              {/* <img src={"images/clients/adspace-new.svg"} alt="Adspace" /> */}
             </div>
           </div>
         </div>
