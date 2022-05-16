@@ -6,7 +6,7 @@ const Footer = () => {
                     <a href="mailto:hi@smuv.studio" className="text-[16px] lg:text-[20px]">
                         start@smuv.studio
                     </a>
-                    <a href="tel:+2348156977033" className="text-[16px] lg:text-[20px]">
+                    <a href="tel:+2348028698609" className="text-[16px] lg:text-[20px]">
                         +234 802 869 8609
                     </a>
                 </div>
