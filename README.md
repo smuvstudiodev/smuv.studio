@@ -1,1 +1,1 @@
-SMUV
+SMUV Studio
