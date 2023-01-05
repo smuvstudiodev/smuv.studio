@@ -3,8 +3,8 @@ const Footer = () => {
         <div className='px-5  xl:px-11 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10 lg:my-10'>
             <div className="bg-[#101012] py-7 lg:py-20  lg:px-16 rounded-xl lg:rounded-md flex flex-col lg:flex-row justify-between gap-y-5 content-center items-center  w-full">
                 <div className="order-2 lg:order-1 text-[#737380] flex flex-col gap-y-2 font-medium">
-                    <a href="mailto:hi@smuv.studio" className="text-[16px] lg:text-[20px]">
-                        start@smuv.studio
+                    <a href="mailto:start@blaac.co" className="text-[16px] lg:text-[20px]">
+                        start@blaac.co
                     </a>
                     <a href="tel:+2348028698609" className="text-[16px] lg:text-[20px]">
                         +234 802 869 8609
@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
                 <div className="order-1 lg:order-2 lg:translate-x-[2.0rem] relative">
                     <div className="client-cover" />
-                    <object type="image/svg+xml" className="h-8 w-8 lg:w-12 lg:h-12" data="/images/web_icon.svg" alt="Blacc Logo" aria-label="Blacc Logo">Blacc Logo</object>
+                    <object type="image/svg+xml" className="h-8 w-8 lg:w-12 lg:h-12" data="/images/web_icon.svg" alt="Blaac Logo" aria-label="Blaac Logo">Blaac Logo</object>
                 </div>
                 <div className="md:hidden border-t-[0.25px] border-[#212125] w-full order-3" />
                 <div className="order-4 text-[#737380] flex gap-x-2 font-semibold">

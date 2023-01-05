@@ -46,8 +46,8 @@ export default function Layout({ children }) {
         <div className='relative'>
 
             <Head>
-                <title>Blacc Studio UI/UX and Frontend development company</title>
-                <meta name="description" content="Blacc, A UX/UI Design Studio" />
+                <title>Blaac Studio UI/UX and Frontend development company</title>
+                <meta name="description" content="Blaac, A UX/UI Design Studio" />
                 <meta name="theme-color" content="#0B0B0D" />
                 {/* eslint-disable-next-line react/no-unknown-property */}
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,8 +66,8 @@ export default function Layout({ children }) {
                                 {/* <svg width="96" height="96">
                                     <image xlinkHref="/images/Logo_Icon_Animation.svg" src="/images/logo-icon.png" width="96" height="96" />
                                 </svg> */}
-                                <object onClick={(e) => goHome(e)} type="image/svg+xml" className="hidden lg:block h-[13px] w-[80px] lg:w-[150px] lg:h-[70px]" data="/images/web_logo.svg" alt="Blacc Love Animation Logo" aria-label="Blacc Love Animation Logo">Blacc Love Animation Logo</object>
-                                <object onClick={(e) => goHome(e)} type="image/svg+xml" className="lg:hidden w-[109px] h-[73px]" data="/images/mobile_logo.svg" alt="Blacc Love Animation Logo" aria-label="Blacc Love Animation Logo">Blacc Love Animation Logo</object>
+                                <object onClick={(e) => goHome(e)} type="image/svg+xml" className="hidden lg:block h-[13px] w-[80px] lg:w-[150px] lg:h-[70px]" data="/images/web_logo.svg" alt="Blaac Love Animation Logo" aria-label="Blaac Love Animation Logo">Blaac Love Animation Logo</object>
+                                <object onClick={(e) => goHome(e)} type="image/svg+xml" className="lg:hidden w-[109px] h-[73px]" data="/images/mobile_logo.svg" alt="Blaac Love Animation Logo" aria-label="Blaac Love Animation Logo">Blaac Love Animation Logo</object>
                                 {/* <Image src="" alt="Logo" width={180.64} height={79.33} /> */}
                             </div>
 

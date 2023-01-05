@@ -5,7 +5,7 @@ const Services = () => {
         <>
             <div className='hidden tagline md:flex flex-col text-center w-[288px] md:w-[600px] lg:w-[705px] mx-auto justify-center content-center items-center my-9 lg:mb-20 md:my-20 lg:mt-10'>
                 <span className="text-[#737380] text-sm font-normal md:text-lg lg:text-xl">Your enterprise wants a smarter product that converts?</span>
-                <h2 className="font-black text-3xl md:text-[72px] md:leading-[80px] lg:text-[92px] lg:leading-[119px] text-[#C2C2CC] ">Blacc can help.</h2>
+                <h2 className="font-black text-3xl md:text-[72px] md:leading-[80px] lg:text-[92px] lg:leading-[119px] text-[#C2C2CC] ">Blaac can help.</h2>
             </div>
 
             <div className=' md:hidden tagline flex md:flex-col text-center w-screen md:w-full px-4 gap-x-4 md:gap-x-[0px] lg:w-[705px] mx-auto justify-center content-center items-center my-9 lg:mb-20 lg:mt-10'>
@@ -14,7 +14,7 @@ const Services = () => {
                     <Image width={10} height={43} priority src="/images/stroke.svg" alt="Line Stroke"/>
                 </div>
                 
-                <h2 className="font-bold text-[26px] text-left md:text-center leading-[27px] lg:text-[92px] lg:leading-[119px] text-[#C2C2CC] w-[45%] md:w-full">Blacc <br className="md:hidden"/> can help.</h2>
+                <h2 className="font-bold text-[26px] text-left md:text-center leading-[27px] lg:text-[92px] lg:leading-[119px] text-[#C2C2CC] w-[45%] md:w-full">Blaac <br className="md:hidden"/> can help.</h2>
             </div>
 
             <div className="px-2  xl:px-9 max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-[1409px] mx-auto my-10">
