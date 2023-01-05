@@ -52,7 +52,7 @@ export default function Contact({ data }) {
                 <div className="py-10 px-3  lg:p-10 ">
                     <div className="px-2 lg:py-10 flex flex-col place-content-start lg:flex-row justify-between w-full lg:gap-x-9">
                         <h1 className="no-case-study-heading text-2xl text-primary md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-7xl font-black self-center  lg:w-[60%]">
-                            Get started with smuv today.
+                            Get started with Blacc today.
                         </h1>
                         <p className="text-sm lg:text-lg 2xl:text-xl font-normal leading-5 text-[#737380] mt-3 lg:mt-0 lg:w-[45%] ">
                             Our goal is clear: work with a vision, make ambitious designs, build the future you dream of.

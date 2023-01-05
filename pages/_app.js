@@ -12,17 +12,17 @@ function MyApp({ Component, pageProps }) {
       }, 2500)
       const anim2 = setTimeout(() => {
         closeLoaderContainer();
-      }, 3500);
+      }, 2500);
 
       body.classList.add("scroll-none");
-      body.classList.add("h-screen");
+      body.classList.add("max-h-screen");
       body.classList.add("overflow-hidden");
 
       return function cleanup() {
         clearTimeout(anim1)
         clearTimeout(anim2);
         body.classList.remove("scroll-none");
-        body.classList.remove("h-screen")
+        body.classList.remove("max-h-screen")
         body.classList.remove("overflow-hidden")
       }
     });
@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <div id="loader" className="bg-black w-screen transition-[2s] top-0 left-0 min-h-screen h-screen fixed z-50 flex justify-center items-center content-center place-content-center">
-        <object type="image/svg+xml" className="w-20 h-20 lg:w-32 lg:h-32 -m-t-10  -translate-y-10" data="/images/Loading_State.svg">svg-animation</object>
+        <object type="image/svg+xml" className="w-20 h-20 lg:w-32 lg:h-32 -m-t-10  -translate-y-10" data="/images/Loading_State.svg">Smuv Loader</object>
       </div>
       <Component {...pageProps} />
     </>
