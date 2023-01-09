@@ -55,8 +55,9 @@ function MyApp({ Component, pageProps }) {
   }
   return (
     <>
-      <div id="loader" className="bg-black w-screen transition-[2s] top-0 left-0 min-h-screen h-screen fixed z-50 flex justify-center items-center content-center place-content-center">
-        <object type="image/svg+xml" className="w-20 h-20 lg:w-32 lg:h-32 -m-t-10  -translate-y-10" data="/images/Loading_State.svg">Smuv Loader</object>
+      <div id="loader" className="bg-black w-screen transition-[2s] top-0 left-0 h-screen fixed z-50 flex justify-center items-center content-center place-content-center">
+        {/* <object type="image/svg+xml" className="w-20 h-20 lg:w-32 lg:h-32 object-contain -m-t-10  -translate-y-10" data="/images/Loading_State.gif">Smuv Loader</object> */}
+        <img className="w-20 h-20 lg:w-32 lg:h-32 object-contain -m-t-10  -translate-y-10" src="/images/Loading_State1.gif" alt='loader' />
       </div>
       <Component {...pageProps} />
     </>
