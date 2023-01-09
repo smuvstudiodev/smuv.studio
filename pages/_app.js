@@ -1,7 +1,14 @@
 import '../styles/globals.css'
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react'; 
 
 function MyApp({ Component, pageProps }) {
+
+
+  const ref = useRef(null);
+  useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
+
   useEffect(() => {
 
     window.addEventListener("load", function () {
@@ -57,7 +64,17 @@ function MyApp({ Component, pageProps }) {
     <>
       <div id="loader" className="bg-black w-screen transition-[2s] top-0 left-0 h-screen fixed z-50 flex justify-center items-center content-center place-content-center">
         {/* <object type="image/svg+xml" className="w-20 h-20 lg:w-32 lg:h-32 object-contain -m-t-10  -translate-y-10" data="/images/Loading_State.gif">Smuv Loader</object> */}
-        <img className="w-20 h-20 lg:w-32 lg:h-32 object-contain -m-t-10  -translate-y-10" src="/images/Loading_State1.gif" alt='loader' />
+        {/* <img className="w-20 h-20 lg:w-32 lg:h-32 object-contain -m-t-10  -translate-y-10" src="/images/Loading_State1.gif" alt='loader' /> */}
+        <div className="w-20 h-20 lg:w-32 lg:h-32 object-contain -m-t-10  -translate-y-10"  >
+          <lottie-player
+            id="firstLottie"
+            ref={ref}
+            autoplay 
+            loop
+            // mode="normal"
+            src="/Loader2.json" 
+          ></lottie-player>
+        </div>
       </div>
       <Component {...pageProps} />
     </>
